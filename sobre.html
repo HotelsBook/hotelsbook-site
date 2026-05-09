@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nós - HotelsBook | Consultoria e Tecnologia</title>
+  <meta name="description" content="Conheça a HotelsBook: Consultoria estratégica e tecnologia para a hotelaria brasileira. Equipe experiente e foco em resultados reais.">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#0a1628',
+            'navy-light': '#1e3a8a',
+            blue: '#3b82f6',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    .glass-nav {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+    .btn-primary { transition: all 0.3s ease; }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(10, 22, 40, 0.2); }
+  </style>
+</head>
+<body class="font-sans text-gray-700 antialiased bg-white flex flex-col min-h-screen">
+
+  <!-- NAVIGATION -->
+  <nav class="fixed w-full z-50 glass-nav">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <!-- Logo -->
+        <div class="flex-shrink-0 flex items-center">
+          <a href="index.html" class="text-2xl font-bold text-navy tracking-tight">
+            Hotels<span class="text-blue">Book</span>
+          </a>
+        </div>
+        
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-8 items-center">
+          <a href="index.html" class="text-gray-600 hover:text-navy transition">Início</a>
+          <a href="sobre.html" class="text-navy font-medium border-b-2 border-blue pb-1">Sobre Nós</a>
+          <a href="analytics.html" class="text-gray-600 hover:text-navy transition">Analytics</a>
+          <a href="hospped.html" class="text-gray-600 hover:text-navy transition">Hospped</a>
+          <a href="parcerias.html" class="text-gray-600 hover:text-navy transition">Parcerias</a>
+          <a href="contato.html" class="bg-navy text-white px-5 py-2.5 rounded-lg font-medium hover:bg-navy-light transition">Contato</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden flex items-center">
+          <button class="text-gray-600 hover:text-navy focus:outline-none">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="relative bg-navy text-white pt-32 pb-20 lg:pt-40 lg:pb-28">
+    <!-- 
+       💡 DICA DE IA PARA IMAGEM DE FUNDO:
+       Prompt: "Wide angle shot of a professional team meeting in a bright modern office in Brazil, diverse group of people collaborating, focus on teamwork, soft natural lighting, high resolution, photorealistic."
+    -->
+    <div class="absolute inset-0 z-0 opacity-20">
+      <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1170&q=80" alt="Team meeting" class="w-full h-full object-cover">
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center md:text-left max-w-3xl">
+        <span class="inline-block py-1 px-3 rounded-full bg-blue/20 text-blue-300 text-sm font-semibold mb-4 border border-blue/30">
+          Quem Somos
+        </span>
+        <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-6 leading-tight">
+          Tecnologia com raízes na operação real
+        </h1>
+        <p class="text-xl text-gray-300 font-light">
+          Não nascemos de planilhas vazias. A HotelsBook foi construída por quem viveu a hotelaria, entendeu suas dores e decidiu transformar desafios em soluções escaláveis.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOSSA HISTÓRIA -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <h2 class="text-3xl font-bold text-navy mb-6">Nossa Trajetória</h2>
+          <div class="w-16 h-1 bg-blue rounded-full mb-8"></div>
+          
+          <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+            A HotelsBook Tecnologia e Hospitalidade LTDA surgiu da constatação de que o setor hoteleiro brasileiro carecia de ferramentas que unissem <strong>expertise operacional real</strong> a <strong>inteligência de dados acessível</strong>.
+          </p>
+          <p class="text-gray-600 mb-6 leading-relaxed">
+            Fundada por profissionais com vivência prática em gestão hoteleira, consultoria e desenvolvimento tecnológico, nossa empresa opera como uma holding de soluções integradas.
+          </p>
+          <p class="text-gray-600 leading-relaxed">
+            Acreditamos que a profissionalização do setor passa por transparência, dados confiáveis e parcerias de longo prazo. Cada produto que desenvolvemos é validado na prática antes de chegar ao mercado.
+          </p>
+        </div>
+        
+        <div class="relative">
+          <!-- 
+             💡 DICA DE IA PARA IMAGEM:
+             Prompt: "Modern hotel lobby architecture detail, focusing on reception desk and luxury interior design, warm lighting, blurred background, high quality photography, Brazilian context."
+          -->
+          <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1170&q=80" alt="Hotel interior" class="rounded-xl shadow-2xl w-full object-cover h-80 lg:h-96">
+          
+          <!-- Card Flutuante -->
+          <div class="absolute -bottom-6 -right-6 bg-navy p-6 rounded-lg shadow-xl hidden md:block text-center">
+            <p class="text-blue text-4xl font-bold mb-1">4</p>
+            <p class="text-white text-sm font-medium">Sócios Fundadores</p>
+            <p class="text-gray-400 text-xs">Especialistas no Setor</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSÃO, VISÃO E VALORES -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-navy mb-4">Nossos Pilares</h2>
+        <div class="w-16 h-1 bg-blue mx-auto rounded-full"></div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Missão -->
+        <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition duration-300 border-t-4 border-blue">
+          <h3 class="text-xl font-bold text-navy mb-4">Missão</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Transformar a gestão hoteleira através de tecnologia e consultoria especializada que maximizam resultados e elevam a experiência do hóspede.
+          </p>
+        </div>
+
+        <!-- Visão -->
+        <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition duration-300 border-t-4 border-navy">
+          <h3 class="text-xl font-bold text-navy mb-4">Visão</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Ser referência nacional em serviços de hospitalidade, conectando excelência operacional à inovação tecnológica em todo o Brasil.
+          </p>
+        </div>
+
+        <!-- Valores -->
+        <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition duration-300 border-t-4 border-blue-light">
+          <h3 class="text-xl font-bold text-navy mb-4">Valores</h3>
+          <ul class="text-gray-600 space-y-2">
+            <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Excelência no atendimento</li>
+            <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Transparência e ética</li>
+            <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Inovação constante</li>
+            <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Parceria de longo prazo</li>
+            <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Resultados mensuráveis</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EQUIPE (SÓCIOS) -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-navy mb-4">Nossa Equipe Fundadora</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Profissionais experientes unindo gestão, tecnologia e relacionamento para entregar o melhor resultado.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Sócio 1 -->
+        <div class="text-center group">
+          <!-- Prompt IA: "Professional portrait of a brazilian businessman, arms crossed, confident smile, modern office background blurred, high quality corporate photography." -->
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=634&q=80" alt="Sócio" class="w-32 h-32 rounded-full object-cover mx-auto mb-4 shadow-lg border-4 border-gray-100 group-hover:border-blue transition duration-300">
+          <h3 class="font-bold text-navy text-lg">Caio Reis</h3>
+          <p class="text-blue font-medium text-sm mb-2">Sócio Fundador</p>
+          <p class="text-gray-500 text-xs">Consultoria B2B e Estratégia</p>
+        </div>
+
+        <!-- Sócio 2 -->
+        <div class="text-center group">
+          <!-- Prompt IA: "Professional portrait of a brazilian businesswoman, friendly expression, wearing business casual, clean background, high quality corporate photography." -->
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=634&q=80" alt="Sócia" class="w-32 h-32 rounded-full object-cover mx-auto mb-4 shadow-lg border-4 border-gray-100 group-hover:border-blue transition duration-300">
+          <h3 class="font-bold text-navy text-lg">Mariana Cíntia</h3>
+          <p class="text-blue font-medium text-sm mb-2">Sócia Fundadora</p>
+          <p class="text-gray-500 text-xs">Relacionamento com Clientes</p>
+        </div>
+
+        <!-- Sócio 3 -->
+        <div class="text-center group">
+          <!-- Prompt IA: "Professional portrait of a brazilian man working on a laptop, focused, tech environment background, high quality corporate photography." -->
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=634&q=80" alt="Sócio" class="w-32 h-32 rounded-full object-cover mx-auto mb-4 shadow-lg border-4 border-gray-100 group-hover:border-blue transition duration-300">
+          <h3 class="font-bold text-navy text-lg">Filipe Soares</h3>
+          <p class="text-blue font-medium text-sm mb-2">Sócio Fundador</p>
+          <p class="text-gray-500 text-xs">Tecnologia e Inovação</p>
+        </div>
+
+        <!-- Sócio 4 -->
+        <div class="text-center group">
+          <!-- Prompt IA: "Professional portrait of a brazilian young man, smiling, smart casual clothing, neutral background, high quality corporate photography." -->
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=1170&q=80" alt="Sócio" class="w-32 h-32 rounded-full object-cover mx-auto mb-4 shadow-lg border-4 border-gray-100 group-hover:border-blue transition duration-300">
+          <h3 class="font-bold text-navy text-lg">Mateus Reis</h3>
+          <p class="text-blue font-medium text-sm mb-2">Sócio Fundador</p>
+          <p class="text-gray-500 text-xs">Operações e Desenvolvimento</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-navy text-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-6">Faça parte dessa história</h2>
+      <p class="text-gray-300 mb-8 text-lg">
+        Seja como cliente ou parceiro, há espaço para quem busca transformar a hotelaria brasileira com seriedade e inovação.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="contato.html" class="btn-primary bg-white text-navy font-semibold py-3.5 px-8 rounded-lg">
+          Falar com a Equipe
+        </a>
+        <a href="parcerias.html" class="btn-primary border border-gray-500 text-gray-200 font-semibold py-3.5 px-8 rounded-lg hover:bg-white/10 hover:border-white">
+          Propor Parceria
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-300 py-12 border-t border-gray-800 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-8 mb-8">
+        <div class="col-span-1 md:col-span-2">
+          <a href="index.html" class="text-2xl font-bold text-white tracking-tight">
+            Hotels<span class="text-blue">Book</span>
+          </a>
+          <p class="mt-4 text-sm text-gray-400 max-w-xs">
+            Tecnologia e Consultoria Estratégica para o Setor Hoteleiro Brasileiro.
+          </p>
+        </div>
+        
+        <div>
+          <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Soluções</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="analytics.html" class="hover:text-white transition">Analytics</a></li>
+            <li><a href="hospped.html" class="hover:text-white transition">Hospped</a></li>
+            <li><a href="sobre.html" class="hover:text-white transition">Consultoria</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Empresa</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="sobre.html" class="hover:text-white transition">Sobre Nós</a></li>
+            <li><a href="parcerias.html" class="hover:text-white transition">Parcerias</a></li>
+            <li><a href="contato.html" class="hover:text-white transition">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
+        <p>&copy; 2026 HotelsBook Tecnologia e Hospitalidade LTDA.</p>
+        <div class="mt-4 md:mt-0 space-x-4">
+          <a href="#" class="hover:text-white transition">Privacidade</a>
+          <a href="#" class="hover:text-white transition">Termos de Uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

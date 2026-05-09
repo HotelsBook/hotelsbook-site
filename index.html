@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HotelsBook | Consultoria e Tecnologia para Hotelaria</title>
+  <meta name="description" content="Soluções integradas para a hotelaria brasileira. Consultoria estratégica, plataforma de dados Analytics e gestão de viagens corporativas com a Hospped.">
+  
+  <!-- Tailwind CSS (Via CDN para desenvolvimento rápido) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Inter (Limpa e Moderna como a Brasil Junior) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Configuração de Cores da Marca -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#0a1628',
+            'navy-light': '#1e3a8a',
+            blue: '#3b82f6',
+            'blue-light': '#60a5fa',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Smooth Scroll */
+    html { scroll-behavior: smooth; }
+    
+    /* Efeito de Vidro no Menu */
+    .glass-nav {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+
+    /* Hover suave nos botões */
+    .btn-primary {
+      transition: all 0.3s ease;
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(10, 22, 40, 0.2);
+    }
+  </style>
+</head>
+<body class="font-sans text-gray-700 antialiased bg-white">
+
+  <!-- NAVIGATION -->
+  <nav class="fixed w-full z-50 glass-nav">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <!-- Logo -->
+        <div class="flex-shrink-0 flex items-center">
+          <a href="index.html" class="text-2xl font-bold text-navy tracking-tight">
+            Hotels<span class="text-blue">Book</span>
+          </a>
+        </div>
+        
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-8 items-center">
+          <a href="index.html" class="text-navy font-medium hover:text-blue transition">Início</a>
+          <a href="sobre.html" class="text-gray-600 hover:text-navy transition">Sobre Nós</a>
+          <a href="analytics.html" class="text-gray-600 hover:text-navy transition">Analytics</a>
+          <a href="hospped.html" class="text-gray-600 hover:text-navy transition">Hospped</a>
+          <a href="parcerias.html" class="text-gray-600 hover:text-navy transition">Parcerias</a>
+          <a href="contato.html" class="bg-navy text-white px-5 py-2.5 rounded-lg font-medium hover:bg-navy-light transition">Contato</a>
+        </div>
+
+        <!-- Mobile Menu Button (Hamburguer) -->
+        <div class="md:hidden flex items-center">
+          <button class="text-gray-600 hover:text-navy focus:outline-none">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <!-- 
+    💡 DICA DE IA PARA IMAGEM DE FUNDO:
+    Prompt: "Cinematic wide shot of a modern hotel lobby in Brazil, soft natural lighting coming from large windows, blurred background to emphasize depth, professional interior design, 8k resolution, photorealistic, no people, architectural photography style."
+  -->
+  <section class="relative bg-navy text-white pt-32 pb-24 lg:pt-48 lg:pb-32 overflow-hidden">
+    <!-- Imagem de Fundo (Placeholder) -->
+    <div class="absolute inset-0 z-0 opacity-20">
+      <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=2070&q=80" alt="Hotel background" class="w-full h-full object-cover">
+    </div>
+    
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <span class="inline-block py-1 px-3 rounded-full bg-blue/20 text-blue-light text-sm font-semibold mb-6 border border-blue/30">
+        Inovação para o Setor Hoteleiro
+      </span>
+      <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-6 leading-tight">
+        Inteligência e Consultoria<br>para Hotelaria Brasileira
+      </h1>
+      <p class="mt-4 text-xl text-gray-300 max-w-2xl mx-auto mb-10 font-light">
+        Unimos expertise em gestão hoteleira com tecnologia proprietária para profissionalizar operações, maximizar receitas e escalar negócios.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="contato.html" class="btn-primary bg-white text-navy font-semibold py-3.5 px-8 rounded-lg">
+          Falar com Consultor
+        </a>
+        <a href="analytics.html" class="btn-primary border border-gray-500 text-gray-200 font-semibold py-3.5 px-8 rounded-lg hover:bg-white/10 hover:border-white">
+          Conhecer Analytics
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE NÓS (Resumo) -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+        <div>
+          <h2 class="text-3xl font-bold text-navy mb-6">Quem Somos</h2>
+          <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+            A HotelsBook é uma holding de soluções integradas para o setor hoteleiro. Não somos apenas uma empresa de tecnologia, somos parceiros estratégicos que entendem a operação do chão de fábrica até o board.
+          </p>
+          <p class="text-gray-600 mb-8 leading-relaxed">
+            Nascemos da necessidade de trazer dados confiáveis e processos eficientes para hotéis e pousadas que desejam crescer com sustentabilidade.
+          </p>
+          <a href="sobre.html" class="text-blue font-semibold hover:text-navy transition flex items-center gap-2">
+            Conheça nossa história e equipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+        </div>
+        <div class="mt-10 lg:mt-0 relative">
+          <!-- 
+             💡 DICA DE IA PARA IMAGEM DA EQUIPE:
+             Prompt: "Group of 4 diverse professionals in a modern office meeting room in Brazil, collaborating around a table with laptops and documents, casual business attire, natural lighting, candid shot, high quality, photorealistic."
+          -->
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1170&q=80" alt="Equipe HotelsBook" class="rounded-xl shadow-2xl w-full object-cover h-80 lg:h-96">
+          <div class="absolute -bottom-6 -right-6 bg-navy p-6 rounded-lg shadow-lg hidden md:block">
+            <p class="text-white text-2xl font-bold">100%</p>
+            <p class="text-gray-300 text-sm">Capital Nacional</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOSSAS SOLUÇÕES (Cards de Navegação) -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-navy mb-4">Nossas Soluções</h2>
+        <div class="w-16 h-1 bg-blue mx-auto rounded-full"></div>
+        <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Tecnologia e serviço desenhados para cobrir todas as etapas da gestão hoteleira e de viagens.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
+        <!-- Card Analytics -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 group">
+          <div class="h-48 overflow-hidden bg-navy relative">
+            <!-- Prompt IA: "Data visualization dashboard on a tablet screen, hotel charts and graphs, blue and dark theme, isometric 3d style, clean UI." -->
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1170&q=80" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition duration-500" alt="Analytics">
+            <div class="absolute inset-0 flex items-center justify-center">
+               <span class="bg-white/90 text-navy px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">SaaS & Dados</span>
+            </div>
+          </div>
+          <div class="p-8">
+            <h3 class="text-2xl font-bold text-navy mb-3">HotelsBook Analytics</h3>
+            <p class="text-gray-600 mb-6">
+              Plataforma de Revenue Management com parser adaptativo e IA generativa. Transforme dados brutos do seu PMS em decisões estratégicas de precificação e ocupação.
+            </p>
+            <ul class="space-y-2 mb-8 text-sm text-gray-500">
+              <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Previsão de Sazonalidade</li>
+              <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Parser de PMS automático</li>
+              <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Relatórios Executivos</li>
+            </ul>
+            <a href="analytics.html" class="inline-block w-full text-center border-2 border-navy text-navy font-semibold py-2.5 rounded-lg hover:bg-navy hover:text-white transition">
+              Ver Detalhes
+            </a>
+          </div>
+        </div>
+
+        <!-- Card Hospped -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 group">
+          <div class="h-48 overflow-hidden bg-blue relative">
+            <!-- Prompt IA: "Modern airport terminal interior, blurred business travelers walking, focus on luggage and smartphone screen showing booking app, bright lighting, professional photography." -->
+            <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1174&q=80" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition duration-500" alt="Hospped">
+            <div class="absolute inset-0 flex items-center justify-center">
+               <span class="bg-white/90 text-blue px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Agência & Viagens</span>
+            </div>
+          </div>
+          <div class="p-8">
+            <h3 class="text-2xl font-bold text-navy mb-3">Hospped</h3>
+            <p class="text-gray-600 mb-6">
+              Gestão completa de viagens corporativas e mobilidade acadêmica. Negociação direta com rede hoteleira, controle de políticas e relatórios de gastos.
+            </p>
+            <ul class="space-y-2 mb-8 text-sm text-gray-500">
+              <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Reservas Corporativas</li>
+              <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Mobilidade Acadêmica</li>
+              <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Controle de Gastos</li>
+            </ul>
+            <a href="hospped.html" class="inline-block w-full text-center border-2 border-navy text-navy font-semibold py-2.5 rounded-lg hover:bg-navy hover:text-white transition">
+              Ver Detalhes
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POR QUE NOS ESCOLHER -->
+  <section class="py-20 bg-navy text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold mb-4">Por que a HotelsBook?</h2>
+        <p class="text-gray-400">Diferenciais que impactam diretamente o seu resultado.</p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div class="p-6">
+          <div class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-blue-light" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Expertise Real</h3>
+          <p class="text-gray-300 text-sm">Nossa equipe vive o dia a dia da hotelaria. Não somos apenas teóricos, somos operadores.</p>
+        </div>
+        
+        <div class="p-6">
+          <div class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-blue-light" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Tecnologia Própria</h3>
+          <p class="text-gray-300 text-sm">Ferramentas desenvolvidas internamente para garantir agilidade, segurança e personalização.</p>
+        </div>
+        
+        <div class="p-6">
+          <div class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-blue-light" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Atuação Nacional</h3>
+          <p class="text-gray-300 text-sm">Atendemos clientes em todo o Brasil, combinando tecnologia remota com suporte humanizado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold text-navy mb-6">Pronto para transformar sua operação?</h2>
+      <p class="text-gray-600 mb-8">Agende uma conversa com nossos especialistas e descubra como podemos otimizar seus resultados.</p>
+      <a href="contato.html" class="btn-primary bg-blue text-white font-semibold py-4 px-10 rounded-lg text-lg shadow-lg hover:bg-blue-600">
+        Entrar em Contato
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-300 py-12 border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-8 mb-8">
+        <div class="col-span-1 md:col-span-2">
+          <a href="index.html" class="text-2xl font-bold text-white tracking-tight">
+            Hotels<span class="text-blue">Book</span>
+          </a>
+          <p class="mt-4 text-sm text-gray-400 max-w-xs">
+            Tecnologia e Consultoria Estratégica para o Setor Hoteleiro Brasileiro.
+          </p>
+        </div>
+        
+        <div>
+          <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Soluções</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="analytics.html" class="hover:text-white transition">Analytics</a></li>
+            <li><a href="hospped.html" class="hover:text-white transition">Hospped</a></li>
+            <li><a href="sobre.html" class="hover:text-white transition">Consultoria</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Empresa</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="sobre.html" class="hover:text-white transition">Sobre Nós</a></li>
+            <li><a href="parcerias.html" class="hover:text-white transition">Parcerias</a></li>
+            <li><a href="contato.html" class="hover:text-white transition">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
+        <p>&copy; 2026 HotelsBook Tecnologia e Hospitalidade LTDA.</p>
+        <div class="mt-4 md:mt-0 space-x-4">
+          <a href="#" class="hover:text-white transition">Privacidade</a>
+          <a href="#" class="hover:text-white transition">Termos de Uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS para Mobile Menu (Simples) -->
+  <script>
+    // Script básico para abrir/fechar menu no mobile pode ser adicionado aqui
+  </script>
+</body>
+</html>

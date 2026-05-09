@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parcerias - HotelsBook | Ecossistema de Tecnologia e Hospitalidade</title>
+  <meta name="description" content="Faça parte do ecossistema HotelsBook. Programas de revenda de tecnologia, cadastro de hotéis parceiros e integrações estratégicas.">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#0a1628',
+            'navy-light': '#1e3a8a',
+            blue: '#3b82f6',
+            'blue-light': '#60a5fa',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans text-gray-700 antialiased bg-white">
+
+  <!-- NAVIGATION -->
+  <header class="fixed w-full z-50 bg-white/95 backdrop-blur-md shadow-sm transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <div class="flex-shrink-0 flex items-center">
+          <a href="index.html" class="text-2xl font-bold text-navy tracking-tight">
+            Hotels<span class="text-blue">Book</span>
+          </a>
+        </div>
+        
+        <nav class="hidden md:flex space-x-8 items-center">
+          <a href="index.html" class="nav-link text-gray-600 hover:text-navy transition">Início</a>
+          <a href="sobre.html" class="nav-link text-gray-600 hover:text-navy transition">Sobre Nós</a>
+          <a href="analytics.html" class="nav-link text-gray-600 hover:text-navy transition">Analytics</a>
+          <a href="hospped.html" class="nav-link text-gray-600 hover:text-navy transition">Hospped</a>
+          <a href="parcerias.html" class="nav-link text-navy font-semibold">Parcerias</a>
+          <a href="contato.html" class="bg-navy text-white px-5 py-2.5 rounded-lg font-medium hover:bg-navy-light transition">Contato</a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden flex items-center">
+          <button class="mobile-menu-toggle text-gray-600 hover:text-navy focus:outline-none" aria-label="Menu">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+      <!-- Mobile Menu -->
+      <nav class="nav-menu hidden md:hidden">
+        <a href="index.html" class="nav-link block py-2 text-gray-600">Início</a>
+        <a href="sobre.html" class="nav-link block py-2 text-gray-600">Sobre Nós</a>
+        <a href="analytics.html" class="nav-link block py-2 text-gray-600">Analytics</a>
+        <a href="hospped.html" class="nav-link block py-2 text-gray-600">Hospped</a>
+        <a href="parcerias.html" class="nav-link block py-2 text-navy font-semibold">Parcerias</a>
+        <a href="contato.html" class="nav-link block py-2 text-navy font-semibold">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="pt-32 pb-20 bg-gradient-to-br from-navy via-navy-light to-blue text-white overflow-hidden relative">
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 40px 40px;"></div>
+    </div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+      <div class="inline-block px-4 py-1.5 rounded-full bg-blue/20 border border-blue/30 text-blue-light text-sm font-semibold mb-6">
+        Programa de Parceiros
+      </div>
+      <h1 class="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+        Construa o futuro da hotelaria<br>
+        <span class="text-blue-light">conosco</span>
+      </h1>
+      <p class="text-xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
+        Unimos tecnologia proprietária, rede de hotéis validada e expertise de mercado. Seja um parceiro de tecnologia, integre sua propriedade ou desenvolva soluções complementares.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#modelos" class="btn-primary bg-white text-navy font-semibold py-3.5 px-8 rounded-lg">
+          Conhecer Modelos de Parceria
+        </a>
+        <a href="contato.html" class="border-2 border-white/30 text-white font-semibold py-3.5 px-8 rounded-lg hover:bg-white/10 transition">
+          Falar com o Time de Parcerias
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY PARTNER SECTION -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl lg:text-4xl font-bold text-navy mb-4">Por que ser um parceiro HotelsBook?</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Oferecemos infraestrutura pronta, suporte técnico dedicado e modelos de remuneração transparentes.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="service-card text-center">
+          <div class="w-16 h-16 bg-blue/10 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-navy mb-3">Receita Recorrente</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Modelos de revenda com comissões sobre a mensalidade do cliente enquanto ele for ativo. Crescimento previsível e escalável.
+          </p>
+        </div>
+
+        <div class="service-card text-center">
+          <div class="w-16 h-16 bg-blue/10 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-navy mb-3">Tecnologia Validada</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Produtos já testados em operação real. IA generativa, parser adaptativo e dashboards prontos para uso imediato.
+          </p>
+        </div>
+
+        <div class="service-card text-center">
+          <div class="w-16 h-16 bg-blue/10 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-navy mb-3">Suporte e Treinamento</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Onboarding guiado, material de vendas white-label e canal direto com nossa equipe de desenvolvimento de negócios.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARTNERSHIP MODELS -->
+  <section id="modelos" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl lg:text-4xl font-bold text-navy mb-4">Modelos de Parceria</h2>
+        <div class="w-24 h-1 bg-blue mx-auto rounded-full mb-6"></div>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Escolha a modalidade que melhor se adapta ao seu modelo de negócio e capacidade de atuação.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Modelo 1: Revenda -->
+        <div class="service-card">
+          <!-- 
+            💡 PROMPT PARA IA - IMAGEM REVENDEDOR:
+            "Professional sales meeting in a modern Brazilian office, consultant presenting a tablet with analytics dashboard to a hotel manager, natural lighting, business casual attire, focused interaction, photorealistic, corporate photography style."
+          -->
+          <div class="media-container rounded-xl mb-6 overflow-hidden h-40">
+            <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1074&q=80" alt="Revenda de Tecnologia" class="w-full h-full object-cover">
+          </div>
+          <h3 class="text-xl font-bold text-navy mb-3">Revendedor de Tecnologia</h3>
+          <p class="text-gray-600 mb-6 text-sm leading-relaxed">
+            Ideal para consultores hoteleiros, agências de turismo e escritórios de gestão que desejam revender a plataforma Analytics e ganhar recorrência.
+          </p>
+          <ul class="space-y-2 mb-6 text-sm text-gray-600">
+            <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Comissão recorrente sobre mensalidade</li>
+            <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Treinamento técnico e comercial</li>
+            <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Material de vendas e cases</li>
+          </ul>
+          <a href="contato.html" class="btn-secondary w-full text-center text-sm">Quero ser Revendedor</a>
+        </div>
+
+        <!-- Modelo 2: Hotéis -->
+        <div class="service-card">
+          <!-- 
+            💡 PROMPT PARA IA - IMAGEM HOTEL PARCEIRO:
+            "Modern hotel reception desk in Brazil, clean and bright interior, front desk agent smiling, subtle branding elements, professional hospitality photography, warm tones, high quality, realistic."
+          -->
+          <div class="media-container rounded-xl mb-6 overflow-hidden h-40">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1170&q=80" alt="Hotel Parceiro" class="w-full h-full object-cover">
+          </div>
+          <h3 class="text-xl font-bold text-navy mb-3">Hotel Parceiro (Hospped)</h3>
+          <p class="text-gray-600 mb-6 text-sm leading-relaxed">
+            Integre-se à nossa base de parceiros de hospedagem e receba reservas corporativas e acadêmicas qualificadas com taxa de comissão justa.
+          </p>
+          <ul class="space-y-2 mb-6 text-sm text-gray-600">
+            <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Visibilidade na plataforma Hospped</li>
+            <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Gestão centralizada de reservas</li>
+            <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Pagamentos ágeis e transparentes</li>
+          </ul>
+          <a href="contato.html" class="btn-secondary w-full text-center text-sm">Cadastrar Meu Hotel</a>
+        </div>
+
+        <!-- Modelo 3: API/Integração -->
+        <div class="service-card">
+          <!-- 
+            💡 PROMPT PARA IA - IMAGEM INTEGRAÇÃO/API:
+            "Abstract data flow visualization connecting hotel management systems, clean UI lines, blue and navy palette, modern tech illustration, SaaS ecosystem context, professional, photorealistic 3D render style."
+          -->
+          <div class="media-container rounded-xl mb-6 overflow-hidden h-40">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1170&q=80" alt="Integração de API" class="w-full h-full object-cover">
+          </div>
+          <h3 class="text-xl font-bold text-navy mb-3">Integração de API</h3>
+          <p class="text-gray-600 mb-6 text-sm leading-relaxed">
+            Para desenvolvedores e empresas de software (PMS, Channel Managers, ERPs) que desejam consumir nossos dados de mercado e analytics.
+          </p>
+          <ul class="space-y-2 mb-6 text-sm text-gray-600">
+            <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Documentação técnica completa</li>
+            <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Dados anonimizados e seguros</li>
+            <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Suporte dedicado ao desenvolvedor</li>
+          </ul>
+          <a href="contato.html" class="btn-secondary w-full text-center text-sm">Acessar Documentação</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS SECTION -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-navy mb-4">Como Funciona a Adesão</h2>
+        <p class="text-lg text-gray-600">Processo transparente e ágil para você começar a operar.</p>
+      </div>
+
+      <div class="grid md:grid-cols-4 gap-6 text-center">
+        <div class="relative">
+          <div class="w-14 h-14 bg-navy text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 z-10 relative">1</div>
+          <div class="hidden md:block absolute top-7 left-1/2 w-full h-0.5 bg-gray-300 -z-0"></div>
+          <h3 class="font-bold text-navy mb-2">Cadastro</h3>
+          <p class="text-gray-600 text-sm">Preencha o formulário de interesse com dados da sua empresa e modelo de atuação.</p>
+        </div>
+        
+        <div class="relative">
+          <div class="w-14 h-14 bg-navy text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 z-10 relative">2</div>
+          <div class="hidden md:block absolute top-7 left-1/2 w-full h-0.5 bg-gray-300 -z-0"></div>
+          <h3 class="font-bold text-navy mb-2">Análise de Fit</h3>
+          <p class="text-gray-600 text-sm">Nossa equipe avalia sinergia estratégica e define o modelo de parceria ideal.</p>
+        </div>
+        
+        <div class="relative">
+          <div class="w-14 h-14 bg-navy text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 z-10 relative">3</div>
+          <div class="hidden md:block absolute top-7 left-1/2 w-full h-0.5 bg-gray-300 -z-0"></div>
+          <h3 class="font-bold text-navy mb-2">Onboarding</h3>
+          <p class="text-gray-600 text-sm">Treinamento técnico, acesso à plataforma e entrega de materiais de apoio.</p>
+        </div>
+        
+        <div class="relative">
+          <div class="w-14 h-14 bg-navy text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 z-10 relative">4</div>
+          <h3 class="font-bold text-navy mb-2">Operação</h3>
+          <p class="text-gray-600 text-sm">Início das vendas ou integrações com acompanhamento mensal de performance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="py-20 bg-navy text-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl lg:text-4xl font-bold mb-6">
+        Pronto para crescer junto?
+      </h2>
+      <p class="text-xl text-gray-300 mb-10">
+        Nossa equipe de parcerias está pronta para analisar sua proposta e desenhar um modelo mutualmente vantajoso.
+      </p>
+      <a href="contato.html" class="btn-primary bg-white text-navy font-semibold py-4 px-10 rounded-lg inline-block">
+        Iniciar Conversa com Parceiros
+      </a>
+      <p class="text-gray-400 text-sm mt-6">Resposta em até 48 horas úteis. Sem compromisso inicial.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-navy mb-4">Dúvidas Frequentes sobre Parcerias</h2>
+      </div>
+
+      <div class="space-y-4">
+        <details class="group bg-gray-50 rounded-xl p-6">
+          <summary class="font-semibold text-navy cursor-pointer flex justify-between items-center">
+            Existe exigência de volume mínimo ou fidelidade?
+            <svg class="w-5 h-5 transition-transform group-open:rotate-180 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </summary>
+          <div class="text-gray-600 mt-4 leading-relaxed">
+            <p>Não trabalhamos com travas contratuais ou metas agressivas de curto prazo. Acreditamos que a parceria deve se sustentar pela qualidade do produto e pelo retorno real. Avaliamos performance de forma contínua e ajustamos estratégias juntos.</p>
+          </div>
+        </details>
+
+        <details class="group bg-gray-50 rounded-xl p-6">
+          <summary class="font-semibold text-navy cursor-pointer flex justify-between items-center">
+            Como funciona o pagamento de comissões?
+            <svg class="w-5 h-5 transition-transform group-open:rotate-180 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </summary>
+          <div class="text-gray-600 mt-4 leading-relaxed">
+            <p>As comissões são apuradas mensalmente e pagas via transferência bancária ou PIX, após confirmação do pagamento do cliente final. Você recebe um dashboard transparente com todas as transações e status de repasse.</p>
+          </div>
+        </details>
+
+        <details class="group bg-gray-50 rounded-xl p-6">
+          <summary class="font-semibold text-navy cursor-pointer flex justify-between items-center">
+            Posso atuar em exclusiva na minha região?
+            <svg class="w-5 h-5 transition-transform group-open:rotate-180 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </summary>
+          <div class="text-gray-600 mt-4 leading-relaxed">
+            <p>Sim, oferecemos acordos de exclusividade regional para parceiros que comprovarem capacidade de cobertura e volume consistente. Os termos são definidos caso a caso, com base no potencial de mercado e no histórico de atuação.</p>
+          </div>
+        </details>
+
+        <details class="group bg-gray-50 rounded-xl p-6">
+          <summary class="font-semibold text-navy cursor-pointer flex justify-between items-center">
+            Vocês oferecem suporte técnico para revendedores?
+            <svg class="w-5 h-5 transition-transform group-open:rotate-180 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </summary>
+          <div class="text-gray-600 mt-4 leading-relaxed">
+            <p>Absolutamente. Cada parceiro recebe um gerente de contas dedicado, acesso à base de conhecimento técnica, webinars de atualização e canal prioritário para resolução de chamados. Seu sucesso é nosso indicador principal.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-300 py-12 border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-8 mb-8">
+        <div class="col-span-1 md:col-span-2">
+          <a href="index.html" class="text-2xl font-bold text-white tracking-tight">
+            Hotels<span class="text-blue">Book</span>
+          </a>
+          <p class="mt-4 text-sm text-gray-400 max-w-xs">
+            Tecnologia e Consultoria Estratégica para o Setor Hoteleiro Brasileiro.
+          </p>
+        </div>
+        
+        <div>
+          <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Soluções</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="analytics.html" class="hover:text-white transition">Analytics</a></li>
+            <li><a href="hospped.html" class="hover:text-white transition">Hospped</a></li>
+            <li><a href="sobre.html" class="hover:text-white transition">Consultoria</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Empresa</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="sobre.html" class="hover:text-white transition">Sobre Nós</a></li>
+            <li><a href="parcerias.html" class="hover:text-white transition font-medium text-white">Parcerias</a></li>
+            <li><a href="contato.html" class="hover:text-white transition">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
+        <p>&copy; <span class="current-year"></span> HotelsBook Tecnologia e Hospitalidade LTDA.</p>
+        <div class="mt-4 md:mt-0 space-x-4">
+          <a href="#" class="hover:text-white transition">Privacidade</a>
+          <a href="#" class="hover:text-white transition">Termos de Uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
