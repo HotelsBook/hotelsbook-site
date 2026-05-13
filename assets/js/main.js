@@ -19,7 +19,7 @@
     menuToggle.addEventListener('click', function () {
       const isExpanded = this.getAttribute('aria-expanded') === 'true';
       this.setAttribute('aria-expanded', String(!isExpanded));
-      
+
       navMenu.classList.toggle('hidden');
       navMenu.classList.toggle('flex');
       navMenu.classList.toggle('flex-col');
@@ -63,13 +63,18 @@
     const header = document.querySelector('header');
     if (!header) return;
 
+    // Garante que o header comece com fundo visível
+    header.classList.add('bg-white/95', 'shadow-sm');
+
     window.addEventListener('scroll', function () {
-      if (window.scrollY > 50) {
-        header.classList.add('shadow-md', 'bg-white/95');
-        header.classList.remove('bg-white/0');
+      if (window.scrollY > 20) {
+        // Ao rolar, adiciona sombra mais forte e fundo sólido
+        header.classList.add('shadow-md', 'bg-white');
+        header.classList.remove('bg-white/95');
       } else {
-        header.classList.remove('shadow-md', 'bg-white/95');
-        header.classList.add('bg-white/0');
+        // No topo, volta ao vidro suave
+        header.classList.remove('shadow-md', 'bg-white');
+        header.classList.add('bg-white/95', 'shadow-sm');
       }
     });
   }
