@@ -4,6 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PXKZXNRNMKQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-PXKZXNRNMKQ', { 'anonymize_ip': true });
+  </script>
   <title>Sobre Nós - HotelsBook | Consultoria e Tecnologia</title>
   <meta name="description"
     content="Conheça a HotelsBook: Consultoria estratégica e tecnologia para a hotelaria brasileira. Equipe experiente e foco em resultados reais.">
@@ -324,7 +332,49 @@
       </div>
     </div>
   </footer>
+  <!-- Banner LGPD Cookies -->
+  <div id="cookie-banner"
+    class="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 p-4 shadow-lg z-50 hidden">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-gray-600 text-center md:text-left">
+        Utilizamos cookies para analisar o tráfego e melhorar sua experiência. Ao continuar navegando, você concorda com
+        nossa
+        <a href="politica-privacidade.html" class="text-blue hover:underline">Política de Privacidade</a>.
+      </p>
+      <div class="flex gap-3">
+        <button id="accept-cookies"
+          class="bg-navy text-white px-6 py-2 rounded-lg text-sm font-medium hover:bg-navy-light transition">
+          Aceitar
+        </button>
+        <button id="decline-cookies"
+          class="border border-gray-300 text-gray-600 px-6 py-2 rounded-lg text-sm font-medium hover:bg-gray-50 transition">
+          Recusar
+        </button>
+      </div>
+    </div>
+  </div>
 
+  <script>
+    const banner = document.getElementById('cookie-banner');
+    const acceptBtn = document.getElementById('accept-cookies');
+    const declineBtn = document.getElementById('decline-cookies');
+
+    if (!localStorage.getItem('cookieConsent')) {
+      banner.classList.remove('hidden');
+    }
+
+    acceptBtn.addEventListener('click', () => {
+      localStorage.setItem('cookieConsent', 'accepted');
+      banner.classList.add('hidden');
+      gtag('consent', 'update', { 'analytics_storage': 'granted' });
+    });
+
+    declineBtn.addEventListener('click', () => {
+      localStorage.setItem('cookieConsent', 'declined');
+      banner.classList.add('hidden');
+      gtag('consent', 'update', { 'analytics_storage': 'denied' });
+    });
+  </script>
 </body>
 
 </html>
