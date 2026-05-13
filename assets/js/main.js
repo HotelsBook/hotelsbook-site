@@ -51,40 +51,43 @@
     navLinks.forEach(function (link) {
       const linkPath = link.getAttribute('href').split('/').pop();
       if (currentPath === linkPath) {
-        link.classList.add('text-navy', 'font-semibold');
+        link.classList.add('text-navy', 'font-semibold', 'border-b-2', 'border-blue');
       }
     });
   }
 
   // ==========================================
-  // 3. HEADER SCROLL EFFECT
+  // 3. HEADER SCROLL EFFECT - CORRIGIDO
   // ==========================================
   function initHeaderScroll() {
     const header = document.querySelector('header');
     if (!header) return;
 
-    let lastScroll = window.pageYOffset;
+    let lastScroll = window.pageYOffset || 0;
     let ticking = false;
 
-    // Garante fundo branco inicial
+    // Estado inicial: navbar visível com fundo branco
+    header.style.transform = 'translateY(0)';
     header.classList.add('bg-white', 'shadow-sm');
 
     window.addEventListener('scroll', function () {
       if (!ticking) {
         window.requestAnimationFrame(function () {
-          const currentScroll = window.pageYOffset;
+          const currentScroll = window.pageYOffset || 0;
 
-          if (currentScroll <= 0) {
-            // No topo: mostra navbar
+          if (currentScroll <= 10) {
+            // No topo (0-10px): navbar visível, sombra leve
             header.style.transform = 'translateY(0)';
-            header.classList.add('bg-white', 'shadow-sm');
-          } else if (currentScroll > lastScroll) {
-            // Descendo: esconde navbar
+            header.classList.remove('shadow-md');
+            header.classList.add('shadow-sm');
+          } else if (currentScroll > lastScroll && currentScroll > 100) {
+            // Descendo E passou de 100px: esconde navbar suavemente
             header.style.transform = 'translateY(-100%)';
           } else {
-            // Subindo: mostra navbar
+            // Subindo: mostra navbar com sombra mais forte
             header.style.transform = 'translateY(0)';
-            header.classList.add('bg-white', 'shadow-md');
+            header.classList.remove('shadow-sm');
+            header.classList.add('shadow-md');
           }
 
           lastScroll = currentScroll;
