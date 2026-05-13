@@ -12,16 +12,20 @@
     --color-gray-200: #e5e7eb;
     --color-gray-600: #4b5563;
     --color-gray-900: #111827;
-    
+
     /* Tipografia */
     --font-main: 'Inter', sans-serif;
-    
+
     /* Sombras Suaves */
     --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
     --shadow-card-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    
+
     /* Transições */
     --transition-base: all 0.3s ease-in-out;
+
+    header {
+        transition: transform 0.3s ease-in-out, background-color 0.3s ease, box-shadow 0.3s ease;
+    }
 }
 
 /* 1. Base & Reset */
@@ -43,7 +47,12 @@ body {
 }
 
 /* 2. Tipografia Global */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     line-height: 1.2;
     font-weight: 700;
     color: var(--color-navy);
@@ -189,8 +198,13 @@ a {
 }
 
 @keyframes shimmer {
-    0% { background-position: 200% 0; }
-    100% { background-position: -200% 0; }
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
 }
 
 /* 5. Navbar & Header */
@@ -200,7 +214,8 @@ a {
     position: relative;
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover,
+.nav-link.active {
     color: var(--color-navy);
 }
 
@@ -221,6 +236,11 @@ footer a:hover {
 
 /* 7. Responsividade Extra */
 @media (max-width: 768px) {
-    h1 { font-size: 2.5rem; }
-    h2 { font-size: 2rem; }
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
 }

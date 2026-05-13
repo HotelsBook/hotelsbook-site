@@ -63,18 +63,34 @@
     const header = document.querySelector('header');
     if (!header) return;
 
-    // Garante que o header comece com fundo visível
-    header.classList.add('bg-white/95', 'shadow-sm');
+    let lastScroll = window.pageYOffset;
+    let ticking = false;
+
+    // Garante fundo branco inicial
+    header.classList.add('bg-white', 'shadow-sm');
 
     window.addEventListener('scroll', function () {
-      if (window.scrollY > 20) {
-        // Ao rolar, adiciona sombra mais forte e fundo sólido
-        header.classList.add('shadow-md', 'bg-white');
-        header.classList.remove('bg-white/95');
-      } else {
-        // No topo, volta ao vidro suave
-        header.classList.remove('shadow-md', 'bg-white');
-        header.classList.add('bg-white/95', 'shadow-sm');
+      if (!ticking) {
+        window.requestAnimationFrame(function () {
+          const currentScroll = window.pageYOffset;
+
+          if (currentScroll <= 0) {
+            // No topo: mostra navbar
+            header.style.transform = 'translateY(0)';
+            header.classList.add('bg-white', 'shadow-sm');
+          } else if (currentScroll > lastScroll) {
+            // Descendo: esconde navbar
+            header.style.transform = 'translateY(-100%)';
+          } else {
+            // Subindo: mostra navbar
+            header.style.transform = 'translateY(0)';
+            header.classList.add('bg-white', 'shadow-md');
+          }
+
+          lastScroll = currentScroll;
+          ticking = false;
+        });
+        ticking = true;
       }
     });
   }
