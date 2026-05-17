@@ -4,32 +4,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Favicon para Google -->
-  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon-192x192.png">
+  
+  <!-- SEO: Título e Descrição Únicos -->
+  <title>HotelsBook Analytics | Plataforma de Revenue Management com IA</title>
+  <meta name="description" content="Plataforma inteligente de Revenue Management com IA generativa. Analise dados, preveja sazonalidade e maximize a receita do seu hotel. Teste grátis por 14 dias.">
+  
+  <!-- SEO: Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="HotelsBook Analytics | Revenue Management com IA">
+  <meta property="og:description" content="Transforme dados do seu PMS em decisões estratégicas. Parser adaptativo, IA generativa e previsão de sazonalidade para hotéis.">
+  <meta property="og:url" content="https://hotelsbook.com.br/analytics.html">
+  <meta property="og:image" content="https://hotelsbook.com.br/assets/images/og-analytics.jpg">
+  <meta property="og:site_name" content="HotelsBook">
+  <meta property="og:locale" content="pt_BR">
+  
+  <!-- SEO: Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="HotelsBook Analytics | Revenue Management com IA">
+  <meta name="twitter:description" content="Analise dados, preveja sazonalidade e maximize a receita do seu hotel com inteligência artificial.">
+  <meta name="twitter:image" content="https://hotelsbook.com.br/assets/images/og-analytics.jpg">
+  
+  <!-- Favicon (Consolidado - sem duplicatas) -->
   <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon-192x192.png">
+  <link rel="manifest" href="site.webmanifest">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PXKZXNRNMKQ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-PXKZXNRNMKQ', { 'anonymize_ip': true });
   </script>
-  <title>HotelsBook Analytics | Plataforma de Revenue Management</title>
-  <meta name="description"
-    content="Plataforma inteligente de Revenue Management com IA generativa. Analise dados, preveja sazonalidade e maximize a receita do seu hotel.">
-
-  <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -57,6 +67,29 @@
       }
     }
   </script>
+  
+  <!-- Schema.org JSON-LD (SEO Estruturado) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "HotelsBook Analytics",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "offers": {
+      "@type": "Offer",
+      "price": "49.00",
+      "priceCurrency": "BRL",
+      "availability": "https://schema.org/InStock"
+    },
+    "description": "Plataforma de Revenue Management com IA generativa para hotéis. Parser adaptativo, previsão de sazonalidade e dashboards em tempo real.",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "ratingCount": "28"
+    }
+  }
+  </script>
 </head>
 
 <body class="font-sans text-gray-700 antialiased bg-white">
@@ -72,13 +105,14 @@
         </div>
 
         <nav class="hidden md:flex space-x-8 items-center">
+          <!-- Links de navegação: JS adicionará 'active' automaticamente -->
           <a href="index.html" class="nav-link text-gray-600 hover:text-navy transition">Início</a>
           <a href="sobre.html" class="nav-link text-gray-600 hover:text-navy transition">Sobre Nós</a>
-          <a href="analytics.html" class="nav-link text-navy font-semibold">Analytics</a>
+          <a href="analytics.html" class="nav-link text-gray-600 hover:text-navy transition">Analytics</a>
           <a href="hospped.html" class="nav-link text-gray-600 hover:text-navy transition">Hospped</a>
           <a href="parcerias.html" class="nav-link text-gray-600 hover:text-navy transition">Parcerias</a>
-          <a href="contato.html"
-            class="bg-navy text-white px-5 py-2.5 rounded-lg font-medium hover:bg-navy-light transition">Contato</a>
+          <!-- ✅ Contato com classe btn-contato para manter estilo de botão -->
+          <a href="contato.html" class="nav-link btn-contato text-gray-600 hover:text-navy transition">Contato</a>
         </nav>
 
         <!-- Mobile Menu Button -->
@@ -95,10 +129,10 @@
       <nav class="nav-menu hidden md:hidden">
         <a href="index.html" class="nav-link block py-2 text-gray-600">Início</a>
         <a href="sobre.html" class="nav-link block py-2 text-gray-600">Sobre Nós</a>
-        <a href="analytics.html" class="nav-link block py-2 text-navy font-semibold">Analytics</a>
+        <a href="analytics.html" class="nav-link block py-2 text-gray-600">Analytics</a>
         <a href="hospped.html" class="nav-link block py-2 text-gray-600">Hospped</a>
         <a href="parcerias.html" class="nav-link block py-2 text-gray-600">Parcerias</a>
-        <a href="contato.html" class="nav-link block py-2 text-navy font-semibold">Contato</a>
+        <a href="contato.html" class="nav-link btn-contato block py-2 text-gray-600">Contato</a>
       </nav>
     </div>
   </header>
@@ -107,16 +141,13 @@
   <section class="pt-32 pb-20 bg-gradient-to-br from-navy via-navy-light to-blue text-white overflow-hidden relative">
     <!-- Background Pattern -->
     <div class="absolute inset-0 opacity-10">
-      <div class="absolute inset-0"
-        style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 40px 40px;">
-      </div>
+      <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 40px 40px;"></div>
     </div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
         <div class="mb-12 lg:mb-0">
-          <div
-            class="inline-block px-4 py-1.5 rounded-full bg-blue/20 border border-blue/30 text-blue-light text-sm font-semibold mb-6">
+          <div class="inline-block px-4 py-1.5 rounded-full bg-blue/20 border border-blue/30 text-blue-light text-sm font-semibold mb-6">
             Plataforma SaaS
           </div>
           <h1 class="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
@@ -124,16 +155,13 @@
             <span class="text-blue-light">com Inteligência Artificial</span>
           </h1>
           <p class="text-xl text-gray-300 mb-8 leading-relaxed">
-            Transforme dados do seu PMS em decisões estratégicas. Nossa plataforma com parser adaptativo e IA generativa
-            prevê sazonalidade e maximiza sua receita hoteleira.
+            Transforme dados do seu PMS em decisões estratégicas. Nossa plataforma com parser adaptativo e IA generativa prevê sazonalidade e maximiza sua receita hoteleira.
           </p>
           <div class="flex flex-col sm:flex-row gap-4">
-            <a href="contato.html"
-              class="btn-primary bg-white text-navy font-semibold py-3.5 px-8 rounded-lg text-center">
+            <a href="contato.html" class="btn-primary bg-white text-navy font-semibold py-3.5 px-8 rounded-lg text-center">
               Solicitar Demonstração
             </a>
-            <a href="#funcionalidades"
-              class="border-2 border-white/30 text-white font-semibold py-3.5 px-8 rounded-lg text-center hover:bg-white/10 transition">
+            <a href="#funcionalidades" class="border-2 border-white/30 text-white font-semibold py-3.5 px-8 rounded-lg text-center hover:bg-white/10 transition">
               Conhecer Funcionalidades
             </a>
           </div>
@@ -159,16 +187,15 @@
             "Modern analytics dashboard interface on a laptop screen showing hotel revenue charts, occupancy graphs, and pricing recommendations. Dark theme with blue accents, clean UI/UX design, professional SaaS application, isometric view, Brazilian hotel context, photorealistic, high quality, no people."
           -->
           <div class="media-container rounded-2xl shadow-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-6">
-            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1170&q=80"
-              alt="Dashboard Analytics" class="rounded-lg w-full">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1170&q=80" 
+                 alt="Dashboard Analytics HotelsBook" class="rounded-lg w-full" loading="lazy">
           </div>
           <!-- Floating Stats Card -->
           <div class="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-xl p-6 hidden lg:block">
             <div class="flex items-center gap-4">
               <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
                 <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
                 </svg>
               </div>
               <div>
@@ -198,44 +225,36 @@
         <div class="service-card">
           <div class="w-14 h-14 bg-blue/10 rounded-xl flex items-center justify-center mb-6">
             <svg class="w-7 h-7 text-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4">
-              </path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path>
             </svg>
           </div>
           <h3 class="text-xl font-bold text-navy mb-3">Sem Integrações Complexas</h3>
           <p class="text-gray-600 leading-relaxed">
-            Nosso parser adaptativo lê relatórios do seu PMS (Desbravador, Xenios, etc.) em PDF, Excel ou CSV. Sem APIs
-            complicadas ou dependência do fornecedor.
+            Nosso parser adaptativo lê relatórios do seu PMS (Desbravador, Xenios, etc.) em PDF, Excel ou CSV. Sem APIs complicadas ou dependência do fornecedor.
           </p>
         </div>
 
         <div class="service-card">
           <div class="w-14 h-14 bg-blue/10 rounded-xl flex items-center justify-center mb-6">
             <svg class="w-7 h-7 text-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z">
-              </path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
             </svg>
           </div>
           <h3 class="text-xl font-bold text-navy mb-3">IA Generativa Integrada</h3>
           <p class="text-gray-600 leading-relaxed">
-            Faça perguntas em linguagem natural: "Qual foi o ADR médio em março?" ou "Projete ocupação para o próximo
-            feriado". Relatórios instantâneos.
+            Faça perguntas em linguagem natural: "Qual foi o ADR médio em março?" ou "Projete ocupação para o próximo feriado". Relatórios instantâneos.
           </p>
         </div>
 
         <div class="service-card">
           <div class="w-14 h-14 bg-blue/10 rounded-xl flex items-center justify-center mb-6">
             <svg class="w-7 h-7 text-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z">
-              </path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
             </svg>
           </div>
           <h3 class="text-xl font-bold text-navy mb-3">Previsão de Sazonalidade</h3>
           <p class="text-gray-600 leading-relaxed">
-            Modelos preditivos que cruzam seu histórico com feriados, eventos locais e clima. Antecipe picos de demanda
-            e ajuste tarifas com precisão.
+            Modelos preditivos que cruzam seu histórico com feriados, eventos locais e clima. Antecipe picos de demanda e ajuste tarifas com precisão.
           </p>
         </div>
       </div>
@@ -252,34 +271,30 @@
             "Close-up of hands pointing at detailed revenue charts on a tablet screen, hotel occupancy metrics, modern data visualization, business meeting context, natural lighting, professional photography, Brazilian business environment, photorealistic."
           -->
           <div class="media-container rounded-2xl shadow-xl">
-            <img src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?auto=format&fit=crop&w=1170&q=80"
-              alt="Análise de dados" class="rounded-xl w-full">
+            <img src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?auto=format&fit=crop&w=1170&q=80" 
+                 alt="Análise de dados hoteleiros" class="rounded-xl w-full" loading="lazy">
           </div>
         </div>
         <div>
           <h2 class="text-3xl font-bold text-navy mb-6">Dashboards Acionáveis em Tempo Real</h2>
           <p class="text-gray-600 mb-6 text-lg leading-relaxed">
-            Visualize receita por canal, forma de pagamento, período ou operador. Identifique quedas, oportunidades e
-            correlações entre ocupação e ADR com atualização contínua.
+            Visualize receita por canal, forma de pagamento, período ou operador. Identifique quedas, oportunidades e correlações entre ocupação e ADR com atualização contínua.
           </p>
           <ul class="space-y-4">
             <li class="flex items-start">
-              <svg class="w-6 h-6 text-blue mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
-                viewBox="0 0 24 24">
+              <svg class="w-6 h-6 text-blue mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
               <span class="text-gray-700">Relatórios personalizados por período e segmento</span>
             </li>
             <li class="flex items-start">
-              <svg class="w-6 h-6 text-blue mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
-                viewBox="0 0 24 24">
+              <svg class="w-6 h-6 text-blue mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
               <span class="text-gray-700">Comparativo ano a ano e mês a mês</span>
             </li>
             <li class="flex items-start">
-              <svg class="w-6 h-6 text-blue mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
-                viewBox="0 0 24 24">
+              <svg class="w-6 h-6 text-blue mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
               <span class="text-gray-700">Exportação em PDF e Excel com um clique</span>
@@ -292,27 +307,23 @@
         <div class="order-2 lg:order-1">
           <h2 class="text-3xl font-bold text-navy mb-6">Benchmarking Anônimo e Seguro</h2>
           <p class="text-gray-600 mb-6 text-lg leading-relaxed">
-            Compare seus indicadores com médias agregadas do setor. Seus dados nunca alimentam modelos públicos.
-            Privacidade por design, criptografia de ponta a ponta e conformidade LGPD nativa.
+            Compare seus indicadores com médias agregadas do setor. Seus dados nunca alimentam modelos públicos. Privacidade por design, criptografia de ponta a ponta e conformidade LGPD nativa.
           </p>
           <ul class="space-y-4">
             <li class="flex items-start">
-              <svg class="w-6 h-6 text-blue mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
-                viewBox="0 0 24 24">
+              <svg class="w-6 h-6 text-blue mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
               <span class="text-gray-700">Dados anonimizados e criptografados</span>
             </li>
             <li class="flex items-start">
-              <svg class="w-6 h-6 text-blue mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
-                viewBox="0 0 24 24">
+              <svg class="w-6 h-6 text-blue mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
               <span class="text-gray-700">Comparativo com hotéis do mesmo porte e região</span>
             </li>
             <li class="flex items-start">
-              <svg class="w-6 h-6 text-blue mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
-                viewBox="0 0 24 24">
+              <svg class="w-6 h-6 text-blue mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
               <span class="text-gray-700">Total conformidade com LGPD</span>
@@ -325,8 +336,8 @@
             "Abstract data security visualization with shield icon and encrypted data streams, blue and navy color scheme, modern tech illustration, clean and professional, SaaS application context, photorealistic 3D render."
           -->
           <div class="media-container rounded-2xl shadow-xl">
-            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1170&q=80"
-              alt="Segurança de dados" class="rounded-xl w-full">
+            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1170&q=80" 
+                 alt="Segurança de dados hoteleiros" class="rounded-xl w-full" loading="lazy">
           </div>
         </div>
       </div>
@@ -339,46 +350,33 @@
       <div class="text-center mb-16">
         <h2 class="text-3xl lg:text-4xl font-bold text-navy mb-4">Como Funciona</h2>
         <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          Implementação simples e rápida. Em poucos passos você já está analisando dados e tomando decisões
-          estratégicas.
+          Implementação simples e rápida. Em poucos passos você já está analisando dados e tomando decisões estratégicas.
         </p>
       </div>
 
       <div class="grid md:grid-cols-4 gap-8">
         <div class="text-center">
-          <div
-            class="w-16 h-16 bg-navy text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-            1</div>
+          <div class="w-16 h-16 bg-navy text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">1</div>
           <h3 class="font-bold text-navy mb-2">Conecte seus Dados</h3>
-          <p class="text-gray-600 text-sm">Faça upload dos relatórios do seu PMS em PDF, Excel ou CSV. Nosso parser
-            identifica automaticamente o formato.</p>
+          <p class="text-gray-600 text-sm">Faça upload dos relatórios do seu PMS em PDF, Excel ou CSV. Nosso parser identifica automaticamente o formato.</p>
         </div>
-
+        
         <div class="text-center">
-          <div
-            class="w-16 h-16 bg-navy text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-            2</div>
+          <div class="w-16 h-16 bg-navy text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">2</div>
           <h3 class="font-bold text-navy mb-2">IA Processa</h3>
-          <p class="text-gray-600 text-sm">Nossa inteligência artificial extrai, normaliza e organiza os dados em
-            minutos, sem intervenção manual.</p>
+          <p class="text-gray-600 text-sm">Nossa inteligência artificial extrai, normaliza e organiza os dados em minutos, sem intervenção manual.</p>
         </div>
-
+        
         <div class="text-center">
-          <div
-            class="w-16 h-16 bg-navy text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-            3</div>
+          <div class="w-16 h-16 bg-navy text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">3</div>
           <h3 class="font-bold text-navy mb-2">Analise e Decida</h3>
-          <p class="text-gray-600 text-sm">Acesse dashboards intuitivos e faça perguntas à IA para gerar insights
-            acionáveis instantaneamente.</p>
+          <p class="text-gray-600 text-sm">Acesse dashboards intuitivos e faça perguntas à IA para gerar insights acionáveis instantaneamente.</p>
         </div>
-
+        
         <div class="text-center">
-          <div
-            class="w-16 h-16 bg-navy text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-            4</div>
+          <div class="w-16 h-16 bg-navy text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">4</div>
           <h3 class="font-bold text-navy mb-2">Maximize Receita</h3>
-          <p class="text-gray-600 text-sm">Ajuste tarifas, otimize ocupação e aumente seu RevPAR com base em dados reais
-            e previsões precisas.</p>
+          <p class="text-gray-600 text-sm">Ajuste tarifas, otimize ocupação e aumente seu RevPAR com base em dados reais e previsões precisas.</p>
         </div>
       </div>
     </div>
@@ -399,47 +397,41 @@
           <h3 class="text-2xl font-bold mb-4">Plano Profissional</h3>
           <div class="text-5xl font-bold mb-2">R$ 49<span class="text-2xl text-gray-400">/mês</span></div>
           <p class="text-gray-400 mb-8">para hotéis de pequeno e médio porte</p>
-
+          
           <ul class="text-left space-y-4 mb-10 max-w-md mx-auto">
             <li class="flex items-center">
-              <svg class="w-5 h-5 text-blue-light mr-3 flex-shrink-0" fill="none" stroke="currentColor"
-                viewBox="0 0 24 24">
+              <svg class="w-5 h-5 text-blue-light mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
               <span>Parser adaptativo ilimitado</span>
             </li>
             <li class="flex items-center">
-              <svg class="w-5 h-5 text-blue-light mr-3 flex-shrink-0" fill="none" stroke="currentColor"
-                viewBox="0 0 24 24">
+              <svg class="w-5 h-5 text-blue-light mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
               <span>IA generativa para relatórios</span>
             </li>
             <li class="flex items-center">
-              <svg class="w-5 h-5 text-blue-light mr-3 flex-shrink-0" fill="none" stroke="currentColor"
-                viewBox="0 0 24 24">
+              <svg class="w-5 h-5 text-blue-light mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
               <span>Previsão de sazonalidade</span>
             </li>
             <li class="flex items-center">
-              <svg class="w-5 h-5 text-blue-light mr-3 flex-shrink-0" fill="none" stroke="currentColor"
-                viewBox="0 0 24 24">
+              <svg class="w-5 h-5 text-blue-light mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
               <span>Suporte via e-mail e WhatsApp</span>
             </li>
             <li class="flex items-center">
-              <svg class="w-5 h-5 text-blue-light mr-3 flex-shrink-0" fill="none" stroke="currentColor"
-                viewBox="0 0 24 24">
+              <svg class="w-5 h-5 text-blue-light mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
               <span>Exportação de relatórios</span>
             </li>
           </ul>
-
-          <a href="contato.html"
-            class="btn-primary bg-white text-navy font-semibold py-4 px-10 rounded-lg inline-block w-full max-w-sm">
+          
+          <a href="contato.html" class="btn-primary bg-white text-navy font-semibold py-4 px-10 rounded-lg inline-block w-full max-w-sm">
             Começar Teste Gratuito de 14 Dias
           </a>
           <p class="text-gray-400 text-sm mt-4">Sem cartão de crédito. Sem fidelidade.</p>
@@ -459,58 +451,48 @@
         <details class="group bg-white rounded-xl border border-gray-200 p-6">
           <summary class="font-semibold text-navy cursor-pointer flex justify-between items-center">
             Preciso substituir meu PMS atual?
-            <svg class="w-5 h-5 transition-transform group-open:rotate-180 flex-shrink-0" fill="none"
-              stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-5 h-5 transition-transform group-open:rotate-180 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
             </svg>
           </summary>
           <div class="text-gray-600 mt-4 leading-relaxed">
-            <p>Não. O HotelsBook Analytics foi desenvolvido para trabalhar de forma complementar ao seu PMS atual. Nosso
-              parser adaptativo processa relatórios exportados em PDF, Excel ou CSV dos principais sistemas do mercado
-              (Desbravador, Xenios, entre outros).</p>
+            <p>Não. O HotelsBook Analytics foi desenvolvido para trabalhar de forma complementar ao seu PMS atual. Nosso parser adaptativo processa relatórios exportados em PDF, Excel ou CSV dos principais sistemas do mercado (Desbravador, Xenios, entre outros).</p>
           </div>
         </details>
 
         <details class="group bg-white rounded-xl border border-gray-200 p-6">
           <summary class="font-semibold text-navy cursor-pointer flex justify-between items-center">
             Quanto tempo leva para implementar?
-            <svg class="w-5 h-5 transition-transform group-open:rotate-180 flex-shrink-0" fill="none"
-              stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-5 h-5 transition-transform group-open:rotate-180 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
             </svg>
           </summary>
           <div class="text-gray-600 mt-4 leading-relaxed">
-            <p>A implementação é imediata. Após o cadastro, você já pode fazer upload dos primeiros relatórios. Nossos
-              clientes relatam que em 7 a 14 dias já identificam oportunidades concretas de aumento de receita.</p>
+            <p>A implementação é imediata. Após o cadastro, você já pode fazer upload dos primeiros relatórios. Nossos clientes relatam que em 7 a 14 dias já identificam oportunidades concretas de aumento de receita.</p>
           </div>
         </details>
 
         <details class="group bg-white rounded-xl border border-gray-200 p-6">
           <summary class="font-semibold text-navy cursor-pointer flex justify-between items-center">
             Meus dados estão seguros?
-            <svg class="w-5 h-5 transition-transform group-open:rotate-180 flex-shrink-0" fill="none"
-              stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-5 h-5 transition-transform group-open:rotate-180 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
             </svg>
           </summary>
           <div class="text-gray-600 mt-4 leading-relaxed">
-            <p>Absolutamente. Utilizamos criptografia de ponta a ponta (TLS 1.3 em trânsito e AES-256 em repouso),
-              infraestrutura em nuvem com certificação ISO 27001 e conformidade total com a LGPD. Seus dados nunca são
-              utilizados para treinar modelos de IA públicos.</p>
+            <p>Absolutamente. Utilizamos criptografia TLS 1.3 em trânsito e AES-256 em repouso, infraestrutura em nuvem com certificação ISO 27001 e conformidade total com a LGPD. Seus dados nunca são utilizados para treinar modelos de IA públicos.</p>
           </div>
         </details>
 
         <details class="group bg-white rounded-xl border border-gray-200 p-6">
           <summary class="font-semibold text-navy cursor-pointer flex justify-between items-center">
             Posso cancelar quando quiser?
-            <svg class="w-5 h-5 transition-transform group-open:rotate-180 flex-shrink-0" fill="none"
-              stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-5 h-5 transition-transform group-open:rotate-180 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
             </svg>
           </summary>
           <div class="text-gray-600 mt-4 leading-relaxed">
-            <p>Sim. Não trabalhamos com fidelidade contratual. Você pode cancelar quando desejar, sem multas ou
-              burocracia. Acreditamos que a qualidade do nosso serviço deve ser o motivo da sua permanência.</p>
+            <p>Sim. Não trabalhamos com fidelidade contratual. Você pode cancelar quando desejar, sem multas ou burocracia. Acreditamos que a qualidade do nosso serviço deve ser o motivo da sua permanência.</p>
           </div>
         </details>
       </div>
@@ -530,8 +512,7 @@
         <a href="contato.html" class="btn-primary bg-white text-navy font-semibold py-4 px-10 rounded-lg">
           Solicitar Demonstração
         </a>
-        <a href="contato.html"
-          class="border-2 border-white/30 text-white font-semibold py-4 px-10 rounded-lg hover:bg-white/10 transition">
+        <a href="contato.html" class="border-2 border-white/30 text-white font-semibold py-4 px-10 rounded-lg hover:bg-white/10 transition">
           Falar com Consultor
         </a>
       </div>
@@ -550,7 +531,7 @@
             Tecnologia e Consultoria Estratégica para o Setor Hoteleiro Brasileiro.
           </p>
         </div>
-
+        
         <div>
           <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Soluções</h4>
           <ul class="space-y-2 text-sm">
@@ -559,7 +540,7 @@
             <li><a href="sobre.html" class="hover:text-white transition">Consultoria</a></li>
           </ul>
         </div>
-
+        
         <div>
           <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Empresa</h4>
           <ul class="space-y-2 text-sm">
@@ -569,7 +550,7 @@
           </ul>
         </div>
       </div>
-
+      
       <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
         <p>&copy; <span class="current-year"></span> HotelsBook Tecnologia e Hospitalidade LTDA.</p>
         <div class="mt-4 md:mt-0 space-x-6">
@@ -582,22 +563,19 @@
 
   <!-- JavaScript -->
   <script src="assets/js/main.js"></script>
+  
   <!-- Banner LGPD Cookies -->
-  <div id="cookie-banner"
-    class="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 p-4 shadow-lg z-50 hidden">
+  <div id="cookie-banner" class="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 p-4 shadow-lg z-50 hidden">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
       <p class="text-sm text-gray-600 text-center md:text-left">
-        Utilizamos cookies para analisar o tráfego e melhorar sua experiência. Ao continuar navegando, você concorda com
-        nossa
+        Utilizamos cookies para analisar o tráfego e melhorar sua experiência. Ao continuar navegando, você concorda com nossa
         <a href="politica-privacidade.html" class="text-blue hover:underline">Política de Privacidade</a>.
       </p>
       <div class="flex gap-3">
-        <button id="accept-cookies"
-          class="bg-navy text-white px-6 py-2 rounded-lg text-sm font-medium hover:bg-navy-light transition">
+        <button id="accept-cookies" class="bg-navy text-white px-6 py-2 rounded-lg text-sm font-medium hover:bg-navy-light transition">
           Aceitar
         </button>
-        <button id="decline-cookies"
-          class="border border-gray-300 text-gray-600 px-6 py-2 rounded-lg text-sm font-medium hover:bg-gray-50 transition">
+        <button id="decline-cookies" class="border border-gray-300 text-gray-600 px-6 py-2 rounded-lg text-sm font-medium hover:bg-gray-50 transition">
           Recusar
         </button>
       </div>
@@ -616,15 +594,18 @@
     acceptBtn.addEventListener('click', () => {
       localStorage.setItem('cookieConsent', 'accepted');
       banner.classList.add('hidden');
-      gtag('consent', 'update', { 'analytics_storage': 'granted' });
+      if (typeof gtag === 'function') {
+        gtag('consent', 'update', { 'analytics_storage': 'granted' });
+      }
     });
 
     declineBtn.addEventListener('click', () => {
       localStorage.setItem('cookieConsent', 'declined');
       banner.classList.add('hidden');
-      gtag('consent', 'update', { 'analytics_storage': 'denied' });
+      if (typeof gtag === 'function') {
+        gtag('consent', 'update', { 'analytics_storage': 'denied' });
+      }
     });
   </script>
 </body>
-
 </html>

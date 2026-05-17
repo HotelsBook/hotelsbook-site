@@ -4,52 +4,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Favicon para Google -->
-  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon-192x192.png">
+  
+  <!-- SEO: Título e Descrição Únicos -->
+  <title>HotelsBook | Consultoria e Tecnologia para Hotelaria</title>
+  <meta name="description" content="Soluções integradas para a hotelaria brasileira. Consultoria estratégica, plataforma de dados Analytics e gestão de viagens corporativas com a Hospped.">
+  
+  <!-- SEO: Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="HotelsBook | Consultoria e Tecnologia para Hotelaria">
+  <meta property="og:description" content="Unimos expertise em gestão hoteleira com tecnologia proprietária para profissionalizar operações, maximizar receitas e escalar negócios.">
+  <meta property="og:url" content="https://hotelsbook.com.br/">
+  <meta property="og:image" content="https://hotelsbook.com.br/assets/images/og-index.jpg">
+  <meta property="og:site_name" content="HotelsBook">
+  <meta property="og:locale" content="pt_BR">
+  
+  <!-- SEO: Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="HotelsBook | Consultoria e Tecnologia para Hotelaria">
+  <meta name="twitter:description" content="Soluções integradas para a hotelaria brasileira. Analytics, Hospped e consultoria estratégica.">
+  <meta name="twitter:image" content="https://hotelsbook.com.br/assets/images/og-index.jpg">
+  
+  <!-- Favicon (Consolidado - sem duplicatas) -->
   <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon-192x192.png">
+  <link rel="manifest" href="site.webmanifest">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-  <!-- Schema.org markup for Google -->
+  <!-- Schema.org JSON-LD (SEO Estruturado para Homepage) -->
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "HotelsBook",
-  "url": "https://hotelsbook.com.br",
-  "logo": "https://hotelsbook.com.br/assets/images/favicon-192x192.png",
-  "sameAs": []
-}
-</script>
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "HotelsBook",
+    "legalName": "HotelsBook Tecnologia e Hospitalidade LTDA",
+    "url": "https://hotelsbook.com.br",
+    "logo": "https://hotelsbook.com.br/assets/images/favicon-192x192.png",
+    "description": "Consultoria estratégica e tecnologia para o setor hoteleiro brasileiro.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "BR"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+55-88-92154-6413",
+      "contactType": "customer service",
+      "areaServed": "BR",
+      "availableLanguage": "Portuguese"
+    },
+    "sameAs": []
+  }
+  </script>
 
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PXKZXNRNMKQ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-PXKZXNRNMKQ', { 'anonymize_ip': true });
   </script>
-  <title>HotelsBook | Consultoria e Tecnologia para Hotelaria</title>
-  <meta name="description"
-    content="Soluções integradas para a hotelaria brasileira. Consultoria estratégica, plataforma de dados Analytics e gestão de viagens corporativas com a Hospped.">
 
-  <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
-  <!-- Tailwind CSS (Via CDN para desenvolvimento rápido) -->
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Google Fonts: Inter (Limpa e Moderna como a Brasil Junior) -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Configuração de Cores da Marca -->
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
   <script>
     tailwind.config = {
       theme: {
@@ -67,36 +92,23 @@
       }
     }
   </script>
-
+  
   <style>
-    /* Smooth Scroll */
-    html {
-      scroll-behavior: smooth;
-    }
-
-    /* Efeito de Vidro no Menu */
+    html { scroll-behavior: smooth; }
     .glass-nav {
       background: rgba(255, 255, 255, 0.95);
       backdrop-filter: blur(10px);
-      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      border-bottom: 1px solid rgba(0,0,0,0.05);
     }
-
-    /* Hover suave nos botões */
-    .btn-primary {
-      transition: all 0.3s ease;
-    }
-
-    .btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(10, 22, 40, 0.2);
-    }
+    .btn-primary { transition: all 0.3s ease; }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(10, 22, 40, 0.2); }
   </style>
 </head>
 
 <body class="font-sans text-gray-700 antialiased bg-white">
 
-  <!-- NAVIGATION -->
-  <nav class="fixed w-full z-50 glass-nav">
+  <!-- NAVIGATION (Usando <header> para compatibilidade com JS de scroll) -->
+  <header class="fixed w-full z-50 glass-nav transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-20">
         <!-- Logo -->
@@ -108,26 +120,37 @@
 
         <!-- Desktop Menu -->
         <div class="hidden md:flex space-x-8 items-center">
-          <a href="index.html" class="text-navy font-medium hover:text-blue transition">Início</a>
-          <a href="sobre.html" class="text-gray-600 hover:text-navy transition">Sobre Nós</a>
-          <a href="analytics.html" class="text-gray-600 hover:text-navy transition">Analytics</a>
-          <a href="hospped.html" class="text-gray-600 hover:text-navy transition">Hospped</a>
-          <a href="parcerias.html" class="text-gray-600 hover:text-navy transition">Parcerias</a>
-          <a href="contato.html"
-            class="bg-navy text-white px-5 py-2.5 rounded-lg font-medium hover:bg-navy-light transition">Contato</a>
+          <!-- Links: JS adicionará 'active' automaticamente -->
+          <a href="index.html" class="nav-link text-gray-600 hover:text-navy transition">Início</a>
+          <a href="sobre.html" class="nav-link text-gray-600 hover:text-navy transition">Sobre Nós</a>
+          <a href="analytics.html" class="nav-link text-gray-600 hover:text-navy transition">Analytics</a>
+          <a href="hospped.html" class="nav-link text-gray-600 hover:text-navy transition">Hospped</a>
+          <a href="parcerias.html" class="nav-link text-gray-600 hover:text-navy transition">Parcerias</a>
+          <!-- ✅ Contato com classe btn-contato para manter estilo de botão -->
+          <a href="contato.html" class="nav-link btn-contato text-gray-600 hover:text-navy transition">Contato</a>
         </div>
 
-        <!-- Mobile Menu Button (Hamburguer) -->
+        <!-- Mobile Menu Button -->
         <div class="md:hidden flex items-center">
-          <button class="text-gray-600 hover:text-navy focus:outline-none">
+          <button class="mobile-menu-toggle text-gray-600 hover:text-navy focus:outline-none" aria-label="Menu">
             <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
         </div>
       </div>
+
+      <!-- Mobile Menu -->
+      <nav class="nav-menu hidden md:hidden">
+        <a href="index.html" class="nav-link block py-2 text-gray-600">Início</a>
+        <a href="sobre.html" class="nav-link block py-2 text-gray-600">Sobre Nós</a>
+        <a href="analytics.html" class="nav-link block py-2 text-gray-600">Analytics</a>
+        <a href="hospped.html" class="nav-link block py-2 text-gray-600">Hospped</a>
+        <a href="parcerias.html" class="nav-link block py-2 text-gray-600">Parcerias</a>
+        <a href="contato.html" class="nav-link btn-contato block py-2 text-gray-600">Contato</a>
+      </nav>
     </div>
-  </nav>
+  </header>
 
   <!-- HERO SECTION -->
   <!-- 
@@ -138,27 +161,24 @@
     <!-- Imagem de Fundo (Placeholder) -->
     <div class="absolute inset-0 z-0 opacity-20">
       <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=2070&q=80"
-        alt="Hotel background" class="w-full h-full object-cover">
+        alt="Hotel background" class="w-full h-full object-cover" loading="lazy">
     </div>
 
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <span
-        class="inline-block py-1 px-3 rounded-full bg-blue/20 text-blue-light text-sm font-semibold mb-6 border border-blue/30">
+      <span class="inline-block py-1 px-3 rounded-full bg-blue/20 text-blue-light text-sm font-semibold mb-6 border border-blue/30">
         Inovação para o Setor Hoteleiro
       </span>
       <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-6 leading-tight">
         Inteligência e Consultoria<br>para Hotelaria Brasileira
       </h1>
       <p class="mt-4 text-xl text-gray-300 max-w-2xl mx-auto mb-10 font-light">
-        Unimos expertise em gestão hoteleira com tecnologia proprietária para profissionalizar operações, maximizar
-        receitas e escalar negócios.
+        Unimos expertise em gestão hoteleira com tecnologia proprietária para profissionalizar operações, maximizar receitas e escalar negócios.
       </p>
       <div class="flex flex-col sm:flex-row justify-center gap-4">
         <a href="contato.html" class="btn-primary bg-white text-navy font-semibold py-3.5 px-8 rounded-lg">
           Falar com Consultor
         </a>
-        <a href="analytics.html"
-          class="btn-primary border border-gray-500 text-gray-200 font-semibold py-3.5 px-8 rounded-lg hover:bg-white/10 hover:border-white">
+        <a href="analytics.html" class="btn-primary border border-gray-500 text-gray-200 font-semibold py-3.5 px-8 rounded-lg hover:bg-white/10 hover:border-white">
           Conhecer Analytics
         </a>
       </div>
@@ -172,12 +192,10 @@
         <div>
           <h2 class="text-3xl font-bold text-navy mb-6">Quem Somos</h2>
           <p class="text-lg text-gray-600 mb-6 leading-relaxed">
-            A HotelsBook é uma holding de soluções integradas para o setor hoteleiro. Não somos apenas uma empresa de
-            tecnologia, somos parceiros estratégicos que entendem a operação do chão de fábrica até o board.
+            A HotelsBook é uma holding de soluções integradas para o setor hoteleiro. Não somos apenas uma empresa de tecnologia, somos parceiros estratégicos que entendem a operação do chão de fábrica até o board.
           </p>
           <p class="text-gray-600 mb-8 leading-relaxed">
-            Nascemos da necessidade de trazer dados confiáveis e processos eficientes para hotéis e pousadas que desejam
-            crescer com sustentabilidade.
+            Nascemos da necessidade de trazer dados confiáveis e processos eficientes para hotéis e pousadas que desejam crescer com sustentabilidade.
           </p>
           <a href="sobre.html" class="text-blue font-semibold hover:text-navy transition flex items-center gap-2">
             Conheça nossa história e equipe
@@ -192,7 +210,7 @@
              Prompt: "Group of 4 diverse professionals in a modern office meeting room in Brazil, collaborating around a table with laptops and documents, casual business attire, natural lighting, candid shot, high quality, photorealistic."
           -->
           <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1170&q=80"
-            alt="Equipe HotelsBook" class="rounded-xl shadow-2xl w-full object-cover h-80 lg:h-96">
+            alt="Equipe HotelsBook" class="rounded-xl shadow-2xl w-full object-cover h-80 lg:h-96" loading="lazy">
           <div class="absolute -bottom-6 -right-6 bg-navy p-6 rounded-lg shadow-lg hidden md:block">
             <p class="text-white text-2xl font-bold">100%</p>
             <p class="text-gray-300 text-sm">Capital Nacional</p>
@@ -208,8 +226,7 @@
       <div class="text-center mb-16">
         <h2 class="text-3xl font-bold text-navy mb-4">Nossas Soluções</h2>
         <div class="w-16 h-1 bg-blue mx-auto rounded-full"></div>
-        <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Tecnologia e serviço desenhados para cobrir todas as etapas da
-          gestão hoteleira e de viagens.</p>
+        <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Tecnologia e serviço desenhados para cobrir todas as etapas da gestão hoteleira e de viagens.</p>
       </div>
 
       <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
@@ -219,28 +236,22 @@
             <!-- Prompt IA: "Data visualization dashboard on a tablet screen, hotel charts and graphs, blue and dark theme, isometric 3d style, clean UI." -->
             <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1170&q=80"
               class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition duration-500"
-              alt="Analytics">
+              alt="Analytics" loading="lazy">
             <div class="absolute inset-0 flex items-center justify-center">
-              <span class="bg-white/90 text-navy px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">SaaS
-                & Dados</span>
+              <span class="bg-white/90 text-navy px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">SaaS & Dados</span>
             </div>
           </div>
           <div class="p-8">
             <h3 class="text-2xl font-bold text-navy mb-3">HotelsBook Analytics</h3>
             <p class="text-gray-600 mb-6">
-              Plataforma de Revenue Management com parser adaptativo e IA generativa. Transforme dados brutos do seu PMS
-              em decisões estratégicas de precificação e ocupação.
+              Plataforma de Revenue Management com parser adaptativo e IA generativa. Transforme dados brutos do seu PMS em decisões estratégicas de precificação e ocupação.
             </p>
             <ul class="space-y-2 mb-8 text-sm text-gray-500">
-              <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Previsão de
-                Sazonalidade</li>
-              <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Parser de PMS
-                automático</li>
-              <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Relatórios Executivos
-              </li>
+              <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Previsão de Sazonalidade</li>
+              <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Parser de PMS automático</li>
+              <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Relatórios Executivos</li>
             </ul>
-            <a href="analytics.html"
-              class="inline-block w-full text-center border-2 border-navy text-navy font-semibold py-2.5 rounded-lg hover:bg-navy hover:text-white transition">
+            <a href="analytics.html" class="inline-block w-full text-center border-2 border-navy text-navy font-semibold py-2.5 rounded-lg hover:bg-navy hover:text-white transition">
               Ver Detalhes
             </a>
           </div>
@@ -251,29 +262,22 @@
           <div class="h-48 overflow-hidden bg-blue relative">
             <!-- Prompt IA: "Modern airport terminal interior, blurred business travelers walking, focus on luggage and smartphone screen showing booking app, bright lighting, professional photography." -->
             <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1174&q=80"
-              class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition duration-500" alt="Hospped">
+              class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition duration-500" alt="Hospped" loading="lazy">
             <div class="absolute inset-0 flex items-center justify-center">
-              <span
-                class="bg-white/90 text-blue px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Agência
-                & Viagens</span>
+              <span class="bg-white/90 text-blue px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Agência & Viagens</span>
             </div>
           </div>
           <div class="p-8">
             <h3 class="text-2xl font-bold text-navy mb-3">Hospped</h3>
             <p class="text-gray-600 mb-6">
-              Gestão completa de viagens corporativas e mobilidade acadêmica. Negociação direta com rede hoteleira,
-              controle de políticas e relatórios de gastos.
+              Gestão completa de viagens corporativas e mobilidade acadêmica. Negociação direta com rede hoteleira, controle de políticas e relatórios de gastos.
             </p>
             <ul class="space-y-2 mb-8 text-sm text-gray-500">
-              <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Reservas Corporativas
-              </li>
-              <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Mobilidade Acadêmica
-              </li>
-              <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Controle de Gastos
-              </li>
+              <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Reservas Corporativas</li>
+              <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Mobilidade Acadêmica</li>
+              <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Controle de Gastos</li>
             </ul>
-            <a href="hospped.html"
-              class="inline-block w-full text-center border-2 border-navy text-navy font-semibold py-2.5 rounded-lg hover:bg-navy hover:text-white transition">
+            <a href="hospped.html" class="inline-block w-full text-center border-2 border-navy text-navy font-semibold py-2.5 rounded-lg hover:bg-navy hover:text-white transition">
               Ver Detalhes
             </a>
           </div>
@@ -294,38 +298,31 @@
         <div class="p-6">
           <div class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6">
             <svg class="w-8 h-8 text-blue-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
           </div>
           <h3 class="text-xl font-bold mb-3">Expertise Real</h3>
-          <p class="text-gray-300 text-sm">Nossa equipe vive o dia a dia da hotelaria. Não somos apenas teóricos, somos
-            operadores.</p>
+          <p class="text-gray-300 text-sm">Nossa equipe vive o dia a dia da hotelaria. Não somos apenas teóricos, somos operadores.</p>
         </div>
 
         <div class="p-6">
           <div class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6">
             <svg class="w-8 h-8 text-blue-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z">
-              </path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
             </svg>
           </div>
           <h3 class="text-xl font-bold mb-3">Tecnologia Própria</h3>
-          <p class="text-gray-300 text-sm">Ferramentas desenvolvidas internamente para garantir agilidade, segurança e
-            personalização.</p>
+          <p class="text-gray-300 text-sm">Ferramentas desenvolvidas internamente para garantir agilidade, segurança e personalização.</p>
         </div>
 
         <div class="p-6">
           <div class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6">
             <svg class="w-8 h-8 text-blue-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
-              </path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
           </div>
           <h3 class="text-xl font-bold mb-3">Atuação Nacional</h3>
-          <p class="text-gray-300 text-sm">Atendemos clientes em todo o Brasil, combinando tecnologia remota com suporte
-            humanizado.</p>
+          <p class="text-gray-300 text-sm">Atendemos clientes em todo o Brasil, combinando tecnologia remota com suporte humanizado.</p>
         </div>
       </div>
     </div>
@@ -335,10 +332,8 @@
   <section class="py-20 bg-white">
     <div class="max-w-4xl mx-auto px-4 text-center">
       <h2 class="text-3xl font-bold text-navy mb-6">Pronto para transformar sua operação?</h2>
-      <p class="text-gray-600 mb-8">Agende uma conversa com nossos especialistas e descubra como podemos otimizar seus
-        resultados.</p>
-      <a href="contato.html"
-        class="btn-primary bg-blue text-white font-semibold py-4 px-10 rounded-lg text-lg shadow-lg hover:bg-blue-600">
+      <p class="text-gray-600 mb-8">Agende uma conversa com nossos especialistas e descubra como podemos otimizar seus resultados.</p>
+      <a href="contato.html" class="btn-primary bg-blue text-white font-semibold py-4 px-10 rounded-lg text-lg shadow-lg hover:bg-blue-600">
         Entrar em Contato
       </a>
     </div>
@@ -356,7 +351,7 @@
             Tecnologia e Consultoria Estratégica para o Setor Hoteleiro Brasileiro.
           </p>
         </div>
-
+        
         <div>
           <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Soluções</h4>
           <ul class="space-y-2 text-sm">
@@ -365,7 +360,7 @@
             <li><a href="sobre.html" class="hover:text-white transition">Consultoria</a></li>
           </ul>
         </div>
-
+        
         <div>
           <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Empresa</h4>
           <ul class="space-y-2 text-sm">
@@ -375,7 +370,7 @@
           </ul>
         </div>
       </div>
-
+      
       <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
         <p>&copy; <span class="current-year"></span> HotelsBook Tecnologia e Hospitalidade LTDA.</p>
         <div class="mt-4 md:mt-0 space-x-6">
@@ -386,26 +381,21 @@
     </div>
   </footer>
 
-  <!-- JS para Mobile Menu (Simples) -->
-  <script>
-    // Script básico para abrir/fechar menu no mobile pode ser adicionado aqui
-  </script>
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
+  
   <!-- Banner LGPD Cookies -->
-  <div id="cookie-banner"
-    class="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 p-4 shadow-lg z-50 hidden">
+  <div id="cookie-banner" class="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 p-4 shadow-lg z-50 hidden">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
       <p class="text-sm text-gray-600 text-center md:text-left">
-        Utilizamos cookies para analisar o tráfego e melhorar sua experiência. Ao continuar navegando, você concorda com
-        nossa
+        Utilizamos cookies para analisar o tráfego e melhorar sua experiência. Ao continuar navegando, você concorda com nossa
         <a href="politica-privacidade.html" class="text-blue hover:underline">Política de Privacidade</a>.
       </p>
       <div class="flex gap-3">
-        <button id="accept-cookies"
-          class="bg-navy text-white px-6 py-2 rounded-lg text-sm font-medium hover:bg-navy-light transition">
+        <button id="accept-cookies" class="bg-navy text-white px-6 py-2 rounded-lg text-sm font-medium hover:bg-navy-light transition">
           Aceitar
         </button>
-        <button id="decline-cookies"
-          class="border border-gray-300 text-gray-600 px-6 py-2 rounded-lg text-sm font-medium hover:bg-gray-50 transition">
+        <button id="decline-cookies" class="border border-gray-300 text-gray-600 px-6 py-2 rounded-lg text-sm font-medium hover:bg-gray-50 transition">
           Recusar
         </button>
       </div>
@@ -424,15 +414,18 @@
     acceptBtn.addEventListener('click', () => {
       localStorage.setItem('cookieConsent', 'accepted');
       banner.classList.add('hidden');
-      gtag('consent', 'update', { 'analytics_storage': 'granted' });
+      if (typeof gtag === 'function') {
+        gtag('consent', 'update', { 'analytics_storage': 'granted' });
+      }
     });
 
     declineBtn.addEventListener('click', () => {
       localStorage.setItem('cookieConsent', 'declined');
       banner.classList.add('hidden');
-      gtag('consent', 'update', { 'analytics_storage': 'denied' });
+      if (typeof gtag === 'function') {
+        gtag('consent', 'update', { 'analytics_storage': 'denied' });
+      }
     });
   </script>
 </body>
-
 </html>

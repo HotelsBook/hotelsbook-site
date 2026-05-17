@@ -4,44 +4,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Favicon para Google -->
-  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon-192x192.png">
+  
+  <!-- SEO: Título e Descrição Únicos -->
+  <title>Contato - HotelsBook | Fale com Nossa Equipe</title>
+  <meta name="description" content="Entre em contato com a HotelsBook. Consultoria estratégica, plataforma Analytics e gestão de viagens corporativas. Atendimento nacional via email e WhatsApp.">
+  
+  <!-- SEO: Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contato - HotelsBook | Fale com Nossa Equipe">
+  <meta property="og:description" content="Nossa equipe comercial e técnica está pronta para entender sua demanda. Atendimento via email, WhatsApp e formulário.">
+  <meta property="og:url" content="https://hotelsbook.com.br/contato.html">
+  <meta property="og:image" content="https://hotelsbook.com.br/assets/images/og-contato.jpg">
+  <meta property="og:site_name" content="HotelsBook">
+  <meta property="og:locale" content="pt_BR">
+  
+  <!-- SEO: Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contato - HotelsBook | Fale com Nossa Equipe">
+  <meta name="twitter:description" content="Entre em contato com a HotelsBook. Consultoria estratégica, Analytics e gestão de viagens.">
+  <meta name="twitter:image" content="https://hotelsbook.com.br/assets/images/og-contato.jpg">
+  
+  <!-- Favicon (Consolidado - sem duplicatas) -->
   <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon-192x192.png">
+  <link rel="manifest" href="site.webmanifest">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-  <!-- Schema.org markup for Google -->
+  <!-- Schema.org JSON-LD (SEO Estruturado para Página de Contato) -->
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "HotelsBook",
-  "url": "https://hotelsbook.com.br",
-  "logo": "https://hotelsbook.com.br/assets/images/favicon-192x192.png",
-  "sameAs": []
-}
-</script>
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contato - HotelsBook",
+    "url": "https://hotelsbook.com.br/contato.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "HotelsBook",
+      "url": "https://hotelsbook.com.br",
+      "logo": "https://hotelsbook.com.br/assets/images/favicon-192x192.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+55-88-92154-6413",
+        "contactType": "customer service",
+        "areaServed": "BR",
+        "availableLanguage": "Portuguese"
+      }
+    }
+  }
+  </script>
 
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PXKZXNRNMKQ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-PXKZXNRNMKQ', { 'anonymize_ip': true });
   </script>
-  <title>Contato - HotelsBook | Fale com Nossa Equipe</title>
-  <meta name="description"
-    content="Entre em contato com a HotelsBook. Consultoria estratégica, plataforma Analytics e gestão de viagens corporativas. Atendimento nacional via email e WhatsApp.">
-
-  <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -84,12 +105,14 @@
         </div>
 
         <nav class="hidden md:flex space-x-8 items-center">
+          <!-- Links de navegação: JS adicionará 'active' automaticamente -->
           <a href="index.html" class="nav-link text-gray-600 hover:text-navy transition">Início</a>
           <a href="sobre.html" class="nav-link text-gray-600 hover:text-navy transition">Sobre Nós</a>
           <a href="analytics.html" class="nav-link text-gray-600 hover:text-navy transition">Analytics</a>
           <a href="hospped.html" class="nav-link text-gray-600 hover:text-navy transition">Hospped</a>
           <a href="parcerias.html" class="nav-link text-gray-600 hover:text-navy transition">Parcerias</a>
-          <a href="contato.html" class="nav-link text-navy font-semibold">Contato</a>
+          <!-- ✅ Contato com classe btn-contato para manter estilo de botão -->
+          <a href="contato.html" class="nav-link btn-contato text-gray-600 hover:text-navy transition">Contato</a>
         </nav>
 
         <!-- Mobile Menu Button -->
@@ -109,7 +132,7 @@
         <a href="analytics.html" class="nav-link block py-2 text-gray-600">Analytics</a>
         <a href="hospped.html" class="nav-link block py-2 text-gray-600">Hospped</a>
         <a href="parcerias.html" class="nav-link block py-2 text-gray-600">Parcerias</a>
-        <a href="contato.html" class="nav-link block py-2 text-navy font-semibold">Contato</a>
+        <a href="contato.html" class="nav-link btn-contato block py-2 text-gray-600">Contato</a>
       </nav>
     </div>
   </header>
@@ -121,16 +144,15 @@
       "Minimalist modern office space with soft natural lighting, clean desk with laptop and notebook, blurred background, corporate atmosphere, Brazilian business context, photorealistic, high quality, neutral tones."
     -->
     <div class="absolute inset-0 opacity-30">
-      <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2069&q=80"
-        alt="Ambiente corporativo" class="w-full h-full object-cover">
+      <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2069&q=80" 
+           alt="Ambiente corporativo" class="w-full h-full object-cover" loading="lazy">
       <div class="absolute inset-0 bg-gradient-to-b from-white via-white/80 to-gray-50"></div>
     </div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
       <h1 class="text-4xl lg:text-5xl font-bold text-navy mb-4">Entre em Contato</h1>
       <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-        Nossa equipe comercial e técnica está pronta para entender sua demanda e apresentar a solução ideal para sua
-        operação.
+        Nossa equipe comercial e técnica está pronta para entender sua demanda e apresentar a solução ideal para sua operação.
       </p>
     </div>
   </section>
@@ -143,8 +165,7 @@
         <!-- LEFT: Contact Information -->
         <div class="lg:col-span-2 mb-12 lg:mb-0">
           <h2 class="text-2xl font-bold text-navy mb-6">Canais de Atendimento</h2>
-          <p class="text-gray-600 mb-8">Selecione o canal mais adequado ao seu perfil. Respondemos em até 24 horas
-            úteis.</p>
+          <p class="text-gray-600 mb-8">Selecione o canal mais adequado ao seu perfil. Respondemos em até 24 horas úteis.</p>
 
           <div class="space-y-6">
             <!-- Email -->
@@ -152,15 +173,12 @@
               <div class="flex items-start">
                 <div class="w-12 h-12 bg-blue/10 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
                   <svg class="w-6 h-6 text-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
-                    </path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                   </svg>
                 </div>
                 <div>
                   <h3 class="font-bold text-navy mb-1">E-mail Comercial</h3>
-                  <a href="mailto:comercial@hotelsbook.com.br"
-                    class="text-blue hover:underline font-medium">comercial@hotelsbook.com.br</a>
+                  <a href="mailto:comercial@hotelsbook.com.br" class="text-blue hover:underline font-medium">comercial@hotelsbook.com.br</a>
                   <p class="text-gray-500 text-sm mt-1">Propostas, parcerias e consultoria B2B</p>
                 </div>
               </div>
@@ -171,14 +189,12 @@
               <div class="flex items-start">
                 <div class="w-12 h-12 bg-blue/10 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
                   <svg class="w-6 h-6 text-blue" fill="currentColor" viewBox="0 0 24 24">
-                    <path
-                      d="M12.04 2C6.59 2 2.17 6.42 2.17 11.87c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.45 0 9.87-4.42 9.87-9.87 0-5.45-4.42-9.87-9.87-9.87zm.01 18.03c-1.5 0-2.98-.4-4.27-1.15l-.31-.18-3.11.82.83-3.04-.2-.32c-.83-1.33-1.27-2.87-1.27-4.45 0-4.64 3.78-8.42 8.42-8.42 4.64 0 8.42 3.78 8.42 8.42 0 4.64-3.78 8.42-8.42 8.42zm4.58-6.24c-.25-.13-1.48-.73-1.71-.81-.23-.08-.4-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.14-.25-.02-.38.1-.5.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.89.87-.89 2.13 0 1.26.92 2.48 1.05 2.65.13.17 1.81 2.77 4.39 3.88.61.26 1.09.42 1.46.54.62.2 1.18.17 1.62.11.49-.07 1.48-.61 1.69-1.19.21-.58.21-1.08.15-1.19-.06-.11-.23-.17-.48-.29z" />
+                    <path d="M12.04 2C6.59 2 2.17 6.42 2.17 11.87c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.45 0 9.87-4.42 9.87-9.87 0-5.45-4.42-9.87-9.87-9.87zm.01 18.03c-1.5 0-2.98-.4-4.27-1.15l-.31-.18-3.11.82.83-3.04-.2-.32c-.83-1.33-1.27-2.87-1.27-4.45 0-4.64 3.78-8.42 8.42-8.42 4.64 0 8.42 3.78 8.42 8.42 0 4.64-3.78 8.42-8.42 8.42zm4.58-6.24c-.25-.13-1.48-.73-1.71-.81-.23-.08-.4-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.14-.25-.02-.38.1-.5.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.89.87-.89 2.13 0 1.26.92 2.48 1.05 2.65.13.17 1.81 2.77 4.39 3.88.61.26 1.09.42 1.46.54.62.2 1.18.17 1.62.11.49-.07 1.48-.61 1.69-1.19.21-.58.21-1.08.15-1.19-.06-.11-.23-.17-.48-.29z"/>
                   </svg>
                 </div>
                 <div>
                   <h3 class="font-bold text-navy mb-1">WhatsApp Corporativo (B2B)</h3>
-                  <a href="https://wa.me/5588921546413" target="_blank" rel="noopener noreferrer"
-                    class="text-blue hover:underline font-medium">(88) 92154-6413</a>
+                  <a href="https://wa.me/5588921546413" target="_blank" rel="noopener noreferrer" class="text-blue hover:underline font-medium">(88) 92154-6413</a>
                   <p class="text-gray-500 text-sm mt-1">Hotéis, redes e empresas de consultoria</p>
                 </div>
               </div>
@@ -189,14 +205,12 @@
               <div class="flex items-start">
                 <div class="w-12 h-12 bg-blue/10 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
                   <svg class="w-6 h-6 text-blue" fill="currentColor" viewBox="0 0 24 24">
-                    <path
-                      d="M12.04 2C6.59 2 2.17 6.42 2.17 11.87c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.45 0 9.87-4.42 9.87-9.87 0-5.45-4.42-9.87-9.87-9.87zm.01 18.03c-1.5 0-2.98-.4-4.27-1.15l-.31-.18-3.11.82.83-3.04-.2-.32c-.83-1.33-1.27-2.87-1.27-4.45 0-4.64 3.78-8.42 8.42-8.42 4.64 0 8.42 3.78 8.42 8.42 0 4.64-3.78 8.42-8.42 8.42zm4.58-6.24c-.25-.13-1.48-.73-1.71-.81-.23-.08-.4-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.14-.25-.02-.38.1-.5.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.89.87-.89 2.13 0 1.26.92 2.48 1.05 2.65.13.17 1.81 2.77 4.39 3.88.61.26 1.09.42 1.46.54.62.2 1.18.17 1.62.11.49-.07 1.48-.61 1.69-1.19.21-.58.21-1.08.15-1.19-.06-.11-.23-.17-.48-.29z" />
+                    <path d="M12.04 2C6.59 2 2.17 6.42 2.17 11.87c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.45 0 9.87-4.42 9.87-9.87 0-5.45-4.42-9.87-9.87-9.87zm.01 18.03c-1.5 0-2.98-.4-4.27-1.15l-.31-.18-3.11.82.83-3.04-.2-.32c-.83-1.33-1.27-2.87-1.27-4.45 0-4.64 3.78-8.42 8.42-8.42 4.64 0 8.42 3.78 8.42 8.42 0 4.64-3.78 8.42-8.42 8.42zm4.58-6.24c-.25-.13-1.48-.73-1.71-.81-.23-.08-.4-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.14-.25-.02-.38.1-.5.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.89.87-.89 2.13 0 1.26.92 2.48 1.05 2.65.13.17 1.81 2.77 4.39 3.88.61.26 1.09.42 1.46.54.62.2 1.18.17 1.62.11.49-.07 1.48-.61 1.69-1.19.21-.58.21-1.08.15-1.19-.06-.11-.23-.17-.48-.29z"/>
                   </svg>
                 </div>
                 <div>
                   <h3 class="font-bold text-navy mb-1">WhatsApp Reservas (B2C)</h3>
-                  <a href="https://wa.me/5585984052096" target="_blank" rel="noopener noreferrer"
-                    class="text-blue hover:underline font-medium">(85) 98405-2096</a>
+                  <a href="https://wa.me/5585984052096" target="_blank" rel="noopener noreferrer" class="text-blue hover:underline font-medium">(85) 98405-2096</a>
                   <p class="text-gray-500 text-sm mt-1">Hospped: viagens corporativas e acadêmicas</p>
                 </div>
               </div>
@@ -207,8 +221,7 @@
               <div class="flex items-start">
                 <div class="w-12 h-12 bg-blue/10 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
                   <svg class="w-6 h-6 text-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
                 </div>
                 <div>
@@ -226,9 +239,9 @@
         <div class="lg:col-span-3">
           <div class="bg-gray-50 p-8 lg:p-10 rounded-2xl border border-gray-100 shadow-sm">
             <h2 class="text-2xl font-bold text-navy mb-2">Envie uma mensagem</h2>
-            <p class="text-gray-600 mb-8">Preencha o formulário abaixo e nossa equipe retornará com uma proposta ou
-              esclarecimento técnico.</p>
+            <p class="text-gray-600 mb-8">Preencha o formulário abaixo e nossa equipe retornará com uma proposta ou esclarecimento técnico.</p>
 
+            <!-- ✅ Formspree endpoint correto -->
             <form action="https://formspree.io/f/mpqbkyde" method="POST" class="space-y-6">
               <div class="grid md:grid-cols-2 gap-6">
                 <div>
@@ -236,8 +249,7 @@
                   <input type="text" id="nome" name="nome" required class="form-input" placeholder="Seu nome">
                 </div>
                 <div>
-                  <label for="empresa" class="block text-sm font-medium text-gray-700 mb-2">Empresa /
-                    Instituição</label>
+                  <label for="empresa" class="block text-sm font-medium text-gray-700 mb-2">Empresa / Instituição</label>
                   <input type="text" id="empresa" name="empresa" class="form-input" placeholder="Nome da organização">
                 </div>
               </div>
@@ -268,20 +280,20 @@
 
               <div>
                 <label for="mensagem" class="block text-sm font-medium text-gray-700 mb-2">Mensagem</label>
-                <textarea id="mensagem" name="mensagem" rows="5" required class="form-input"
-                  placeholder="Descreva brevemente sua necessidade ou dúvida..."></textarea>
+                <textarea id="mensagem" name="mensagem" rows="5" required class="form-input" placeholder="Descreva brevemente sua necessidade ou dúvida..."></textarea>
               </div>
 
               <div class="flex items-start">
-                <input type="checkbox" id="lgpd" name="lgpd" required
-                  class="mt-1 mr-3 w-4 h-4 text-blue border-gray-300 rounded focus:ring-blue">
+                <input type="checkbox" id="lgpd" name="lgpd" required class="mt-1 mr-3 w-4 h-4 text-blue border-gray-300 rounded focus:ring-blue">
                 <label for="lgpd" class="text-sm text-gray-600">
-                  Concordo com a <a href="#" class="text-blue hover:underline">Política de Privacidade</a> e autorizo o
-                  tratamento dos meus dados para fins de contato comercial.
+                  Concordo com a <a href="politica-privacidade.html" class="text-blue hover:underline">Política de Privacidade</a> e autorizo o tratamento dos meus dados para fins de contato comercial.
                 </label>
               </div>
 
+              <!-- Redirecionamento após envio -->
               <input type="hidden" name="_next" value="https://hotelsbook.com.br/contato.html?enviado=sucesso">
+              <!-- Reply-to para responder direto ao cliente -->
+              <input type="hidden" name="_replyto" value="email">
 
               <button type="submit" class="btn-primary w-full py-4 text-base">
                 Enviar mensagem
@@ -301,8 +313,7 @@
   <section class="py-16 bg-gray-50 border-t border-gray-100">
     <div class="max-w-5xl mx-auto px-4 text-center">
       <h2 class="text-3xl font-bold text-navy mb-6">Atendimento em Todo o Brasil</h2>
-      <p class="text-gray-600 mb-10 max-w-3xl mx-auto">Atuamos de forma remota e presencial, com equipe distribuída
-        estrategicamente para atender hotéis, redes e corporações em todas as regiões do país.</p>
+      <p class="text-gray-600 mb-10 max-w-3xl mx-auto">Atuamos de forma remota e presencial, com equipe distribuída estrategicamente para atender hotéis, redes e corporações em todas as regiões do país.</p>
 
       <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
         <div class="p-4 bg-white rounded-xl shadow-sm">
@@ -337,7 +348,7 @@
             Tecnologia e Consultoria Estratégica para o Setor Hoteleiro Brasileiro.
           </p>
         </div>
-
+        
         <div>
           <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Soluções</h4>
           <ul class="space-y-2 text-sm">
@@ -346,7 +357,7 @@
             <li><a href="sobre.html" class="hover:text-white transition">Consultoria</a></li>
           </ul>
         </div>
-
+        
         <div>
           <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Empresa</h4>
           <ul class="space-y-2 text-sm">
@@ -356,7 +367,7 @@
           </ul>
         </div>
       </div>
-
+      
       <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
         <p>&copy; <span class="current-year"></span> HotelsBook Tecnologia e Hospitalidade LTDA.</p>
         <div class="mt-4 md:mt-0 space-x-6">
@@ -369,22 +380,19 @@
 
   <!-- JavaScript -->
   <script src="assets/js/main.js"></script>
+  
   <!-- Banner LGPD Cookies -->
-  <div id="cookie-banner"
-    class="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 p-4 shadow-lg z-50 hidden">
+  <div id="cookie-banner" class="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 p-4 shadow-lg z-50 hidden">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
       <p class="text-sm text-gray-600 text-center md:text-left">
-        Utilizamos cookies para analisar o tráfego e melhorar sua experiência. Ao continuar navegando, você concorda com
-        nossa
+        Utilizamos cookies para analisar o tráfego e melhorar sua experiência. Ao continuar navegando, você concorda com nossa
         <a href="politica-privacidade.html" class="text-blue hover:underline">Política de Privacidade</a>.
       </p>
       <div class="flex gap-3">
-        <button id="accept-cookies"
-          class="bg-navy text-white px-6 py-2 rounded-lg text-sm font-medium hover:bg-navy-light transition">
+        <button id="accept-cookies" class="bg-navy text-white px-6 py-2 rounded-lg text-sm font-medium hover:bg-navy-light transition">
           Aceitar
         </button>
-        <button id="decline-cookies"
-          class="border border-gray-300 text-gray-600 px-6 py-2 rounded-lg text-sm font-medium hover:bg-gray-50 transition">
+        <button id="decline-cookies" class="border border-gray-300 text-gray-600 px-6 py-2 rounded-lg text-sm font-medium hover:bg-gray-50 transition">
           Recusar
         </button>
       </div>
@@ -403,15 +411,18 @@
     acceptBtn.addEventListener('click', () => {
       localStorage.setItem('cookieConsent', 'accepted');
       banner.classList.add('hidden');
-      gtag('consent', 'update', { 'analytics_storage': 'granted' });
+      if (typeof gtag === 'function') {
+        gtag('consent', 'update', { 'analytics_storage': 'granted' });
+      }
     });
 
     declineBtn.addEventListener('click', () => {
       localStorage.setItem('cookieConsent', 'declined');
       banner.classList.add('hidden');
-      gtag('consent', 'update', { 'analytics_storage': 'denied' });
+      if (typeof gtag === 'function') {
+        gtag('consent', 'update', { 'analytics_storage': 'denied' });
+      }
     });
   </script>
 </body>
-
 </html>

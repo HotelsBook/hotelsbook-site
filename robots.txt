@@ -1,4 +1,34 @@
+# ==========================================
+# robots.txt - HotelsBook
+# Instruções para motores de busca
+# Última atualização: Maio 2026
+# ==========================================
+
+# Permitir rastreamento para todos os bots
 User-agent: *
 Allow: /
 
+# Bloquear arquivos desnecessários para SEO (opcional)
+Disallow: /*.json$
+Disallow: /assets/js/
+Disallow: /assets/css/
+Disallow: /*?*
+
+# Permitir Googlebot com crawl-delay suave (opcional)
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Permitir Bingbot (opcional)
+User-agent: Bingbot
+Allow: /
+
+# Sitemap para indexação eficiente
 Sitemap: https://hotelsbook.com.br/sitemap.xml
+
+# ==========================================
+# Notas:
+# - "/" = permite acesso a todo o site
+# - "$" = fim da URL (para bloquear extensões específicas)
+# - "?" = parâmetros de query string
+# ==========================================

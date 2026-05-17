@@ -2,181 +2,201 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO: Título e Descrição Únicos -->
+  <title>Política de Privacidade - HotelsBook</title>
+  <meta name="description" content="Política de Privacidade e Tratamento de Dados da HotelsBook Tecnologia e Hospitalidade LTDA em conformidade com a LGPD.">
+  
+  <!-- SEO: Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Política de Privacidade - HotelsBook">
+  <meta property="og:description" content="Como coletamos, usamos, armazenamos e protegemos suas informações em conformidade com a Lei Geral de Proteção de Dados (LGPD).">
+  <meta property="og:url" content="https://hotelsbook.com.br/politica-privacidade.html">
+  <meta property="og:site_name" content="HotelsBook">
+  <meta property="og:locale" content="pt_BR">
+  
+  <!-- SEO: Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Política de Privacidade - HotelsBook">
+  <meta name="twitter:description" content="Política de Privacidade e Tratamento de Dados da HotelsBook em conformidade com a LGPD.">
+  
+  <!-- Favicon (Consolidado - sem duplicatas) -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon-192x192.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-    <!-- Favicon para Google -->
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon-192x192.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!-- Schema.org JSON-LD (SEO Estruturado para PrivacyPolicy) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Política de Privacidade - HotelsBook",
+    "url": "https://hotelsbook.com.br/politica-privacidade.html",
+    "description": "Política de Privacidade e Tratamento de Dados em conformidade com a LGPD.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "HotelsBook",
+      "url": "https://hotelsbook.com.br"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "HotelsBook",
+      "url": "https://hotelsbook.com.br"
+    }
+  }
+  </script>
 
-    <!-- Schema.org markup for Google -->
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "HotelsBook",
-  "url": "https://hotelsbook.com.br",
-  "logo": "https://hotelsbook.com.br/assets/images/favicon-192x192.png",
-  "sameAs": []
-}
-</script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PXKZXNRNMKQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PXKZXNRNMKQ', { 'anonymize_ip': true });
+  </script>
 
-    <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PXKZXNRNMKQ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-PXKZXNRNMKQ', { 'anonymize_ip': true });
-    </script>
-    <title>Política de Privacidade - HotelsBook</title>
-    <meta name="description"
-        content="Política de Privacidade e Tratamento de Dados da HotelsBook Tecnologia e Hospitalidade LTDA em conformidade com a LGPD.">
-
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: { navy: '#0a1628', blue: '#3b82f6' },
-                    fontFamily: { sans: ['Inter', 'sans-serif'] }
-                }
-            }
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { navy: '#0a1628', blue: '#3b82f6' },
+          fontFamily: { sans: ['Inter', 'sans-serif'] }
         }
-    </script>
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
+      }
+    }
+  </script>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
 </head>
 
 <body class="font-sans text-gray-700 bg-white">
 
-    <!-- Header Simples -->
-    <header class="bg-white border-b border-gray-200 py-6">
-        <div class="max-w-4xl mx-auto px-4">
-            <a href="index.html" class="text-2xl font-bold text-navy">Hotels<span class="text-blue">Book</span></a>
-        </div>
-    </header>
-
-    <!-- Conteúdo Principal -->
-    <main class="max-w-4xl mx-auto px-4 py-16">
-        <h1 class="text-4xl font-bold text-navy mb-8">Política de Privacidade</h1>
-        <p class="text-gray-600 mb-6">Última atualização: 11 de Maio de 2026</p>
-
-        <div class="prose prose-lg max-w-none text-gray-600">
-            <p class="mb-6">A <strong>HotelsBook Tecnologia e Hospitalidade LTDA</strong> ("HotelsBook", "nós" ou
-                "nosso"), compromete-se a proteger a privacidade e os dados pessoais de nossos usuários, clientes e
-                parceiros. Esta Política de Privacidade descreve como coletamos, usamos, armazenamos e protegemos suas
-                informações em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 - LGPD).</p>
-
-            <h2 class="text-2xl font-bold text-navy mt-8 mb-4">1. Dados Coletados</h2>
-            <p class="mb-4">Coletamos informações que você nos fornece diretamente, tais como:</p>
-            <ul class="list-disc pl-6 mb-6 space-y-2">
-                <li><strong>Dados de Identificação:</strong> Nome completo, CPF/CNPJ, e-mail corporativo,
-                    telefone/WhatsApp.</li>
-                <li><strong>Dados da Empresa:</strong> Nome da organização, cargo, segmento de atuação (hotelaria).</li>
-                <li><strong>Dados de Navegação:</strong> Endereço IP, tipo de navegador, páginas visitadas e tempo de
-                    permanência (via cookies).</li>
-            </ul>
-
-            <h2 class="text-2xl font-bold text-navy mt-8 mb-4">2. Finalidade do Tratamento</h2>
-            <p class="mb-4">Seus dados são utilizados para as seguintes finalidades:</p>
-            <ul class="list-disc pl-6 mb-6 space-y-2">
-                <li>Prestação de serviços de consultoria, analytics e gestão de viagens (Hospped).</li>
-                <li>Comunicação comercial e envio de propostas (mediante consentimento ou legítimo interesse).</li>
-                <li>Melhoria da experiência do usuário em nosso site e plataforma.</li>
-                <li>Cumprimento de obrigações legais e regulatórias.</li>
-            </ul>
-
-            <h2 class="text-2xl font-bold text-navy mt-8 mb-4">3. Compartilhamento de Dados</h2>
-            <p class="mb-6">Não vendemos seus dados pessoais. Podemos compartilhar informações apenas nas seguintes
-                situações:</p>
-            <ul class="list-disc pl-6 mb-6 space-y-2">
-                <li>Com parceiros estratégicos estritamente necessários para a prestação do serviço (ex: provedores de
-                    hospedagem, processadores de pagamento).</li>
-                <li>Por exigência legal ou ordem judicial.</li>
-            </ul>
-
-            <h2 class="text-2xl font-bold text-navy mt-8 mb-4">4. Segurança</h2>
-            <p class="mb-6">Utilizamos medidas técnicas e administrativas para proteger seus dados contra acesso não
-                autorizado, alteração, divulgação ou destruição. Nosso site utiliza criptografia SSL (HTTPS) para
-                garantir a segurança das transmissões.</p>
-
-            <h2 class="text-2xl font-bold text-navy mt-8 mb-4">5. Direitos do Titular</h2>
-            <p class="mb-4">De acordo com a LGPD, você tem direito a:</p>
-            <ul class="list-disc pl-6 mb-6 space-y-2">
-                <li>Confirmar a existência de tratamento.</li>
-                <li>Acessar, corrigir ou atualizar seus dados.</li>
-                <li>Solicitar a anonimização, bloqueio ou eliminação de dados desnecessários.</li>
-                <li>Revogar o consentimento a qualquer momento.</li>
-            </ul>
-
-            <h2 class="text-2xl font-bold text-navy mt-8 mb-4">6. Contato</h2>
-            <p class="mb-6">Para exercer seus direitos ou tirar dúvidas, entre em contato com nosso Encarregado de Dados
-                (DPO):</p>
-            <p class="bg-gray-50 p-4 rounded-lg border border-gray-200">
-                <strong>Email:</strong> gestao@hotelsbook.com.br<br>
-                <strong>Endereço:</strong> [Seu Endereço Completo, quando tiver]
-            </p>
-        </div>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-300 py-12 mt-20">
-        <div class="max-w-7xl mx-auto px-4 text-center text-sm">
-            <p>&copy; 2026 HotelsBook Tecnologia e Hospitalidade LTDA.</p>
-        </div>
-    </footer>
-    <!-- Banner LGPD Cookies -->
-    <div id="cookie-banner"
-        class="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 p-4 shadow-lg z-50 hidden">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-            <p class="text-sm text-gray-600 text-center md:text-left">
-                Utilizamos cookies para analisar o tráfego e melhorar sua experiência. Ao continuar navegando, você
-                concorda com nossa
-                <a href="politica-privacidade.html" class="text-blue hover:underline">Política de Privacidade</a>.
-            </p>
-            <div class="flex gap-3">
-                <button id="accept-cookies"
-                    class="bg-navy text-white px-6 py-2 rounded-lg text-sm font-medium hover:bg-navy-light transition">
-                    Aceitar
-                </button>
-                <button id="decline-cookies"
-                    class="border border-gray-300 text-gray-600 px-6 py-2 rounded-lg text-sm font-medium hover:bg-gray-50 transition">
-                    Recusar
-                </button>
-            </div>
-        </div>
+  <!-- Header Simples -->
+  <header class="bg-white border-b border-gray-200 py-6">
+    <div class="max-w-4xl mx-auto px-4">
+      <a href="index.html" class="text-2xl font-bold text-navy">Hotels<span class="text-blue">Book</span></a>
     </div>
+  </header>
 
-    <script>
-        const banner = document.getElementById('cookie-banner');
-        const acceptBtn = document.getElementById('accept-cookies');
-        const declineBtn = document.getElementById('decline-cookies');
+  <!-- Conteúdo Principal -->
+  <main class="max-w-4xl mx-auto px-4 py-16">
+    <h1 class="text-4xl font-bold text-navy mb-8">Política de Privacidade</h1>
+    <p class="text-gray-600 mb-6">Última atualização: 11 de Maio de 2026</p>
 
-        if (!localStorage.getItem('cookieConsent')) {
-            banner.classList.remove('hidden');
-        }
+    <div class="prose prose-lg max-w-none text-gray-600">
+      <p class="mb-6">A <strong>HotelsBook Tecnologia e Hospitalidade LTDA</strong> ("HotelsBook", "nós" ou "nosso"), compromete-se a proteger a privacidade e os dados pessoais de nossos usuários, clientes e parceiros. Esta Política de Privacidade descreve como coletamos, usamos, armazenamos e protegemos suas informações em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 - LGPD).</p>
 
-        acceptBtn.addEventListener('click', () => {
-            localStorage.setItem('cookieConsent', 'accepted');
-            banner.classList.add('hidden');
-            gtag('consent', 'update', { 'analytics_storage': 'granted' });
-        });
+      <h2 class="text-2xl font-bold text-navy mt-8 mb-4">1. Dados Coletados</h2>
+      <p class="mb-4">Coletamos informações que você nos fornece diretamente, tais como:</p>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li><strong>Dados de Identificação:</strong> Nome completo, CPF/CNPJ, e-mail corporativo, telefone/WhatsApp.</li>
+        <li><strong>Dados da Empresa:</strong> Nome da organização, cargo, segmento de atuação (hotelaria).</li>
+        <li><strong>Dados de Navegação:</strong> Endereço IP, tipo de navegador, páginas visitadas e tempo de permanência (via cookies).</li>
+      </ul>
 
-        declineBtn.addEventListener('click', () => {
-            localStorage.setItem('cookieConsent', 'declined');
-            banner.classList.add('hidden');
-            gtag('consent', 'update', { 'analytics_storage': 'denied' });
-        });
-    </script>
+      <h2 class="text-2xl font-bold text-navy mt-8 mb-4">2. Finalidade do Tratamento</h2>
+      <p class="mb-4">Seus dados são utilizados para as seguintes finalidades:</p>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Prestação de serviços de consultoria, analytics e gestão de viagens (Hospped).</li>
+        <li>Comunicação comercial e envio de propostas (mediante consentimento ou legítimo interesse).</li>
+        <li>Melhoria da experiência do usuário em nosso site e plataforma.</li>
+        <li>Cumprimento de obrigações legais e regulatórias.</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold text-navy mt-8 mb-4">3. Compartilhamento de Dados</h2>
+      <p class="mb-6">Não vendemos seus dados pessoais. Podemos compartilhar informações apenas nas seguintes situações:</p>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Com parceiros estratégicos estritamente necessários para a prestação do serviço (ex: provedores de hospedagem, processadores de pagamento).</li>
+        <li>Por exigência legal ou ordem judicial.</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold text-navy mt-8 mb-4">4. Segurança</h2>
+      <p class="mb-6">Utilizamos medidas técnicas e administrativas para proteger seus dados contra acesso não autorizado, alteração, divulgação ou destruição. Nosso site utiliza criptografia SSL (HTTPS) para garantir a segurança das transmissões.</p>
+
+      <h2 class="text-2xl font-bold text-navy mt-8 mb-4">5. Direitos do Titular</h2>
+      <p class="mb-4">De acordo com a LGPD, você tem direito a:</p>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Confirmar a existência de tratamento.</li>
+        <li>Acessar, corrigir ou atualizar seus dados.</li>
+        <li>Solicitar a anonimização, bloqueio ou eliminação de dados desnecessários.</li>
+        <li>Revogar o consentimento a qualquer momento.</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold text-navy mt-8 mb-4">6. Contato</h2>
+      <p class="mb-6">Para exercer seus direitos ou tirar dúvidas, entre em contato com nosso Encarregado de Dados (DPO):</p>
+      <p class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+        <strong>Email:</strong> <a href="mailto:gestao@hotelsbook.com.br" class="text-blue hover:underline">gestao@hotelsbook.com.br</a><br>
+        <strong>Endereço:</strong> [Seu Endereço Completo, quando tiver]
+      </p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-12 mt-20">
+    <div class="max-w-7xl mx-auto px-4 text-center text-sm">
+      <p>&copy; <span class="current-year"></span> HotelsBook Tecnologia e Hospitalidade LTDA.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
+  
+  <!-- Banner LGPD Cookies -->
+  <div id="cookie-banner" class="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 p-4 shadow-lg z-50 hidden">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-gray-600 text-center md:text-left">
+        Utilizamos cookies para analisar o tráfego e melhorar sua experiência. Ao continuar navegando, você concorda com nossa
+        <a href="politica-privacidade.html" class="text-blue hover:underline">Política de Privacidade</a>.
+      </p>
+      <div class="flex gap-3">
+        <button id="accept-cookies" class="bg-navy text-white px-6 py-2 rounded-lg text-sm font-medium hover:bg-navy-light transition">
+          Aceitar
+        </button>
+        <button id="decline-cookies" class="border border-gray-300 text-gray-600 px-6 py-2 rounded-lg text-sm font-medium hover:bg-gray-50 transition">
+          Recusar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const banner = document.getElementById('cookie-banner');
+    const acceptBtn = document.getElementById('accept-cookies');
+    const declineBtn = document.getElementById('decline-cookies');
+
+    if (!localStorage.getItem('cookieConsent')) {
+      banner.classList.remove('hidden');
+    }
+
+    acceptBtn.addEventListener('click', () => {
+      localStorage.setItem('cookieConsent', 'accepted');
+      banner.classList.add('hidden');
+      if (typeof gtag === 'function') {
+        gtag('consent', 'update', { 'analytics_storage': 'granted' });
+      }
+    });
+
+    declineBtn.addEventListener('click', () => {
+      localStorage.setItem('cookieConsent', 'declined');
+      banner.classList.add('hidden');
+      if (typeof gtag === 'function') {
+        gtag('consent', 'update', { 'analytics_storage': 'denied' });
+      }
+    });
+  </script>
 </body>
-
 </html>
