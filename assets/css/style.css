@@ -1,5 +1,5 @@
 /* =========================================
-   HOTELSBOOK - MAIN STYLESHEET
+   HOTELSBOOK - MAIN STYLESHEET (CORRIGIDO)
    ========================================= */
 
 :root {
@@ -9,6 +9,7 @@
     --color-blue-dark: #2563eb;
     --color-gray-100: #f3f4f6;
     --color-gray-200: #e5e7eb;
+    --color-gray-300: #d1d5db;
     --color-gray-600: #4b5563;
     --color-gray-900: #111827;
     --font-main: 'Inter', sans-serif;
@@ -17,7 +18,7 @@
     --transition-base: all 0.3s ease-in-out;
 }
 
-/* Header Transition - CORRIGIDO */
+/* Header Transition */
 header {
     transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
                 background-color 0.25s ease,
@@ -41,6 +42,7 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+/* Títulos Padrão (Fundo Claro) */
 h1, h2, h3, h4, h5, h6 {
     line-height: 1.2;
     font-weight: 700;
@@ -56,6 +58,24 @@ a {
     text-decoration: none;
     color: inherit;
     transition: var(--transition-base);
+}
+
+/* ==========================================
+   CORREÇÃO DE CONTRASTE PARA FUNDOS ESCUROS
+   ========================================== */
+/* Se a seção tem fundo Navy, os textos devem ser claros */
+
+section.bg-navy h1,
+section.bg-navy h2,
+section.bg-navy h3,
+section.bg-navy h4,
+section.bg-navy h5,
+section.bg-navy h6 {
+    color: #ffffff !important;
+}
+
+section.bg-navy p {
+    color: var(--color-gray-300) !important;
 }
 
 /* Botões */
