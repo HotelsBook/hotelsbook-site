@@ -51,7 +51,13 @@
     navLinks.forEach(function (link) {
       const linkPath = link.getAttribute('href').split('/').pop();
       if (currentPath === linkPath) {
-        link.classList.add('text-navy', 'font-semibold', 'border-b-2', 'border-blue');
+        // Adiciona estilo de ativo: cor e negrito para TODOS
+        link.classList.add('text-navy', 'font-semibold');
+        
+        // ✅ Adiciona barra azul APENAS se NÃO for o botão "Contato"
+        if (!link.classList.contains('btn-contato')) {
+          link.classList.add('border-b-2', 'border-blue');
+        }
       }
     });
   }
@@ -99,20 +105,20 @@
   }
 
   // ==========================================
-  // 4. FORM HANDLING & VALIDATION
+  // 4. FORM HANDLING & VALIDATION (REAL SEND TO FORMSPREE)
   // ==========================================
   function initForms() {
     const forms = document.querySelectorAll('form');
 
     forms.forEach(function (form) {
       form.addEventListener('submit', async function (e) {
-        e.preventDefault();
+        e.preventDefault(); // Impede reload da página
 
         const submitBtn = form.querySelector('button[type="submit"]');
         const originalText = submitBtn.textContent;
         const originalClasses = submitBtn.className;
 
-        // Basic Validation
+        // Validação básica
         const requiredFields = form.querySelectorAll('[required]');
         let isValid = true;
         requiredFields.forEach(function (field) {
@@ -129,41 +135,50 @@
           return;
         }
 
-        // Loading State
+        // Estado de carregamento
         submitBtn.disabled = true;
         submitBtn.textContent = 'Enviando...';
         submitBtn.classList.add('opacity-75', 'cursor-not-allowed');
 
         try {
-          // Simulate network request (replace with actual API endpoint when ready)
-          await new Promise(function (resolve) {
-            setTimeout(resolve, 1500);
+          // Prepara os dados para envio real ao Formspree
+          const formData = new FormData(form);
+
+          // Envia via fetch para o endpoint do Formspree
+          const response = await fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+              'Accept': 'application/json'
+            }
           });
 
-          // Success State
-          submitBtn.textContent = 'Mensagem enviada com sucesso!';
-          submitBtn.classList.remove('bg-navy', 'opacity-75', 'cursor-not-allowed');
-          submitBtn.classList.add('bg-green-600');
-          form.reset();
-
-          setTimeout(function () {
-            submitBtn.disabled = false;
+          if (response.ok) {
+            // ✅ SUCESSO: Formulário enviado ao Formspree
+            submitBtn.textContent = 'Enviado com sucesso!';
+            submitBtn.classList.remove('bg-navy', 'opacity-75', 'cursor-not-allowed');
+            submitBtn.classList.add('bg-green-600', 'border-green-600');
+            form.reset();
+          } else {
+            // ❌ Erro retornado pelo Formspree
+            const data = await response.json();
+            alert('Erro: ' + (data.errors ? data.errors[0].message : 'Tente novamente.'));
             submitBtn.textContent = originalText;
-            submitBtn.className = originalClasses;
-          }, 3000);
+          }
 
         } catch (error) {
+          // ❌ Erro de rede ou conexão
           console.error('Form submission error:', error);
-          submitBtn.textContent = 'Erro ao enviar. Tente novamente.';
-          submitBtn.classList.remove('bg-navy', 'opacity-75');
-          submitBtn.classList.add('bg-red-600');
-
-          setTimeout(function () {
-            submitBtn.disabled = false;
-            submitBtn.textContent = originalText;
-            submitBtn.className = originalClasses;
-          }, 3000);
+          alert('Erro ao conectar com o servidor. Verifique sua internet.');
+          submitBtn.textContent = originalText;
         }
+
+        // Reseta o botão após 3 segundos
+        setTimeout(function () {
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalText;
+          submitBtn.className = originalClasses;
+        }, 3000);
       });
     });
   }
