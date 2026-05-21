@@ -2,33 +2,83 @@
 # robots.txt - HotelsBook
 # Instruções para motores de busca
 # Última atualização: Maio 2026
+# Domínio: https://hotelsbook.com.br
 # ==========================================
 
-# Permitir rastreamento para todos os bots
+# ==========================================
+# REGRAS GERAIS
+# ==========================================
 User-agent: *
 Allow: /
 
-# Bloquear arquivos desnecessários para SEO (opcional)
+# Bloquear arquivos técnicos e de configuração
 Disallow: /*.json$
+Disallow: /*.map$
 Disallow: /assets/js/
 Disallow: /assets/css/
+Disallow: /assets/images/*.psd$
+Disallow: /assets/images/*.ai$
 Disallow: /*?*
 
-# Permitir Googlebot com crawl-delay suave (opcional)
+# Bloquear paths internos ou em desenvolvimento
+Disallow: /draft/
+Disallow: /temp/
+Disallow: /backup/
+
+# ==========================================
+# OTIMIZAÇÃO PARA GOOGLE
+# ==========================================
 User-agent: Googlebot
 Allow: /
 Crawl-delay: 1
 
-# Permitir Bingbot (opcional)
+# Permitir rastreamento de imagens para rich results
+User-agent: Googlebot-Image
+Allow: /assets/images/
+Disallow: /assets/images/icons/
+
+# ==========================================
+# OUTROS BOTS IMPORTANTES
+# ==========================================
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 1
 
-# Sitemap para indexação eficiente
+User-agent: DuckDuckBot
+Allow: /
+
+# ==========================================
+# BOTS QUE PODEM SER BLOQUEADOS (OPCIONAL)
+# ==========================================
+# Bloquear bots de scraping agressivo
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+# Bloquear bots de IA de treinamento (se desejar)
+# Observação: muitos ignoram robots.txt, mas é boa prática declarar
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+# ==========================================
+# SITEMAP
+# ==========================================
 Sitemap: https://hotelsbook.com.br/sitemap.xml
 
 # ==========================================
-# Notas:
-# - "/" = permite acesso a todo o site
-# - "$" = fim da URL (para bloquear extensões específicas)
-# - "?" = parâmetros de query string
+# NOTAS TÉCNICAS
+# ==========================================
+# • "/" = permite acesso a todo o site
+# • "$" = fim da URL (para bloquear extensões específicas)
+# • "?" = parâmetros de query string (evita duplicação por UTM)
+# • Crawl-delay: sugere pausa entre requisições (nem todos respeitam)
+# • Este arquivo AFETA APENAS hotelsbook.com.br, não github.com
 # ==========================================

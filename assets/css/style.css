@@ -267,3 +267,20 @@ footer a:hover {
     h1 { font-size: 2.5rem; }
     h2 { font-size: 2rem; }
 }
+
+/* Dropdown Menu para Hospped */
+.group:hover > .absolute {
+  transform: translateY(0);
+}
+
+/* Ajuste para o dropdown não quebrar no mobile */
+@media (max-width: 768px) {
+  .group > .absolute {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 0;
+  }
+}
