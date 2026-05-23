@@ -105,7 +105,44 @@
   }
 
   // ==========================================
-  // 4. FORM HANDLING & VALIDATION (REAL SEND TO FORMSPREE)
+  // 4. HOSPPED SUB-NAVBAR SCROLL EFFECT (NOVO)
+  // ==========================================
+  function initHosppedSubnavScroll() {
+    const subnav = document.getElementById('hospped-subnav');
+    if (!subnav) return; // Só executa nas páginas Hospped
+
+    let lastScroll = 0;
+    let ticking = false;
+
+    window.addEventListener('scroll', function () {
+      if (!ticking) {
+        window.requestAnimationFrame(function () {
+          const currentScroll = window.pageYOffset || 0;
+          
+          // Só ativa após rolar 100px (para não esconder no topo)
+          if (currentScroll > 100) {
+            if (currentScroll > lastScroll) {
+              // Rolando para BAIXO: esconde sub-navbar
+              subnav.classList.add('-translate-y-full');
+            } else {
+              // Rolando para CIMA: mostra sub-navbar
+              subnav.classList.remove('-translate-y-full');
+            }
+          } else {
+            // No topo: sempre visível
+            subnav.classList.remove('-translate-y-full');
+          }
+          
+          lastScroll = currentScroll;
+          ticking = false;
+        });
+        ticking = true;
+      }
+    });
+  }
+
+  // ==========================================
+  // 5. FORM HANDLING & VALIDATION (REAL SEND TO FORMSPREE)
   // ==========================================
   function initForms() {
     const forms = document.querySelectorAll('form');
@@ -184,7 +221,7 @@
   }
 
   // ==========================================
-  // 5. DYNAMIC COPYRIGHT YEAR
+  // 6. DYNAMIC COPYRIGHT YEAR
   // ==========================================
   function initDynamicYear() {
     const yearElements = document.querySelectorAll('.current-year');
@@ -201,6 +238,7 @@
     initMobileMenu();
     initActiveNavLink();
     initHeaderScroll();
+    initHosppedSubnavScroll(); // ✅ Nova função adicionada
     initForms();
     initDynamicYear();
   }
