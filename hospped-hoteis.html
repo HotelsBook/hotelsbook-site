@@ -94,8 +94,9 @@
 
 <body class="font-sans text-gray-700 antialiased bg-white">
 
-  <!-- NAVIGATION -->
+  <!-- NAVIGATION (HEADER PRINCIPAL + SUB-NAVBAR JUNTOS) -->
   <header class="fixed w-full z-50 bg-white/95 backdrop-blur-md shadow-sm transition-all duration-300">
+    <!-- Header Principal -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-20">
         <div class="flex-shrink-0 flex items-center">
@@ -108,7 +109,7 @@
           <a href="index.html" class="nav-link text-gray-600 hover:text-navy transition">Início</a>
           <a href="sobre.html" class="nav-link text-gray-600 hover:text-navy transition">Sobre Nós</a>
           <a href="analytics.html" class="nav-link text-gray-600 hover:text-navy transition">Analytics</a>
-          <a href="hospped.html" class="nav-link text-gray-600 hover:text-navy transition">Hospped</a>
+          <a href="hospped.html" class="nav-link text-gray-600 hover:text-navy transition border-b-2 border-blue font-semibold">Hospped</a>
           <a href="parcerias.html" class="nav-link text-gray-600 hover:text-navy transition">Parcerias</a>
           <a href="contato.html" class="nav-link btn-contato text-gray-600 hover:text-navy transition">Contato</a>
         </nav>
@@ -126,46 +127,37 @@
         <a href="index.html" class="nav-link block py-2 text-gray-600">Início</a>
         <a href="sobre.html" class="nav-link block py-2 text-gray-600">Sobre Nós</a>
         <a href="analytics.html" class="nav-link block py-2 text-gray-600">Analytics</a>
-        <a href="hospped.html" class="nav-link block py-2 text-gray-600">Hospped</a>
+        <a href="hospped.html" class="nav-link block py-2 text-gray-600 font-medium border-b-2 border-blue">Hospped</a>
         <a href="parcerias.html" class="nav-link block py-2 text-gray-600">Parcerias</a>
         <a href="contato.html" class="nav-link btn-contato block py-2 text-gray-600">Contato</a>
       </nav>
     </div>
+
+    <!-- SUB-NAVBAR HOSPPED (GRUDADA NO HEADER - LINKS À ESQUERDA) -->
+    <nav id="hospped-subnav" class="border-t border-gray-200 bg-white/95 backdrop-blur-md transition-transform duration-300 ease-in-out">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center h-14">
+          <div class="flex items-center space-x-1 overflow-x-auto">
+            <a href="hospped.html" class="px-4 py-2 text-sm font-medium rounded-lg transition whitespace-nowrap text-gray-600 hover:text-navy hover:bg-gray-100">
+              Visão Geral
+            </a>
+            <a href="hospped-corporativo.html" class="px-4 py-2 text-sm font-medium rounded-lg transition whitespace-nowrap text-gray-600 hover:text-navy hover:bg-gray-100">
+              Viagens Corporativas
+            </a>
+            <a href="hospped-academico.html" class="px-4 py-2 text-sm font-medium rounded-lg transition whitespace-nowrap text-gray-600 hover:text-navy hover:bg-gray-100">
+              Mobilidade Acadêmica
+            </a>
+            <a href="hospped-hoteis.html" class="px-4 py-2 text-sm font-medium rounded-lg transition whitespace-nowrap bg-blue text-white">
+              Cadastrar Hotel
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
   </header>
 
-  <!-- SUB-NAVBAR HOSPPED (CORRIGIDO: top-20 para ficar abaixo do header) -->
-  <nav class="sticky top-20 z-40 bg-white shadow-md border-b border-gray-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16">
-        <div class="flex items-center space-x-1 overflow-x-auto">
-          <a href="hospped.html"
-            class="px-4 py-2 text-sm font-medium rounded-lg transition whitespace-nowrap text-gray-600 hover:text-navy hover:bg-gray-100">
-            Visão Geral
-          </a>
-          <a href="hospped-corporativo.html"
-            class="px-4 py-2 text-sm font-medium rounded-lg transition whitespace-nowrap text-gray-600 hover:text-navy hover:bg-gray-100">
-            Viagens Corporativas
-          </a>
-          <a href="hospped-academico.html"
-            class="px-4 py-2 text-sm font-medium rounded-lg transition whitespace-nowrap text-gray-600 hover:text-navy hover:bg-gray-100">
-            Mobilidade Acadêmica
-          </a>
-          <a href="hospped-hoteis.html"
-            class="px-4 py-2 text-sm font-medium rounded-lg transition whitespace-nowrap bg-blue text-white">
-            Cadastrar Hotel
-          </a>
-        </div>
-
-        <a href="contato.html?assunto=hospped"
-          class="hidden md:inline-flex items-center px-4 py-2 text-sm font-medium text-blue bg-blue/10 hover:bg-blue/20 rounded-lg transition ml-4 whitespace-nowrap">
-          Falar com Especialista →
-        </a>
-      </div>
-    </div>
-  </nav>
-
   <!-- HERO SECTION -->
-  <section class="relative gradient-hoteis text-white pt-32 pb-24 lg:pt-48 lg:pb-32 overflow-hidden">
+  <section class="relative gradient-hoteis text-white pt-40 pb-24 lg:pt-52 lg:pb-32 overflow-hidden">
     <div class="absolute inset-0 z-0 opacity-20">
       <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1170&q=80"
         alt="Recepção de hotel brasileiro moderno" class="w-full h-full object-cover" loading="lazy">
@@ -542,6 +534,45 @@
 
   <!-- JavaScript -->
   <script src="assets/js/main.js"></script>
+  
+  <!-- SCROLL INTELIGENTE PARA SUB-NAVBAR HOSPPED (INLINE PARA GARANTIR FUNCIONAMENTO) -->
+  <script>
+    (function() {
+      'use strict';
+      
+      const subnav = document.getElementById('hospped-subnav');
+      if (!subnav) return;
+      
+      let lastScroll = 0;
+      let ticking = false;
+      
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(function() {
+            const currentScroll = window.pageYOffset || 0;
+            
+            // Só ativa após rolar 100px (para não esconder no topo)
+            if (currentScroll > 100) {
+              if (currentScroll > lastScroll) {
+                // Rolando para BAIXO: esconde sub-navbar
+                subnav.style.transform = 'translateY(-100%)';
+              } else {
+                // Rolando para CIMA: mostra sub-navbar
+                subnav.style.transform = 'translateY(0)';
+              }
+            } else {
+              // No topo: sempre visível
+              subnav.style.transform = 'translateY(0)';
+            }
+            
+            lastScroll = currentScroll;
+            ticking = false;
+          });
+          ticking = true;
+        }
+      });
+    })();
+  </script>
 </body>
 
 </html>
