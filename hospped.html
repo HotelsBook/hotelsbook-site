@@ -57,7 +57,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PXKZXNRNMKQ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-PXKZXNRNMKQ', { 'anonymize_ip': true });
   </script>
@@ -92,7 +92,7 @@
 
 <body class="font-sans text-gray-700 antialiased bg-white">
 
-  <!-- NAVIGATION -->
+  <!-- NAVIGATION (HEADER PRINCIPAL) -->
   <header class="fixed w-full z-50 bg-white/95 backdrop-blur-md shadow-sm transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-20">
@@ -103,17 +103,14 @@
         </div>
 
         <nav class="hidden md:flex space-x-8 items-center">
-          <!-- Links de navegação: JS adicionará 'active' automaticamente -->
           <a href="index.html" class="nav-link text-gray-600 hover:text-navy transition">Início</a>
           <a href="sobre.html" class="nav-link text-gray-600 hover:text-navy transition">Sobre Nós</a>
           <a href="analytics.html" class="nav-link text-gray-600 hover:text-navy transition">Analytics</a>
           <a href="hospped.html" class="nav-link text-gray-600 hover:text-navy transition">Hospped</a>
           <a href="parcerias.html" class="nav-link text-gray-600 hover:text-navy transition">Parcerias</a>
-          <!-- ✅ Contato com classe btn-contato para manter estilo de botão -->
           <a href="contato.html" class="nav-link btn-contato text-gray-600 hover:text-navy transition">Contato</a>
         </nav>
 
-        <!-- Mobile Menu Button -->
         <div class="md:hidden flex items-center">
           <button class="mobile-menu-toggle text-gray-600 hover:text-navy focus:outline-none" aria-label="Menu">
             <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -122,39 +119,6 @@
           </button>
         </div>
       </div>
-
-      <!-- SUB-NAVBAR HOSPPED -->
-      <nav class="sticky top-0 z-40 bg-white shadow-md border-b border-gray-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="flex items-center justify-between h-16">
-            <!-- Links de Navegação -->
-            <div class="flex items-center space-x-1 overflow-x-auto">
-              <a href="hospped.html" class="px-4 py-2 text-sm font-medium rounded-lg transition whitespace-nowrap 
-          {{ page == 'geral' ? 'bg-blue text-white' : 'text-gray-600 hover:text-navy hover:bg-gray-100' }}">
-                Visão Geral
-              </a>
-              <a href="hospped-corporativo.html" class="px-4 py-2 text-sm font-medium rounded-lg transition whitespace-nowrap
-          {{ page == 'corporativo' ? 'bg-blue text-white' : 'text-gray-600 hover:text-navy hover:bg-gray-100' }}">
-                Viagens Corporativas
-              </a>
-              <a href="hospped-academico.html" class="px-4 py-2 text-sm font-medium rounded-lg transition whitespace-nowrap
-          {{ page == 'academico' ? 'bg-blue text-white' : 'text-gray-600 hover:text-navy hover:bg-gray-100' }}">
-                Mobilidade Acadêmica
-              </a>
-              <a href="hospped-hoteis.html" class="px-4 py-2 text-sm font-medium rounded-lg transition whitespace-nowrap
-          {{ page == 'hoteis' ? 'bg-blue text-white' : 'text-gray-600 hover:text-navy hover:bg-gray-100' }}">
-                Cadastrar Hotel
-              </a>
-            </div>
-
-            <!-- Botão CTA -->
-            <a href="contato.html?assunto=hospped"
-              class="hidden md:inline-flex items-center px-4 py-2 text-sm font-medium text-blue bg-blue/10 hover:bg-blue/20 rounded-lg transition ml-4 whitespace-nowrap">
-              Falar com Especialista →
-            </a>
-          </div>
-        </div>
-      </nav>
 
       <!-- Mobile Menu -->
       <nav class="nav-menu hidden md:hidden">
@@ -168,6 +132,34 @@
     </div>
   </header>
 
+  <!-- SUB-NAVBAR HOSPPED (FORA DO HEADER - CORREÇÃO DE ESTRUTURA) -->
+  <nav class="sticky top-20 z-40 bg-white shadow-md border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center space-x-1 overflow-x-auto">
+          <!-- Visão Geral (ATIVO) -->
+          <a href="hospped.html" class="px-4 py-2 text-sm font-medium rounded-lg transition whitespace-nowrap bg-blue text-white">
+            Visão Geral
+          </a>
+          <!-- Links Inativos -->
+          <a href="hospped-corporativo.html" class="px-4 py-2 text-sm font-medium rounded-lg transition whitespace-nowrap text-gray-600 hover:text-navy hover:bg-gray-100">
+            Viagens Corporativas
+          </a>
+          <a href="hospped-academico.html" class="px-4 py-2 text-sm font-medium rounded-lg transition whitespace-nowrap text-gray-600 hover:text-navy hover:bg-gray-100">
+            Mobilidade Acadêmica
+          </a>
+          <a href="hospped-hoteis.html" class="px-4 py-2 text-sm font-medium rounded-lg transition whitespace-nowrap text-gray-600 hover:text-navy hover:bg-gray-100">
+            Cadastrar Hotel
+          </a>
+        </div>
+        
+        <a href="contato.html?assunto=hospped" class="hidden md:inline-flex items-center px-4 py-2 text-sm font-medium text-blue bg-blue/10 hover:bg-blue/20 rounded-lg transition ml-4 whitespace-nowrap">
+          Falar com Especialista →
+        </a>
+      </div>
+    </div>
+  </nav>
+
   <!-- HERO SECTION -->
   <section class="pt-32 pb-20 bg-gradient-to-br from-navy via-navy-light to-blue text-white overflow-hidden relative">
     <div class="absolute inset-0 opacity-10">
@@ -176,7 +168,7 @@
       </div>
     </div>
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
         <div class="mb-12 lg:mb-0">
           <div
@@ -204,10 +196,6 @@
         </div>
 
         <div class="relative">
-          <!-- 
-            💡 PROMPT PARA IA - IMAGEM DE VIAGENS:
-            "Business professionals walking through a modern airport terminal with luggage, blurred background showing departure boards, focus on confident movement, cinematic lighting, Brazilian business context, photorealistic, high quality, 16:9 aspect ratio."
-          -->
           <div class="media-container rounded-2xl shadow-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-6">
             <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1174&q=80"
               alt="Viagens Corporativas" class="rounded-lg w-full" loading="lazy">
@@ -257,10 +245,6 @@
             <h3 class="text-2xl font-bold text-navy">Viagens Corporativas</h3>
           </div>
 
-          <!-- 
-            💡 PROMPT PARA IA - IMAGEM CORPORATIVA:
-            "Close up of hands typing on a laptop keyboard showing a travel booking platform, office desk environment, coffee cup, blurred modern office background, professional photography, sharp focus, corporate tone."
-          -->
           <div class="media-container rounded-xl mb-6 overflow-hidden h-48">
             <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1074&q=80"
               alt="Viagens Corporativas" class="w-full h-full object-cover" loading="lazy">
@@ -317,10 +301,6 @@
             <h3 class="text-2xl font-bold text-navy">Mobilidade Acadêmica</h3>
           </div>
 
-          <!-- 
-            💡 PROMPT PARA IA - IMAGEM ACADÊMICA:
-            "Group of university students with backpacks walking on a modern campus, sunny day, diverse group, smiling, focus on interaction, Brazilian university context, photorealistic, high quality, 16:9 aspect ratio."
-          -->
           <div class="media-container rounded-xl mb-6 overflow-hidden h-48">
             <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1170&q=80"
               alt="Mobilidade Acadêmica" class="w-full h-full object-cover" loading="lazy">
@@ -380,7 +360,6 @@
           <div
             class="w-16 h-16 bg-navy text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4 z-10 relative">
             1</div>
-          <!-- Connector Line (Desktop) -->
           <div class="hidden md:block absolute top-8 left-1/2 w-full h-1 bg-gray-200 -z-0"></div>
           <h3 class="font-bold text-navy mb-2">Solicitação</h3>
           <p class="text-gray-600 text-sm">Sua equipe solicita a viagem via plataforma, e-mail ou WhatsApp, informando
