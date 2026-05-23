@@ -132,25 +132,29 @@
     </div>
   </header>
 
-  <!-- SUB-NAVBAR HOSPPED (FLUTUANTE, SEM CTA, COM SCROLL INTELIGENTE) -->
+  <!-- SUB-NAVBAR HOSPPED (OTIMIZADA - LARGURA REDUZIDA + CTA À DIREITA) -->
   <nav id="hospped-subnav" class="fixed top-24 left-0 right-0 z-40 px-4 sm:px-6 lg:px-8 pointer-events-none transition-transform duration-300 ease-in-out transform">
-    <div class="max-w-7xl mx-auto">
+    <div class="max-w-5xl mx-auto">
       <div class="bg-white/95 backdrop-blur-md rounded-2xl shadow-lg border border-gray-200/50 pointer-events-auto">
-        <div class="flex items-center justify-center h-14 px-6">
+        <div class="flex items-center justify-between h-14 px-6">
           <div class="flex items-center space-x-1 overflow-x-auto scrollbar-hide">
-            <a href="hospped.html" class="px-4 py-2 text-sm font-medium rounded-xl transition whitespace-nowrap bg-gradient-to-r from-blue to-blue-light text-white shadow-sm">
+            <a href="hospped.html" class="px-5 py-2 text-sm font-medium rounded-xl transition whitespace-nowrap bg-gradient-to-r from-blue to-blue-light text-white shadow-sm">
               Visão Geral
             </a>
-            <a href="hospped-corporativo.html" class="px-4 py-2 text-sm font-medium rounded-xl transition whitespace-nowrap text-gray-600 hover:text-navy hover:bg-blue-50">
+            <a href="hospped-corporativo.html" class="px-5 py-2 text-sm font-medium rounded-xl transition whitespace-nowrap text-gray-600 hover:text-navy hover:bg-blue-50">
               Viagens Corporativas
             </a>
-            <a href="hospped-academico.html" class="px-4 py-2 text-sm font-medium rounded-xl transition whitespace-nowrap text-gray-600 hover:text-navy hover:bg-blue-50">
+            <a href="hospped-academico.html" class="px-5 py-2 text-sm font-medium rounded-xl transition whitespace-nowrap text-gray-600 hover:text-navy hover:bg-blue-50">
               Mobilidade Acadêmica
             </a>
-            <a href="hospped-hoteis.html" class="px-4 py-2 text-sm font-medium rounded-xl transition whitespace-nowrap text-gray-600 hover:text-navy hover:bg-blue-50">
+            <a href="hospped-hoteis.html" class="px-5 py-2 text-sm font-medium rounded-xl transition whitespace-nowrap text-gray-600 hover:text-navy hover:bg-blue-50">
               Cadastrar Hotel
             </a>
           </div>
+          
+          <a href="contato.html?assunto=hospped" class="hidden md:inline-flex items-center px-5 py-2 text-sm font-semibold text-white bg-gradient-to-r from-blue to-blue-light rounded-xl hover:shadow-md transition whitespace-nowrap">
+            Falar com Especialista →
+          </a>
         </div>
       </div>
     </div>
@@ -620,43 +624,6 @@
         gtag('consent', 'update', { 'analytics_storage': 'denied' });
       }
     });
-
-    // ==========================================
-    // SCROLL INTELIGENTE PARA SUB-NAVBAR HOSPPED
-    // ==========================================
-    (function() {
-      const subnav = document.getElementById('hospped-subnav');
-      if (!subnav) return;
-
-      let lastScroll = 0;
-      let ticking = false;
-
-      window.addEventListener('scroll', function() {
-        if (!ticking) {
-          window.requestAnimationFrame(function() {
-            const currentScroll = window.pageYOffset || 0;
-            
-            // Só ativa após rolar 100px (para não esconder no topo)
-            if (currentScroll > 100) {
-              if (currentScroll > lastScroll) {
-                // Rolando para BAIXO: esconde sub-navbar
-                subnav.classList.add('-translate-y-full');
-              } else {
-                // Rolando para CIMA: mostra sub-navbar
-                subnav.classList.remove('-translate-y-full');
-              }
-            } else {
-              // No topo: sempre visível
-              subnav.classList.remove('-translate-y-full');
-            }
-            
-            lastScroll = currentScroll;
-            ticking = false;
-          });
-          ticking = true;
-        }
-      });
-    })();
   </script>
 </body>
 
