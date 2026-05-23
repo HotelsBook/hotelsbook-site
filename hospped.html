@@ -88,6 +88,19 @@
       }
     }
   </script>
+
+  <style>
+    /* Animação de entrada da sub-navbar */
+    #hospped-subnav {
+      opacity: 0;
+      transform: translateY(-10px);
+      transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+    }
+    #hospped-subnav.subnav-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
 </head>
 
 <body class="font-sans text-gray-700 antialiased bg-white">
@@ -131,7 +144,7 @@
       </nav>
     </div>
 
-    <!-- SUB-NAVBAR HOSPPED (GRUDADA NO HEADER - LINKS À ESQUERDA) -->
+    <!-- SUB-NAVBAR HOSPPED (GRUDADA NO HEADER - LINKS À ESQUERDA + ANIMAÇÃO DE ENTRADA) -->
     <nav id="hospped-subnav" class="border-t border-gray-200 bg-white/95 backdrop-blur-md transition-transform duration-300 ease-in-out">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center h-14">
@@ -626,6 +639,13 @@
       const subnav = document.getElementById('hospped-subnav');
       if (!subnav) return;
       
+      // Animação de entrada ao carregar a página
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          subnav.classList.add('subnav-visible');
+        }, 50); // Pequeno delay para garantir que o CSS foi aplicado
+      });
+      
       let lastScroll = 0;
       let ticking = false;
       
@@ -639,13 +659,16 @@
               if (currentScroll > lastScroll) {
                 // Rolando para BAIXO: esconde sub-navbar
                 subnav.style.transform = 'translateY(-100%)';
+                subnav.classList.remove('subnav-visible');
               } else {
                 // Rolando para CIMA: mostra sub-navbar
                 subnav.style.transform = 'translateY(0)';
+                subnav.classList.add('subnav-visible');
               }
             } else {
               // No topo: sempre visível
               subnav.style.transform = 'translateY(0)';
+              subnav.classList.add('subnav-visible');
             }
             
             lastScroll = currentScroll;
