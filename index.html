@@ -64,7 +64,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PXKZXNRNMKQ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-PXKZXNRNMKQ', { 'anonymize_ip': true });
   </script>
@@ -120,7 +120,7 @@
 
 <body class="font-sans text-gray-700 antialiased bg-white">
 
-  <!-- NAVIGATION (Usando <header> para compatibilidade com JS de scroll) -->
+  <!-- NAVIGATION -->
   <header class="fixed w-full z-50 bg-white/95 backdrop-blur-md shadow-sm transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-20">
@@ -129,22 +129,12 @@
           Hotels<span class="text-blue">Book</span>
         </a>
 
-        <!-- Desktop Menu -->
+        <!-- Desktop Menu (SEM DROPDOWN - Hospped é link direto) -->
         <nav class="hidden md:flex items-center space-x-8">
           <a href="index.html" class="nav-link text-gray-600 hover:text-navy transition">Início</a>
           <a href="sobre.html" class="nav-link text-gray-600 hover:text-navy transition">Sobre Nós</a>
           <a href="analytics.html" class="nav-link text-gray-600 hover:text-navy transition">Analytics</a>
-
-          <!-- Hospped Dropdown -->
-          <div class="relative group">
-            <a href="hospped.html" class="nav-link text-gray-600 hover:text-navy transition flex items-center gap-1">
-              Hospped
-              <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor"
-                viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </a>
-
+          <a href="hospped.html" class="nav-link text-gray-600 hover:text-navy transition">Hospped</a>
           <a href="parcerias.html" class="nav-link text-gray-600 hover:text-navy transition">Parcerias</a>
           <a href="contato.html"
             class="nav-link btn-contato text-white px-5 py-2.5 rounded-lg font-medium hover:bg-navy-light transition">Contato</a>
@@ -172,23 +162,7 @@
     </div>
   </header>
 
-  <!-- Mobile Menu -->
-  <nav class="nav-menu hidden md:hidden">
-    <a href="index.html" class="nav-link block py-2 text-gray-600">Início</a>
-    <a href="sobre.html" class="nav-link block py-2 text-gray-600">Sobre Nós</a>
-    <a href="analytics.html" class="nav-link block py-2 text-gray-600">Analytics</a>
-    <a href="hospped.html" class="nav-link block py-2 text-gray-600">Hospped</a>
-    <a href="parcerias.html" class="nav-link block py-2 text-gray-600">Parcerias</a>
-    <a href="contato.html" class="nav-link btn-contato block py-2 text-gray-600">Contato</a>
-  </nav>
-  </div>
-  </header>
-
   <!-- HERO SECTION -->
-  <!-- 
-    💡 DICA DE IA PARA IMAGEM DE FUNDO:
-    Prompt: "Cinematic wide shot of a modern hotel lobby in Brazil, soft natural lighting coming from large windows, blurred background to emphasize depth, professional interior design, 8k resolution, photorealistic, no people, architectural photography style."
-  -->
   <section class="relative bg-navy text-white pt-32 pb-24 lg:pt-48 lg:pb-32 overflow-hidden">
     <!-- Imagem de Fundo (Placeholder) -->
     <div class="absolute inset-0 z-0 opacity-20">
@@ -242,10 +216,6 @@
           </a>
         </div>
         <div class="mt-10 lg:mt-0 relative">
-          <!-- 
-             💡 DICA DE IA PARA IMAGEM DA EQUIPE:
-             Prompt: "Group of 4 diverse professionals in a modern office meeting room in Brazil, collaborating around a table with laptops and documents, casual business attire, natural lighting, candid shot, high quality, photorealistic."
-          -->
           <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1170&q=80"
             alt="Equipe HotelsBook" class="rounded-xl shadow-2xl w-full object-cover h-80 lg:h-96" loading="lazy">
           <div class="absolute -bottom-6 -right-6 bg-navy p-6 rounded-lg shadow-lg hidden md:block">
@@ -271,7 +241,6 @@
         <!-- Card Analytics -->
         <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 group">
           <div class="h-48 overflow-hidden bg-navy relative">
-            <!-- Prompt IA: "Data visualization dashboard on a tablet screen, hotel charts and graphs, blue and dark theme, isometric 3d style, clean UI." -->
             <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1170&q=80"
               class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition duration-500"
               alt="Analytics" loading="lazy">
@@ -304,7 +273,6 @@
         <!-- Card Hospped -->
         <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 group">
           <div class="h-48 overflow-hidden bg-blue relative">
-            <!-- Prompt IA: "Modern airport terminal interior, blurred business travelers walking, focus on luggage and smartphone screen showing booking app, bright lighting, professional photography." -->
             <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1174&q=80"
               class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition duration-500" alt="Hospped"
               loading="lazy">
