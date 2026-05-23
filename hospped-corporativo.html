@@ -134,7 +134,7 @@
   </header>
 
   <!-- SUB-NAVBAR HOSPPED (ESTILO HOTEIS - LARGURA TOTAL + CTA) -->
-  <nav id="hospped-subnav" class="fixed top-20 left-0 right-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-200 transition-transform duration-300 ease-in-out transform">
+  <nav id="hospped-subnav" class="fixed top-20 left-0 right-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-200 transition-transform duration-300 ease-in-out">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-14">
         <div class="flex items-center space-x-1 overflow-x-auto">
@@ -470,6 +470,45 @@
 
   <!-- JavaScript -->
   <script src="assets/js/main.js"></script>
+  
+  <!-- SCROLL INTELIGENTE PARA SUB-NAVBAR HOSPPED (INLINE PARA GARANTIR FUNCIONAMENTO) -->
+  <script>
+    (function() {
+      'use strict';
+      
+      const subnav = document.getElementById('hospped-subnav');
+      if (!subnav) return;
+      
+      let lastScroll = 0;
+      let ticking = false;
+      
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(function() {
+            const currentScroll = window.pageYOffset || 0;
+            
+            // Só ativa após rolar 100px (para não esconder no topo)
+            if (currentScroll > 100) {
+              if (currentScroll > lastScroll) {
+                // Rolando para BAIXO: esconde sub-navbar
+                subnav.style.transform = 'translateY(-100%)';
+              } else {
+                // Rolando para CIMA: mostra sub-navbar
+                subnav.style.transform = 'translateY(0)';
+              }
+            } else {
+              // No topo: sempre visível
+              subnav.style.transform = 'translateY(0)';
+            }
+            
+            lastScroll = currentScroll;
+            ticking = false;
+          });
+          ticking = true;
+        }
+      });
+    })();
+  </script>
 </body>
 
 </html>
