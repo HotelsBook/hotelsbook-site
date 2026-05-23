@@ -108,7 +108,7 @@
           <a href="index.html" class="nav-link text-gray-600 hover:text-navy transition">Início</a>
           <a href="sobre.html" class="nav-link text-gray-600 hover:text-navy transition">Sobre Nós</a>
           <a href="analytics.html" class="nav-link text-gray-600 hover:text-navy transition">Analytics</a>
-          <a href="hospped.html" class="nav-link text-gray-600 hover:text-navy transition">Hospped</a>
+          <a href="hospped.html" class="nav-link text-gray-600 hover:text-navy transition border-b-2 border-blue font-semibold">Hospped</a>
           <a href="parcerias.html" class="nav-link text-gray-600 hover:text-navy transition">Parcerias</a>
           <a href="contato.html" class="nav-link btn-contato text-gray-600 hover:text-navy transition">Contato</a>
         </nav>
@@ -126,39 +126,41 @@
         <a href="index.html" class="nav-link block py-2 text-gray-600">Início</a>
         <a href="sobre.html" class="nav-link block py-2 text-gray-600">Sobre Nós</a>
         <a href="analytics.html" class="nav-link block py-2 text-gray-600">Analytics</a>
-        <a href="hospped.html" class="nav-link block py-2 text-gray-600">Hospped</a>
+        <a href="hospped.html" class="nav-link block py-2 text-gray-600 font-medium border-b-2 border-blue">Hospped</a>
         <a href="parcerias.html" class="nav-link block py-2 text-gray-600">Parcerias</a>
         <a href="contato.html" class="nav-link btn-contato block py-2 text-gray-600">Contato</a>
       </nav>
     </div>
   </header>
 
-  <!-- SUB-NAVBAR HOSPPED (SEM CTA, CENTRALIZADA, COM SCROLL INTELIGENTE) -->
-  <nav id="hospped-subnav" class="fixed top-24 left-0 right-0 z-40 px-4 sm:px-6 lg:px-8 pointer-events-none transition-transform duration-300 ease-in-out transform">
-    <div class="max-w-5xl mx-auto">
-      <div class="bg-white/95 backdrop-blur-md rounded-2xl shadow-lg border border-gray-200/50 pointer-events-auto">
-        <div class="flex items-center justify-center h-14 px-6">
-          <div class="flex items-center space-x-1 overflow-x-auto scrollbar-hide">
-            <a href="hospped.html" class="px-5 py-2 text-sm font-medium rounded-xl transition whitespace-nowrap text-gray-600 hover:text-navy hover:bg-blue-50">
-              Visão Geral
-            </a>
-            <a href="hospped-corporativo.html" class="px-5 py-2 text-sm font-medium rounded-xl transition whitespace-nowrap bg-gradient-to-r from-blue to-blue-light text-white shadow-sm">
-              Viagens Corporativas
-            </a>
-            <a href="hospped-academico.html" class="px-5 py-2 text-sm font-medium rounded-xl transition whitespace-nowrap text-gray-600 hover:text-navy hover:bg-blue-50">
-              Mobilidade Acadêmica
-            </a>
-            <a href="hospped-hoteis.html" class="px-5 py-2 text-sm font-medium rounded-xl transition whitespace-nowrap text-gray-600 hover:text-navy hover:bg-blue-50">
-              Cadastrar Hotel
-            </a>
-          </div>
+  <!-- SUB-NAVBAR HOSPPED (ESTILO HOTEIS - LARGURA TOTAL + CTA) -->
+  <nav id="hospped-subnav" class="fixed top-20 left-0 right-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-200 transition-transform duration-300 ease-in-out transform">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-14">
+        <div class="flex items-center space-x-1 overflow-x-auto">
+          <a href="hospped.html" class="px-4 py-2 text-sm font-medium rounded-lg transition whitespace-nowrap text-gray-600 hover:text-navy hover:bg-gray-100">
+            Visão Geral
+          </a>
+          <a href="hospped-corporativo.html" class="px-4 py-2 text-sm font-medium rounded-lg transition whitespace-nowrap bg-blue text-white">
+            Viagens Corporativas
+          </a>
+          <a href="hospped-academico.html" class="px-4 py-2 text-sm font-medium rounded-lg transition whitespace-nowrap text-gray-600 hover:text-navy hover:bg-gray-100">
+            Mobilidade Acadêmica
+          </a>
+          <a href="hospped-hoteis.html" class="px-4 py-2 text-sm font-medium rounded-lg transition whitespace-nowrap text-gray-600 hover:text-navy hover:bg-gray-100">
+            Cadastrar Hotel
+          </a>
         </div>
+        
+        <a href="contato.html?assunto=hospped" class="hidden md:inline-flex items-center px-4 py-2 text-sm font-medium text-blue hover:bg-blue-50 rounded-lg transition whitespace-nowrap">
+          Falar com Especialista →
+        </a>
       </div>
     </div>
   </nav>
 
   <!-- HERO SECTION -->
-  <section class="relative gradient-hospped text-white pt-48 pb-24 lg:pt-48 lg:pb-32 overflow-hidden">
+  <section class="relative gradient-hospped text-white pt-36 pb-24 lg:pt-48 lg:pb-32 overflow-hidden">
     <div class="absolute inset-0 z-0 opacity-20">
       <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=2070&q=80"
         alt="Terminal aeroportuário moderno" class="w-full h-full object-cover" loading="lazy">
