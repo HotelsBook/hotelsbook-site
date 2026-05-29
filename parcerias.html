@@ -106,7 +106,7 @@
           <!-- Links de navegação: JS adicionará 'active' automaticamente -->
           <a href="index.html" class="nav-link text-gray-600 hover:text-navy transition">Início</a>
           <a href="sobre.html" class="nav-link text-gray-600 hover:text-navy transition">Sobre Nós</a>
-          <a href="analytics.html" class="nav-link text-gray-600 hover:text-navy transition">Analytics</a>
+          <a href="databeds.html" class="nav-link text-gray-600 hover:text-navy transition">DataBeds</a>
           <a href="hospped.html" class="nav-link text-gray-600 hover:text-navy transition">Hospped</a>
           <a href="parcerias.html" class="nav-link text-gray-600 hover:text-navy transition">Parcerias</a>
           <!-- ✅ Contato com classe btn-contato para manter estilo de botão -->
@@ -127,7 +127,7 @@
       <nav class="nav-menu hidden md:hidden">
         <a href="index.html" class="nav-link block py-2 text-gray-600">Início</a>
         <a href="sobre.html" class="nav-link block py-2 text-gray-600">Sobre Nós</a>
-        <a href="analytics.html" class="nav-link block py-2 text-gray-600">Analytics</a>
+        <a href="databeds.html" class="nav-link block py-2 text-gray-600">DataBeds</a>
         <a href="hospped.html" class="nav-link block py-2 text-gray-600">Hospped</a>
         <a href="parcerias.html" class="nav-link block py-2 text-gray-600">Parcerias</a>
         <a href="contato.html" class="nav-link btn-contato block py-2 text-gray-600">Contato</a>
@@ -237,7 +237,7 @@
           </div>
           <h3 class="text-xl font-bold text-navy mb-3">Revendedor de Tecnologia</h3>
           <p class="text-gray-600 mb-6 text-sm leading-relaxed">
-            Ideal para consultores hoteleiros, agências de turismo e escritórios de gestão que desejam revender a plataforma Analytics e ganhar recorrência.
+            Ideal para consultores hoteleiros, agências de turismo e escritórios de gestão que desejam revender a plataforma DataBeds e ganhar recorrência.
           </p>
           <ul class="space-y-2 mb-6 text-sm text-gray-600">
             <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Comissão recorrente sobre mensalidade</li>
@@ -424,7 +424,7 @@
         <div>
           <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Soluções</h4>
           <ul class="space-y-2 text-sm">
-            <li><a href="analytics.html" class="hover:text-white transition">Analytics</a></li>
+            <li><a href="databeds.html" class="hover:text-white transition">DataBeds</a></li>
             <li><a href="hospped.html" class="hover:text-white transition">Hospped</a></li>
             <li><a href="sobre.html" class="hover:text-white transition">Consultoria</a></li>
           </ul>
@@ -484,6 +484,7 @@
       localStorage.setItem('cookieConsent', 'accepted');
       banner.classList.add('hidden');
       if (typeof gtag === 'function') {
+        // ✅ CORREÇÃO: 'analytics_storage' é parâmetro oficial do Google Consent Mode
         gtag('consent', 'update', { 'analytics_storage': 'granted' });
       }
     });
@@ -492,6 +493,7 @@
       localStorage.setItem('cookieConsent', 'declined');
       banner.classList.add('hidden');
       if (typeof gtag === 'function') {
+        // ✅ CORREÇÃO: 'analytics_storage' é parâmetro oficial do Google Consent Mode
         gtag('consent', 'update', { 'analytics_storage': 'denied' });
       }
     });

@@ -186,6 +186,7 @@
       localStorage.setItem('cookieConsent', 'accepted');
       banner.classList.add('hidden');
       if (typeof gtag === 'function') {
+        // ✅ CORREÇÃO: 'analytics_storage' é parâmetro oficial do Google Consent Mode
         gtag('consent', 'update', { 'analytics_storage': 'granted' });
       }
     });
@@ -194,6 +195,7 @@
       localStorage.setItem('cookieConsent', 'declined');
       banner.classList.add('hidden');
       if (typeof gtag === 'function') {
+        // ✅ CORREÇÃO: 'analytics_storage' é parâmetro oficial do Google Consent Mode
         gtag('consent', 'update', { 'analytics_storage': 'denied' });
       }
     });

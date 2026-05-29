@@ -7,7 +7,7 @@
   
   <!-- SEO: Título e Descrição Únicos -->
   <title>Contato - HotelsBook | Fale com Nossa Equipe</title>
-  <meta name="description" content="Entre em contato com a HotelsBook. Consultoria estratégica, plataforma Analytics e gestão de viagens corporativas. Atendimento nacional via email e WhatsApp.">
+  <meta name="description" content="Entre em contato com a HotelsBook. Consultoria estratégica, plataforma DataBeds e gestão de viagens corporativas. Atendimento nacional via email e WhatsApp.">
   
   <!-- SEO: Open Graph / Facebook -->
   <meta property="og:type" content="website">
@@ -21,7 +21,7 @@
   <!-- SEO: Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Contato - HotelsBook | Fale com Nossa Equipe">
-  <meta name="twitter:description" content="Entre em contato com a HotelsBook. Consultoria estratégica, Analytics e gestão de viagens.">
+  <meta name="twitter:description" content="Entre em contato com a HotelsBook. Consultoria estratégica, análise de dados e gestão de viagens.">
   <meta name="twitter:image" content="https://hotelsbook.com.br/assets/images/og-contato.jpg">
   
   <!-- Favicon (Consolidado - sem duplicatas) -->
@@ -108,7 +108,7 @@
           <!-- Links de navegação: JS adicionará 'active' automaticamente -->
           <a href="index.html" class="nav-link text-gray-600 hover:text-navy transition">Início</a>
           <a href="sobre.html" class="nav-link text-gray-600 hover:text-navy transition">Sobre Nós</a>
-          <a href="analytics.html" class="nav-link text-gray-600 hover:text-navy transition">Analytics</a>
+          <a href="databeds.html" class="nav-link text-gray-600 hover:text-navy transition">DataBeds</a>
           <a href="hospped.html" class="nav-link text-gray-600 hover:text-navy transition">Hospped</a>
           <a href="parcerias.html" class="nav-link text-gray-600 hover:text-navy transition">Parcerias</a>
           <!-- ✅ Contato com classe btn-contato para manter estilo de botão -->
@@ -129,7 +129,7 @@
       <nav class="nav-menu hidden md:hidden">
         <a href="index.html" class="nav-link block py-2 text-gray-600">Início</a>
         <a href="sobre.html" class="nav-link block py-2 text-gray-600">Sobre Nós</a>
-        <a href="analytics.html" class="nav-link block py-2 text-gray-600">Analytics</a>
+        <a href="databeds.html" class="nav-link block py-2 text-gray-600">DataBeds</a>
         <a href="hospped.html" class="nav-link block py-2 text-gray-600">Hospped</a>
         <a href="parcerias.html" class="nav-link block py-2 text-gray-600">Parcerias</a>
         <a href="contato.html" class="nav-link btn-contato block py-2 text-gray-600">Contato</a>
@@ -270,7 +270,7 @@
                 <select id="assunto" name="assunto" required class="form-input bg-white">
                   <option value="" disabled selected>Selecione uma opção</option>
                   <option value="consultoria">Consultoria Estratégica</option>
-                  <option value="analytics">HotelsBook Analytics</option>
+                  <option value="databeds">HotelsBook DataBeds</option>
                   <option value="hospped">Hospped - Reservas Corporativas e Acadêmicas</option>
                   <option value="parceria">Proposta de Parceria</option>
                   <option value="carreira">Carreiras / RH</option>
@@ -352,7 +352,7 @@
         <div>
           <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Soluções</h4>
           <ul class="space-y-2 text-sm">
-            <li><a href="analytics.html" class="hover:text-white transition">Analytics</a></li>
+            <li><a href="databeds.html" class="hover:text-white transition">DataBeds</a></li>
             <li><a href="hospped.html" class="hover:text-white transition">Hospped</a></li>
             <li><a href="sobre.html" class="hover:text-white transition">Consultoria</a></li>
           </ul>
@@ -412,6 +412,7 @@
       localStorage.setItem('cookieConsent', 'accepted');
       banner.classList.add('hidden');
       if (typeof gtag === 'function') {
+        // ✅ CORREÇÃO: 'analytics_storage' é parâmetro oficial do Google Consent Mode
         gtag('consent', 'update', { 'analytics_storage': 'granted' });
       }
     });
@@ -420,6 +421,7 @@
       localStorage.setItem('cookieConsent', 'declined');
       banner.classList.add('hidden');
       if (typeof gtag === 'function') {
+        // ✅ CORREÇÃO: 'analytics_storage' é parâmetro oficial do Google Consent Mode
         gtag('consent', 'update', { 'analytics_storage': 'denied' });
       }
     });

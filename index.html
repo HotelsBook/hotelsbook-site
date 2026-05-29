@@ -8,7 +8,7 @@
   <!-- SEO: Título e Descrição Únicos -->
   <title>HotelsBook | Consultoria e Tecnologia para Hotelaria</title>
   <meta name="description"
-    content="Soluções integradas para a hotelaria brasileira. Consultoria estratégica, plataforma de dados Analytics e gestão de viagens corporativas com a Hospped.">
+    content="Soluções integradas para a hotelaria brasileira. Consultoria estratégica, plataforma de dados DataBeds e gestão de viagens corporativas com a Hospped.">
 
   <!-- SEO: Open Graph / Facebook -->
   <meta property="og:type" content="website">
@@ -24,7 +24,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="HotelsBook | Consultoria e Tecnologia para Hotelaria">
   <meta name="twitter:description"
-    content="Soluções integradas para a hotelaria brasileira. Analytics, Hospped e consultoria estratégica.">
+    content="Soluções integradas para a hotelaria brasileira. DataBeds, Hospped e consultoria estratégica.">
   <meta name="twitter:image" content="https://hotelsbook.com.br/assets/images/og-index.jpg">
 
   <!-- Favicon (Consolidado - sem duplicatas) -->
@@ -133,7 +133,7 @@
         <nav class="hidden md:flex items-center space-x-8">
           <a href="index.html" class="nav-link text-gray-600 hover:text-navy transition">Início</a>
           <a href="sobre.html" class="nav-link text-gray-600 hover:text-navy transition">Sobre Nós</a>
-          <a href="analytics.html" class="nav-link text-gray-600 hover:text-navy transition">Analytics</a>
+          <a href="databeds.html" class="nav-link text-gray-600 hover:text-navy transition">DataBeds</a>
           <a href="hospped.html" class="nav-link text-gray-600 hover:text-navy transition">Hospped</a>
           <a href="parcerias.html" class="nav-link text-gray-600 hover:text-navy transition">Parcerias</a>
           <a href="contato.html"
@@ -154,7 +154,7 @@
       <nav class="nav-menu hidden md:hidden py-4 border-t border-gray-100">
         <a href="index.html" class="block py-2 text-gray-600">Início</a>
         <a href="sobre.html" class="block py-2 text-gray-600">Sobre Nós</a>
-        <a href="analytics.html" class="block py-2 text-gray-600">Analytics</a>
+        <a href="databeds.html" class="block py-2 text-gray-600">DataBeds</a>
         <a href="hospped.html" class="block py-2 text-gray-600 font-medium">Hospped</a>
         <a href="parcerias.html" class="block py-2 text-gray-600">Parcerias</a>
         <a href="contato.html" class="block py-2 mt-2 bg-navy text-white text-center rounded-lg font-medium">Contato</a>
@@ -186,9 +186,9 @@
         <a href="contato.html" class="btn-primary bg-white text-navy font-semibold py-3.5 px-8 rounded-lg">
           Falar com Consultor
         </a>
-        <a href="analytics.html"
+        <a href="databeds.html"
           class="btn-primary border border-gray-500 text-gray-200 font-semibold py-3.5 px-8 rounded-lg hover:bg-white/10 hover:border-white">
-          Conhecer Analytics
+          Conhecer DataBeds
         </a>
       </div>
     </div>
@@ -238,19 +238,19 @@
       </div>
 
       <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
-        <!-- Card Analytics -->
+        <!-- Card DataBeds -->
         <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 group">
           <div class="h-48 overflow-hidden bg-navy relative">
             <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1170&q=80"
               class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition duration-500"
-              alt="Analytics" loading="lazy">
+              alt="DataBeds" loading="lazy">
             <div class="absolute inset-0 flex items-center justify-center">
               <span class="bg-white/90 text-navy px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">SaaS
                 & Dados</span>
             </div>
           </div>
           <div class="p-8">
-            <h3 class="text-2xl font-bold text-navy mb-3">HotelsBook Analytics</h3>
+            <h3 class="text-2xl font-bold text-navy mb-3">HotelsBook DataBeds</h3>
             <p class="text-gray-600 mb-6">
               Plataforma de Revenue Management com parser adaptativo e IA generativa. Transforme dados brutos do seu PMS
               em decisões estratégicas de precificação e ocupação.
@@ -263,7 +263,7 @@
               <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Relatórios Executivos
               </li>
             </ul>
-            <a href="analytics.html"
+            <a href="databeds.html"
               class="inline-block w-full text-center border-2 border-navy text-navy font-semibold py-2.5 rounded-lg hover:bg-navy hover:text-white transition">
               Ver Detalhes
             </a>
@@ -384,7 +384,7 @@
         <div>
           <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Soluções</h4>
           <ul class="space-y-2 text-sm">
-            <li><a href="analytics.html" class="hover:text-white transition">Analytics</a></li>
+            <li><a href="databeds.html" class="hover:text-white transition">DataBeds</a></li>
             <li><a href="hospped.html" class="hover:text-white transition">Hospped</a></li>
             <li><a href="sobre.html" class="hover:text-white transition">Consultoria</a></li>
           </ul>
@@ -448,6 +448,7 @@
       localStorage.setItem('cookieConsent', 'accepted');
       banner.classList.add('hidden');
       if (typeof gtag === 'function') {
+        // ✅ CORREÇÃO: 'analytics_storage' é parâmetro oficial do Google Consent Mode
         gtag('consent', 'update', { 'analytics_storage': 'granted' });
       }
     });
@@ -456,6 +457,7 @@
       localStorage.setItem('cookieConsent', 'declined');
       banner.classList.add('hidden');
       if (typeof gtag === 'function') {
+        // ✅ CORREÇÃO: 'analytics_storage' é parâmetro oficial do Google Consent Mode
         gtag('consent', 'update', { 'analytics_storage': 'denied' });
       }
     });

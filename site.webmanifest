@@ -1,7 +1,7 @@
 {
   "name": "HotelsBook | Consultoria e Tecnologia para Hotelaria",
   "short_name": "HotelsBook",
-  "description": "Soluções integradas para a hotelaria brasileira. Consultoria estratégica, plataforma de dados Analytics e gestão de viagens corporativas.",
+  "description": "Soluções integradas para a hotelaria brasileira. Consultoria estratégica, plataforma de dados DataBeds e gestão de viagens corporativas.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
