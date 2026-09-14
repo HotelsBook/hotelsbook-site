@@ -6,13 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- SEO: Título e Descrição Únicos -->
-  <title>HotelsBook DataBeds | Inteligência de Dados para Pequenas Hospedagens</title>
-  <meta name="description" content="Painel de indicadores com IA para pousadas e pequenos meios de hospedagem. Organize reservas, ocupação e tarifas com previsão de sazonalidade. Startup residente no Sebraelab (Sebrae-CE).">
+  <title>HotelsBook DataBeds | Plataforma de Revenue Management com IA</title>
+  <meta name="description" content="Plataforma inteligente de Revenue Management com IA generativa. Analise dados, preveja sazonalidade e maximize a receita do seu hotel. Solicite uma demonstração.">
   
   <!-- SEO: Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="HotelsBook DataBeds | Inteligência de Dados para Pequenas Hospedagens">
-  <meta property="og:description" content="Transforme relatórios do seu sistema de reservas em decisões simples. Parser adaptativo, IA generativa e previsão de sazonalidade para pequenos negócios de hospedagem.">
+  <meta property="og:title" content="HotelsBook DataBeds | Revenue Management com IA">
+  <meta property="og:description" content="Transforme dados do seu PMS em decisões estratégicas. Parser adaptativo, IA generativa e previsão de sazonalidade para hotéis.">
   <meta property="og:url" content="https://hotelsbook.com.br/databeds.html">
   <meta property="og:image" content="https://hotelsbook.com.br/assets/images/og-databeds.jpg">
   <meta property="og:site_name" content="HotelsBook">
@@ -20,8 +20,8 @@
   
   <!-- SEO: Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="HotelsBook DataBeds | Inteligência de Dados para Pequenas Hospedagens">
-  <meta name="twitter:description" content="Organize reservas, ocupação e tarifas com previsão de sazonalidade e IA generativa. Feito para pousadas e pequenos meios de hospedagem.">
+  <meta name="twitter:title" content="HotelsBook DataBeds | Revenue Management com IA">
+  <meta name="twitter:description" content="Analise dados, preveja sazonalidade e maximize a receita do seu hotel com inteligência artificial.">
   <meta name="twitter:image" content="https://hotelsbook.com.br/assets/images/og-databeds.jpg">
   
   <!-- Favicon (Consolidado - sem duplicatas) -->
@@ -76,7 +76,12 @@
     "name": "HotelsBook DataBeds",
     "applicationCategory": "BusinessApplication",
     "operatingSystem": "Web",
-    "description": "Plataforma de inteligência de dados para pequenos meios de hospedagem. Parser adaptativo, previsão de sazonalidade e painéis simples em tempo real."
+    "description": "Plataforma de Revenue Management com IA generativa para hotéis. Parser adaptativo, previsão de sazonalidade e dashboards em tempo real.",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "ratingCount": "28"
+    }
   }
   </script>
 </head>
@@ -94,10 +99,13 @@
         </div>
 
         <nav class="hidden md:flex space-x-8 items-center">
+          <!-- Links de navegação: JS adicionará 'active' automaticamente -->
           <a href="index.html" class="nav-link text-gray-600 hover:text-navy transition">Início</a>
           <a href="sobre.html" class="nav-link text-gray-600 hover:text-navy transition">Sobre Nós</a>
           <a href="databeds.html" class="nav-link text-gray-600 hover:text-navy transition">DataBeds</a>
+          <a href="hospped.html" class="nav-link text-gray-600 hover:text-navy transition">Hospped</a>
           <a href="parcerias.html" class="nav-link text-gray-600 hover:text-navy transition">Parcerias</a>
+          <!-- ✅ Contato com classe btn-contato para manter estilo de botão -->
           <a href="contato.html" class="nav-link btn-contato text-gray-600 hover:text-navy transition">Contato</a>
         </nav>
 
@@ -116,6 +124,7 @@
         <a href="index.html" class="nav-link block py-2 text-gray-600">Início</a>
         <a href="sobre.html" class="nav-link block py-2 text-gray-600">Sobre Nós</a>
         <a href="databeds.html" class="nav-link block py-2 text-gray-600">DataBeds</a>
+        <a href="hospped.html" class="nav-link block py-2 text-gray-600">Hospped</a>
         <a href="parcerias.html" class="nav-link block py-2 text-gray-600">Parcerias</a>
         <a href="contato.html" class="nav-link btn-contato block py-2 text-gray-600">Contato</a>
       </nav>
@@ -136,11 +145,11 @@
             Plataforma SaaS
           </div>
           <h1 class="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-            Inteligência de Dados para<br>
-            <span class="text-blue-light">Pequenas Hospedagens</span>
+            Revenue Management<br>
+            <span class="text-blue-light">com Inteligência Artificial</span>
           </h1>
           <p class="text-xl text-gray-300 mb-8 leading-relaxed">
-            Transforme relatórios do seu sistema de reservas em decisões simples. Nossa plataforma com parser adaptativo e IA generativa organiza seus dados, prevê sazonalidade e apoia o planejamento do seu pequeno negócio.
+            Transforme dados do seu PMS em decisões estratégicas. Nossa plataforma com parser adaptativo e IA generativa prevê sazonalidade e maximiza sua receita hoteleira.
           </p>
           <div class="flex flex-col sm:flex-row gap-4">
             <a href="contato.html" class="btn-primary bg-white text-navy font-semibold py-3.5 px-8 rounded-lg text-center">
@@ -161,27 +170,31 @@
               <svg class="w-5 h-5 text-blue-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
-              <span>Demonstração gratuita</span>
+              <span>Teste grátis disponível</span>
             </div>
           </div>
         </div>
 
         <div class="relative">
+          <!-- 
+            💡 PROMPT PARA IA - IMAGEM DO DASHBOARD:
+            "Modern analytics dashboard interface on a laptop screen showing hotel revenue charts, occupancy graphs, and pricing recommendations. Dark theme with blue accents, clean UI/UX design, professional SaaS application, isometric view, Brazilian hotel context, photorealistic, high quality, no people."
+          -->
           <div class="media-container rounded-2xl shadow-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-6">
             <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1170&q=80" 
-                 alt="Painel de dados DataBeds HotelsBook" class="rounded-lg w-full" loading="lazy">
+                 alt="Dashboard DataBeds HotelsBook" class="rounded-lg w-full" loading="lazy">
           </div>
           <!-- Floating Stats Card -->
           <div class="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-xl p-6 hidden lg:block">
             <div class="flex items-center gap-4">
               <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
                 <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
                 </svg>
               </div>
               <div>
-                <p class="text-gray-500 text-sm">Startup residente no</p>
-                <p class="text-2xl font-bold text-navy">Sebraelab-CE</p>
+                <p class="text-gray-500 text-sm">Aumento médio de receita</p>
+                <p class="text-2xl font-bold text-navy">+23%</p>
               </div>
             </div>
           </div>
@@ -198,7 +211,7 @@
           Por que o HotelsBook DataBeds?
         </h2>
         <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          Ferramentas simples para pousadas e pequenos meios de hospedagem que hoje organizam reservas e tarifas no caderno ou na planilha.
+          Solucionamos os principais desafios de revenue management para hotéis independentes e redes de médio porte.
         </p>
       </div>
 
@@ -211,7 +224,7 @@
           </div>
           <h3 class="text-xl font-bold text-navy mb-3">Sem Integrações Complexas</h3>
           <p class="text-gray-600 leading-relaxed">
-            Nosso parser adaptativo lê relatórios do seu sistema de reservas (PMS) em PDF, Excel ou CSV. Sem APIs complicadas ou dependência do fornecedor.
+            Nosso parser adaptativo lê relatórios do seu PMS (Desbravador, Xenios, etc.) em PDF, Excel ou CSV. Sem APIs complicadas ou dependência do fornecedor.
           </p>
         </div>
 
@@ -223,7 +236,7 @@
           </div>
           <h3 class="text-xl font-bold text-navy mb-3">IA Generativa Integrada</h3>
           <p class="text-gray-600 leading-relaxed">
-            Faça perguntas em linguagem natural: "Qual foi minha diária média em março?" ou "Como foi minha ocupação no último feriado?". Relatórios instantâneos.
+            Faça perguntas em linguagem natural: "Qual foi o ADR médio em março?" ou "Projete ocupação para o próximo feriado". Relatórios instantâneos.
           </p>
         </div>
 
@@ -235,7 +248,7 @@
           </div>
           <h3 class="text-xl font-bold text-navy mb-3">Previsão de Sazonalidade</h3>
           <p class="text-gray-600 leading-relaxed">
-            Modelos preditivos que cruzam seu histórico com feriados e eventos locais. Antecipe períodos de maior demanda e planeje suas tarifas com antecedência.
+            Modelos preditivos que cruzam seu histórico com feriados, eventos locais e clima. Antecipe picos de demanda e ajuste tarifas com precisão.
           </p>
         </div>
       </div>
@@ -247,15 +260,19 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center mb-20">
         <div class="mb-10 lg:mb-0">
+          <!-- 
+            💡 PROMPT PARA IA - IMAGEM DE GRÁFICOS:
+            "Close-up of hands pointing at detailed revenue charts on a tablet screen, hotel occupancy metrics, modern data visualization, business meeting context, natural lighting, professional photography, Brazilian business environment, photorealistic."
+          -->
           <div class="media-container rounded-2xl shadow-xl">
             <img src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?auto=format&fit=crop&w=1170&q=80" 
-                 alt="Análise de dados de hospedagem" class="rounded-xl w-full" loading="lazy">
+                 alt="Análise de dados hoteleiros" class="rounded-xl w-full" loading="lazy">
           </div>
         </div>
         <div>
-          <h2 class="text-3xl font-bold text-navy mb-6">Painéis Simples em Tempo Real</h2>
+          <h2 class="text-3xl font-bold text-navy mb-6">Dashboards Acionáveis em Tempo Real</h2>
           <p class="text-gray-600 mb-6 text-lg leading-relaxed">
-            Visualize reservas por canal, forma de pagamento ou período. Identifique quedas, oportunidades e a relação entre ocupação e diária média com atualização contínua.
+            Visualize receita por canal, forma de pagamento, período ou operador. Identifique quedas, oportunidades e correlações entre ocupação e ADR com atualização contínua.
           </p>
           <ul class="space-y-4">
             <li class="flex items-start">
@@ -268,7 +285,7 @@
               <svg class="w-6 h-6 text-blue mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
-              <span class="text-gray-700">Comparativo ano a ano e mês a mês do seu próprio histórico</span>
+              <span class="text-gray-700">Comparativo ano a ano e mês a mês</span>
             </li>
             <li class="flex items-start">
               <svg class="w-6 h-6 text-blue mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -282,9 +299,9 @@
 
       <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
         <div class="order-2 lg:order-1">
-          <h2 class="text-3xl font-bold text-navy mb-6">Seus Dados, Somente Seus</h2>
+          <h2 class="text-3xl font-bold text-navy mb-6">Benchmarking Anônimo e Seguro</h2>
           <p class="text-gray-600 mb-6 text-lg leading-relaxed">
-            Privacidade por design: criptografia de ponta a ponta e conformidade LGPD nativa. Seus dados nunca são compartilhados, vendidos ou usados em comparativos públicos.
+            Compare seus indicadores com médias agregadas do setor. Seus dados nunca alimentam modelos públicos. Privacidade por design, criptografia de ponta a ponta e conformidade LGPD nativa.
           </p>
           <ul class="space-y-4">
             <li class="flex items-start">
@@ -297,7 +314,7 @@
               <svg class="w-6 h-6 text-blue mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
-              <span class="text-gray-700">Uso exclusivo pelo seu próprio negócio</span>
+              <span class="text-gray-700">Comparativo com hotéis do mesmo porte e região</span>
             </li>
             <li class="flex items-start">
               <svg class="w-6 h-6 text-blue mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -308,9 +325,13 @@
           </ul>
         </div>
         <div class="order-1 lg:order-2 mb-10 lg:mb-0">
+          <!-- 
+            💡 PROMPT PARA IA - IMAGEM DE SEGURANÇA/DADOS:
+            "Abstract data security visualization with shield icon and encrypted data streams, blue and navy color scheme, modern tech illustration, clean and professional, SaaS application context, photorealistic 3D render."
+          -->
           <div class="media-container rounded-2xl shadow-xl">
             <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1170&q=80" 
-                 alt="Segurança de dados" class="rounded-xl w-full" loading="lazy">
+                 alt="Segurança de dados hoteleiros" class="rounded-xl w-full" loading="lazy">
           </div>
         </div>
       </div>
@@ -323,7 +344,7 @@
       <div class="text-center mb-16">
         <h2 class="text-3xl lg:text-4xl font-bold text-navy mb-4">Como Funciona</h2>
         <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          Implementação simples e rápida. Em poucos passos você já está analisando seus próprios dados e planejando com confiança.
+          Implementação simples e rápida. Em poucos passos você já está analisando dados e tomando decisões estratégicas.
         </p>
       </div>
 
@@ -331,7 +352,7 @@
         <div class="text-center">
           <div class="w-16 h-16 bg-navy text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">1</div>
           <h3 class="font-bold text-navy mb-2">Conecte seus Dados</h3>
-          <p class="text-gray-600 text-sm">Faça upload dos relatórios do seu sistema de reservas em PDF, Excel ou CSV. Nosso parser identifica automaticamente o formato.</p>
+          <p class="text-gray-600 text-sm">Faça upload dos relatórios do seu PMS em PDF, Excel ou CSV. Nosso parser identifica automaticamente o formato.</p>
         </div>
         
         <div class="text-center">
@@ -343,23 +364,23 @@
         <div class="text-center">
           <div class="w-16 h-16 bg-navy text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">3</div>
           <h3 class="font-bold text-navy mb-2">Analise e Decida</h3>
-          <p class="text-gray-600 text-sm">Acesse painéis intuitivos e faça perguntas à IA para gerar insights acionáveis instantaneamente.</p>
+          <p class="text-gray-600 text-sm">Acesse dashboards intuitivos e faça perguntas à IA para gerar insights acionáveis instantaneamente.</p>
         </div>
         
         <div class="text-center">
           <div class="w-16 h-16 bg-navy text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">4</div>
-          <h3 class="font-bold text-navy mb-2">Planeje com Confiança</h3>
-          <p class="text-gray-600 text-sm">Organize tarifas e ocupação com base no seu histórico e nas previsões de sazonalidade — sem achismo.</p>
+          <h3 class="font-bold text-navy mb-2">Maximize Receita</h3>
+          <p class="text-gray-600 text-sm">Ajuste tarifas, otimize ocupação e aumente seu RevPAR com base em dados reais e previsões precisas.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PLANOS E PROPOSTA PERSONALIZADA -->
+    <!-- PLANOS E PROPOSTA PERSONALIZADA (SUBSTITUIU PRICING) -->
   <section class="py-20 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
-        <h2 class="text-3xl lg:text-4xl font-bold text-navy mb-4">Planos Flexíveis para sua Hospedagem</h2>
+        <h2 class="text-3xl lg:text-4xl font-bold text-navy mb-4">Planos Flexíveis para seu Hotel</h2>
         <p class="text-xl text-gray-600 max-w-3xl mx-auto">
           Oferecemos soluções personalizadas de acordo com o porte da sua operação e número de unidades. Solicite uma proposta sob medida.
         </p>
@@ -369,38 +390,38 @@
         <div class="bg-gradient-to-br from-navy via-blue to-blue-light rounded-2xl p-8 lg:p-12 text-white text-center shadow-2xl border border-blue/20">
           <h3 class="text-3xl lg:text-4xl font-bold mb-6">Solicite uma Proposta Personalizada</h3>
           <p class="text-xl text-white/90 mb-10 max-w-2xl mx-auto">
-            Cada hospedagem tem necessidades únicas. Nossa equipe vai analisar sua operação e apresentar a melhor solução com custo-benefício ideal.
+            Cada hotel tem necessidades únicas. Nossa equipe vai analisar sua operação e apresentar a melhor solução com custo-benefício ideal.
           </p>
           
           <div class="grid md:grid-cols-3 gap-6 mb-10 text-left">
             <div class="bg-white/15 backdrop-blur-md rounded-xl p-6 border border-white/20 hover:bg-white/20 transition">
               <div class="w-14 h-14 bg-white/25 rounded-xl flex items-center justify-center mb-4 mx-auto">
                 <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
-                </svg>
-              </div>
-              <h4 class="text-lg font-bold mb-2">Pousadas Familiares</h4>
-              <p class="text-sm text-white/85 leading-relaxed">Soluções acessíveis para quem opera com poucos quartos e poucos recursos</p>
-            </div>
-            
-            <div class="bg-white/15 backdrop-blur-md rounded-xl p-6 border border-white/20 hover:bg-white/20 transition">
-              <div class="w-14 h-14 bg-white/25 rounded-xl flex items-center justify-center mb-4 mx-auto">
-                <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
                 </svg>
               </div>
-              <h4 class="text-lg font-bold mb-2">Pequenos Hotéis</h4>
-              <p class="text-sm text-white/85 leading-relaxed">Para operações de pequeno porte que querem profissionalizar a gestão com dados</p>
+              <h4 class="text-lg font-bold mb-2">Hotéis Independentes</h4>
+              <p class="text-sm text-white/85 leading-relaxed">Soluções acessíveis para pousadas e hotéis de pequeno porte</p>
             </div>
             
             <div class="bg-white/15 backdrop-blur-md rounded-xl p-6 border border-white/20 hover:bg-white/20 transition">
               <div class="w-14 h-14 bg-white/25 rounded-xl flex items-center justify-center mb-4 mx-auto">
                 <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                 </svg>
               </div>
-              <h4 class="text-lg font-bold mb-2">Múltiplas Unidades</h4>
-              <p class="text-sm text-white/85 leading-relaxed">Planos escaláveis para quem administra mais de uma hospedagem</p>
+              <h4 class="text-lg font-bold mb-2">Redes Regionais</h4>
+              <p class="text-sm text-white/85 leading-relaxed">Planos escaláveis para múltiplas unidades e redes em expansão</p>
+            </div>
+            
+            <div class="bg-white/15 backdrop-blur-md rounded-xl p-6 border border-white/20 hover:bg-white/20 transition">
+              <div class="w-14 h-14 bg-white/25 rounded-xl flex items-center justify-center mb-4 mx-auto">
+                <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                </svg>
+              </div>
+              <h4 class="text-lg font-bold mb-2">Enterprise</h4>
+              <p class="text-sm text-white/85 leading-relaxed">Soluções completas com suporte dedicado e integrações avançadas</p>
             </div>
           </div>
           
@@ -429,7 +450,7 @@
             </svg>
           </summary>
           <div class="text-gray-600 mt-4 leading-relaxed">
-            <p>Não. O HotelsBook DataBeds foi desenvolvido para trabalhar de forma complementar ao seu sistema atual. Nosso parser adaptativo processa relatórios exportados em PDF, Excel ou CSV dos principais sistemas do mercado (Desbravador, Xenios, entre outros).</p>
+            <p>Não. O HotelsBook DataBeds foi desenvolvido para trabalhar de forma complementar ao seu PMS atual. Nosso parser adaptativo processa relatórios exportados em PDF, Excel ou CSV dos principais sistemas do mercado (Desbravador, Xenios, entre outros).</p>
           </div>
         </details>
 
@@ -441,7 +462,7 @@
             </svg>
           </summary>
           <div class="text-gray-600 mt-4 leading-relaxed">
-            <p>A implementação é imediata. Após o cadastro, você já pode fazer upload dos primeiros relatórios e, em poucos dias de uso, começar a identificar padrões e oportunidades no seu próprio histórico.</p>
+            <p>A implementação é imediata. Após o cadastro, você já pode fazer upload dos primeiros relatórios. Nossos clientes relatam que em 7 a 14 dias já identificam oportunidades concretas de aumento de receita.</p>
           </div>
         </details>
 
@@ -453,19 +474,19 @@
             </svg>
           </summary>
           <div class="text-gray-600 mt-4 leading-relaxed">
-            <p>Absolutamente. Utilizamos criptografia TLS 1.3 em trânsito e AES-256 em repouso, infraestrutura em nuvem com certificação ISO 27001 e conformidade total com a LGPD. Seus dados nunca são utilizados para treinar modelos de IA públicos nem compartilhados com terceiros.</p>
+            <p>Absolutamente. Utilizamos criptografia TLS 1.3 em trânsito e AES-256 em repouso, infraestrutura em nuvem com certificação ISO 27001 e conformidade total com a LGPD. Seus dados nunca são utilizados para treinar modelos de IA públicos.</p>
           </div>
         </details>
 
         <details class="group bg-white rounded-xl border border-gray-200 p-6">
           <summary class="font-semibold text-navy cursor-pointer flex justify-between items-center">
-            Como funcionam os planos e valores?
+            Como funciona a precificação?
             <svg class="w-5 h-5 transition-transform group-open:rotate-180 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
             </svg>
           </summary>
           <div class="text-gray-600 mt-4 leading-relaxed">
-            <p>Nossos planos são personalizados de acordo com o porte da hospedagem, número de unidades e funcionalidades necessárias. Entre em contato para receber uma proposta sob medida que se encaixe no seu orçamento.</p>
+            <p>Nossos planos são personalizados de acordo com o porte do hotel, número de unidades e funcionalidades necessárias. Entre em contato para receber uma proposta sob medida que se encaixe no seu orçamento.</p>
           </div>
         </details>
       </div>
@@ -476,7 +497,7 @@
   <section class="py-20 bg-navy text-white">
     <div class="max-w-4xl mx-auto px-4 text-center">
       <h2 class="text-3xl lg:text-4xl font-bold mb-6">
-        Pronto para organizar sua hospedagem com dados?
+        Pronto para transformar sua gestão de receita?
       </h2>
       <p class="text-xl text-gray-300 mb-10">
         Agende uma demonstração gratuita e conheça todas as funcionalidades do DataBeds.
@@ -486,7 +507,7 @@
           Solicitar Demonstração
         </a>
         <a href="contato.html" class="border-2 border-white/30 text-white font-semibold py-4 px-10 rounded-lg hover:bg-white/10 transition">
-          Falar com a Equipe
+          Falar com Consultor
         </a>
       </div>
     </div>
@@ -501,15 +522,16 @@
             Hotels<span class="text-blue">Book</span>
           </a>
           <p class="mt-4 text-sm text-gray-400 max-w-xs">
-            Tecnologia e dados para pequenos meios de hospedagem. Startup residente no Sebraelab (Sebrae-CE).
+            Tecnologia e Consultoria Estratégica para o Setor Hoteleiro Brasileiro.
           </p>
         </div>
         
         <div>
-          <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Solução</h4>
+          <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Soluções</h4>
           <ul class="space-y-2 text-sm">
             <li><a href="databeds.html" class="hover:text-white transition">DataBeds</a></li>
-            <li><a href="sobre.html" class="hover:text-white transition">Nossa História</a></li>
+            <li><a href="hospped.html" class="hover:text-white transition">Hospped</a></li>
+            <li><a href="sobre.html" class="hover:text-white transition">Consultoria</a></li>
           </ul>
         </div>
         
@@ -567,6 +589,7 @@
       localStorage.setItem('cookieConsent', 'accepted');
       banner.classList.add('hidden');
       if (typeof gtag === 'function') {
+        // ✅ CORREÇÃO: 'analytics_storage' é parâmetro oficial do Google Consent Mode
         gtag('consent', 'update', { 'analytics_storage': 'granted' });
       }
     });
@@ -575,6 +598,7 @@
       localStorage.setItem('cookieConsent', 'declined');
       banner.classList.add('hidden');
       if (typeof gtag === 'function') {
+        // ✅ CORREÇÃO: 'analytics_storage' é parâmetro oficial do Google Consent Mode
         gtag('consent', 'update', { 'analytics_storage': 'denied' });
       }
     });

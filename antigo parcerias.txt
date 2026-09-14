@@ -6,13 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- SEO: Título e Descrição Únicos -->
-  <title>Parcerias | HotelsBook - Ecossistema para Pequenas Hospedagens</title>
-  <meta name="description" content="Faça parte do ecossistema HotelsBook. Programa de indicação de tecnologia para pousadas, cadastro de pequenas hospedagens parceiras e integrações com desenvolvedores.">
+  <title>Parcerias - HotelsBook | Ecossistema de Tecnologia e Hospitalidade</title>
+  <meta name="description" content="Faça parte do ecossistema HotelsBook. Programas de revenda de tecnologia, cadastro de hotéis parceiros e integrações estratégicas.">
   
   <!-- SEO: Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Parcerias | HotelsBook - Ecossistema para Pequenas Hospedagens">
-  <meta property="og:description" content="Unimos tecnologia proprietária e rede de pequenas hospedagens validada. Indique nossa ferramenta, cadastre sua pousada ou integre sua solução.">
+  <meta property="og:title" content="Parcerias - HotelsBook | Ecossistema de Tecnologia e Hospitalidade">
+  <meta property="og:description" content="Unimos tecnologia proprietária, rede de hotéis validada e expertise de mercado. Seja um parceiro de tecnologia, integre sua propriedade ou desenvolva soluções complementares.">
   <meta property="og:url" content="https://hotelsbook.com.br/parcerias.html">
   <meta property="og:image" content="https://hotelsbook.com.br/assets/images/og-parcerias.jpg">
   <meta property="og:site_name" content="HotelsBook">
@@ -20,8 +20,8 @@
   
   <!-- SEO: Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Parcerias | HotelsBook - Ecossistema para Pequenas Hospedagens">
-  <meta name="twitter:description" content="Programa de indicação de tecnologia, cadastro de pequenas hospedagens parceiras e integrações técnicas.">
+  <meta name="twitter:title" content="Parcerias - HotelsBook | Ecossistema de Tecnologia e Hospitalidade">
+  <meta name="twitter:description" content="Programas de revenda de tecnologia, cadastro de hotéis parceiros e integrações estratégicas.">
   <meta name="twitter:image" content="https://hotelsbook.com.br/assets/images/og-parcerias.jpg">
   
   <!-- Favicon (Consolidado - sem duplicatas) -->
@@ -36,10 +36,10 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebPage",
+    "@type": "PartnershipPage",
     "name": "Programa de Parcerias - HotelsBook",
     "url": "https://hotelsbook.com.br/parcerias.html",
-    "description": "Programas de indicação de tecnologia para pequenos meios de hospedagem, cadastro de pousadas parceiras e integrações técnicas com desenvolvedores.",
+    "description": "Programas de revenda de tecnologia, cadastro de hotéis parceiros e integrações estratégicas para o setor hoteleiro.",
     "publisher": {
       "@type": "Organization",
       "name": "HotelsBook",
@@ -103,11 +103,13 @@
         </div>
 
         <nav class="hidden md:flex space-x-8 items-center">
+          <!-- Links de navegação: JS adicionará 'active' automaticamente -->
           <a href="index.html" class="nav-link text-gray-600 hover:text-navy transition">Início</a>
           <a href="sobre.html" class="nav-link text-gray-600 hover:text-navy transition">Sobre Nós</a>
           <a href="databeds.html" class="nav-link text-gray-600 hover:text-navy transition">DataBeds</a>
           <a href="hospped.html" class="nav-link text-gray-600 hover:text-navy transition">Hospped</a>
           <a href="parcerias.html" class="nav-link text-gray-600 hover:text-navy transition">Parcerias</a>
+          <!-- ✅ Contato com classe btn-contato para manter estilo de botão -->
           <a href="contato.html" class="nav-link btn-contato text-gray-600 hover:text-navy transition">Contato</a>
         </nav>
 
@@ -144,11 +146,11 @@
         Programa de Parceiros
       </div>
       <h1 class="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-        Fortaleça pequenos negócios de hospedagem<br>
+        Construa o futuro da hotelaria<br>
         <span class="text-blue-light">conosco</span>
       </h1>
       <p class="text-xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
-        Unimos tecnologia proprietária e rede de pequenas hospedagens validada. Indique nossa ferramenta, cadastre sua pousada ou integre sua solução ao nosso ecossistema.
+        Unimos tecnologia proprietária, rede de hotéis validada e expertise de mercado. Seja um parceiro de tecnologia, integre sua propriedade ou desenvolva soluções complementares.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <a href="#modelos" class="btn-primary bg-white text-navy font-semibold py-3.5 px-8 rounded-lg">
@@ -167,7 +169,7 @@
       <div class="text-center mb-16">
         <h2 class="text-3xl lg:text-4xl font-bold text-navy mb-4">Por que ser um parceiro HotelsBook?</h2>
         <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          Oferecemos ferramenta simples, suporte técnico dedicado e modelos de remuneração transparentes para quem apoia o pequeno empreendedor.
+          Oferecemos infraestrutura pronta, suporte técnico dedicado e modelos de remuneração transparentes.
         </p>
       </div>
 
@@ -178,9 +180,9 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
           </div>
-          <h3 class="text-xl font-bold text-navy mb-3">Remuneração por Indicação</h3>
+          <h3 class="text-xl font-bold text-navy mb-3">Receita Recorrente</h3>
           <p class="text-gray-600 leading-relaxed">
-            Receba comissões sobre a mensalidade do pequeno negócio que você indicou, enquanto ele for ativo. Crescimento previsível e escalável.
+            Modelos de revenda com comissões sobre a mensalidade do cliente enquanto ele for ativo. Crescimento previsível e escalável.
           </p>
         </div>
 
@@ -192,7 +194,7 @@
           </div>
           <h3 class="text-xl font-bold text-navy mb-3">Tecnologia Validada</h3>
           <p class="text-gray-600 leading-relaxed">
-            Ferramenta já testada em operação real com pequenas hospedagens. Dashboards prontos para uso imediato pelo microempreendedor.
+            Produtos já testados em operação real. IA generativa, parser adaptativo e dashboards prontos para uso imediato.
           </p>
         </div>
 
@@ -204,7 +206,7 @@
           </div>
           <h3 class="text-xl font-bold text-navy mb-3">Suporte e Treinamento</h3>
           <p class="text-gray-600 leading-relaxed">
-            Onboarding guiado, material de apresentação simples e canal direto com nossa equipe. A gente cuida do suporte ao pequeno negócio parceiro.
+            Onboarding guiado, material de vendas white-label e canal direto com nossa equipe de desenvolvimento de negócios.
           </p>
         </div>
       </div>
@@ -218,63 +220,75 @@
         <h2 class="text-3xl lg:text-4xl font-bold text-navy mb-4">Modelos de Parceria</h2>
         <div class="w-24 h-1 bg-blue mx-auto rounded-full mb-6"></div>
         <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          Escolha a modalidade que melhor se adapta ao seu perfil e à sua forma de apoiar pequenos negócios.
+          Escolha a modalidade que melhor se adapta ao seu modelo de negócio e capacidade de atuação.
         </p>
       </div>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Modelo 1: Indicação -->
+        <!-- Modelo 1: Revenda -->
         <div class="service-card">
+          <!-- 
+            💡 PROMPT PARA IA - IMAGEM REVENDEDOR:
+            "Professional sales meeting in a modern Brazilian office, consultant presenting a tablet with analytics dashboard to a hotel manager, natural lighting, business casual attire, focused interaction, photorealistic, corporate photography style."
+          -->
           <div class="media-container rounded-xl mb-6 overflow-hidden h-40">
             <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1074&q=80"
-              alt="Parceiro de Indicação" class="w-full h-full object-cover" loading="lazy">
+              alt="Revenda de Tecnologia" class="w-full h-full object-cover" loading="lazy">
           </div>
-          <h3 class="text-xl font-bold text-navy mb-3">Indicador da Ferramenta</h3>
+          <h3 class="text-xl font-bold text-navy mb-3">Revendedor de Tecnologia</h3>
           <p class="text-gray-600 mb-6 text-sm leading-relaxed">
-            Ideal para contadores, designers, profissionais de marketing digital e apoiadores do turismo local que já atendem pousadas e pequenos meios de hospedagem e querem agregar valor.
+            Ideal para consultores hoteleiros, agências de turismo e escritórios de gestão que desejam revender a plataforma DataBeds e ganhar recorrência.
           </p>
           <ul class="space-y-2 mb-6 text-sm text-gray-600">
             <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Comissão recorrente sobre mensalidade</li>
-            <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Treinamento simples sobre a ferramenta</li>
-            <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Material de apresentação digital</li>
+            <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Treinamento técnico e comercial</li>
+            <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Material de vendas e cases</li>
           </ul>
-          <a href="contato.html" class="btn-secondary w-full text-center text-sm">Quero Indicar</a>
+          <a href="contato.html" class="btn-secondary w-full text-center text-sm">Quero ser Revendedor</a>
         </div>
 
-        <!-- Modelo 2: Pequenas Hospedagens -->
+        <!-- Modelo 2: Hotéis -->
         <div class="service-card">
+          <!-- 
+            💡 PROMPT PARA IA - IMAGEM HOTEL PARCEIRO:
+            "Modern hotel reception desk in Brazil, clean and bright interior, front desk agent smiling, subtle branding elements, professional hospitality photography, warm tones, high quality, realistic."
+          -->
           <div class="media-container rounded-xl mb-6 overflow-hidden h-40">
             <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1170&q=80"
-              alt="Pousada Parceira" class="w-full h-full object-cover" loading="lazy">
+              alt="Hotel Parceiro" class="w-full h-full object-cover" loading="lazy">
           </div>
-          <h3 class="text-xl font-bold text-navy mb-3">Pousada Parceira (Hospped)</h3>
+          <h3 class="text-xl font-bold text-navy mb-3">Hotel Parceiro (Hospped)</h3>
           <p class="text-gray-600 mb-6 text-sm leading-relaxed">
-            Integre-se à nossa base de pequenas hospedagens parceiras e receba reservas corporativas e acadêmicas qualificadas quando seu perfil for compatível com a demanda.
+            Integre-se à nossa base de parceiros de hospedagem e receba reservas corporativas e acadêmicas qualificadas com taxa de comissão justa.
           </p>
           <ul class="space-y-2 mb-6 text-sm text-gray-600">
             <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Visibilidade na plataforma Hospped</li>
             <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Gestão centralizada de reservas</li>
             <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Pagamentos ágeis e transparentes</li>
           </ul>
-          <a href="contato.html" class="btn-secondary w-full text-center text-sm">Cadastrar Minha Pousada</a>
+          <a href="contato.html" class="btn-secondary w-full text-center text-sm">Cadastrar Meu Hotel</a>
         </div>
 
         <!-- Modelo 3: API/Integração -->
         <div class="service-card">
+          <!-- 
+            💡 PROMPT PARA IA - IMAGEM INTEGRAÇÃO/API:
+            "Abstract data flow visualization connecting hotel management systems, clean UI lines, blue and navy palette, modern tech illustration, SaaS ecosystem context, professional, photorealistic 3D render style."
+          -->
           <div class="media-container rounded-xl mb-6 overflow-hidden h-40">
             <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1170&q=80"
               alt="Integração de API" class="w-full h-full object-cover" loading="lazy">
           </div>
-          <h3 class="text-xl font-bold text-navy mb-3">Integração Técnica</h3>
+          <h3 class="text-xl font-bold text-navy mb-3">Integração de API</h3>
           <p class="text-gray-600 mb-6 text-sm leading-relaxed">
-            Para desenvolvedores e pequenas empresas de software que desejam integrar sua solução ao nosso ecossistema de apoio a pequenos meios de hospedagem.
+            Para desenvolvedores e empresas de software (PMS, Channel Managers, ERPs) que desejam consumir nossos dados de mercado e analytics.
           </p>
           <ul class="space-y-2 mb-6 text-sm text-gray-600">
             <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Documentação técnica completa</li>
             <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Dados anonimizados e seguros</li>
             <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Suporte dedicado ao desenvolvedor</li>
           </ul>
-          <a href="contato.html" class="btn-secondary w-full text-center text-sm">Falar com Time Técnico</a>
+          <a href="contato.html" class="btn-secondary w-full text-center text-sm">Acessar Documentação</a>
         </div>
       </div>
     </div>
@@ -285,7 +299,7 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
         <h2 class="text-3xl font-bold text-navy mb-4">Como Funciona a Adesão</h2>
-        <p class="text-lg text-gray-600">Processo transparente e ágil para você começar a participar.</p>
+        <p class="text-lg text-gray-600">Processo transparente e ágil para você começar a operar.</p>
       </div>
 
       <div class="grid md:grid-cols-4 gap-6 text-center">
@@ -293,27 +307,27 @@
           <div class="w-14 h-14 bg-navy text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 z-10 relative">1</div>
           <div class="hidden md:block absolute top-7 left-1/2 w-full h-0.5 bg-gray-300 -z-0"></div>
           <h3 class="font-bold text-navy mb-2">Cadastro</h3>
-          <p class="text-gray-600 text-sm">Preencha o formulário com seus dados e o tipo de parceria que busca.</p>
+          <p class="text-gray-600 text-sm">Preencha o formulário de interesse com dados da sua empresa e modelo de atuação.</p>
         </div>
         
         <div class="relative">
           <div class="w-14 h-14 bg-navy text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 z-10 relative">2</div>
           <div class="hidden md:block absolute top-7 left-1/2 w-full h-0.5 bg-gray-300 -z-0"></div>
-          <h3 class="font-bold text-navy mb-2">Conversa Inicial</h3>
-          <p class="text-gray-600 text-sm">Nossa equipe avalia sinergia e define o modelo de parceria ideal para você.</p>
+          <h3 class="font-bold text-navy mb-2">Análise de Fit</h3>
+          <p class="text-gray-600 text-sm">Nossa equipe avalia sinergia estratégica e define o modelo de parceria ideal.</p>
         </div>
         
         <div class="relative">
           <div class="w-14 h-14 bg-navy text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 z-10 relative">3</div>
           <div class="hidden md:block absolute top-7 left-1/2 w-full h-0.5 bg-gray-300 -z-0"></div>
           <h3 class="font-bold text-navy mb-2">Onboarding</h3>
-          <p class="text-gray-600 text-sm">Treinamento simples, acesso à plataforma e entrega de materiais de apoio.</p>
+          <p class="text-gray-600 text-sm">Treinamento técnico, acesso à plataforma e entrega de materiais de apoio.</p>
         </div>
         
         <div class="relative">
           <div class="w-14 h-14 bg-navy text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 z-10 relative">4</div>
-          <h3 class="font-bold text-navy mb-2">Parceria Ativa</h3>
-          <p class="text-gray-600 text-sm">Início das indicações ou integrações com acompanhamento mensal.</p>
+          <h3 class="font-bold text-navy mb-2">Operação</h3>
+          <p class="text-gray-600 text-sm">Início das vendas ou integrações com acompanhamento mensal de performance.</p>
         </div>
       </div>
     </div>
@@ -323,7 +337,7 @@
   <section class="py-20 bg-navy text-white">
     <div class="max-w-4xl mx-auto px-4 text-center">
       <h2 class="text-3xl lg:text-4xl font-bold mb-6">
-        Pronto para fortalecer pequenos negócios conosco?
+        Pronto para crescer junto?
       </h2>
       <p class="text-xl text-gray-300 mb-10">
         Nossa equipe de parcerias está pronta para analisar sua proposta e desenhar um modelo mutualmente vantajoso.
@@ -351,7 +365,7 @@
             </svg>
           </summary>
           <div class="text-gray-600 mt-4 leading-relaxed">
-            <p>Não trabalhamos com travas contratuais ou metas agressivas de curto prazo. Acreditamos que a parceria deve se sustentar pela qualidade da ferramenta e pelo retorno real ao pequeno negócio indicado.</p>
+            <p>Não trabalhamos com travas contratuais ou metas agressivas de curto prazo. Acreditamos que a parceria deve se sustentar pela qualidade do produto e pelo retorno real. Avaliamos performance de forma contínua e ajustamos estratégias juntos.</p>
           </div>
         </details>
 
@@ -363,31 +377,31 @@
             </svg>
           </summary>
           <div class="text-gray-600 mt-4 leading-relaxed">
-            <p>As comissões são apuradas mensalmente e pagas via transferência bancária ou PIX, após confirmação do pagamento do pequeno negócio indicado. Você recebe um relatório transparente com todas as indicações e status de repasse.</p>
+            <p>As comissões são apuradas mensalmente e pagas via transferência bancária ou PIX, após confirmação do pagamento do cliente final. Você recebe um dashboard transparente com todas as transações e status de repasse.</p>
           </div>
         </details>
 
         <details class="group bg-gray-50 rounded-xl p-6">
           <summary class="font-semibold text-navy cursor-pointer flex justify-between items-center">
-            Posso indicar qualquer tipo de hospedagem?
+            Posso atuar em exclusiva na minha região?
             <svg class="w-5 h-5 transition-transform group-open:rotate-180 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
             </svg>
           </summary>
           <div class="text-gray-600 mt-4 leading-relaxed">
-            <p>Nossa ferramenta é desenhada especificamente para pequenos meios de hospedagem — pousadas familiares, chalés, hostels e hospedagens com até cerca de 20 quartos. Para negócios maiores, conversamos caso a caso.</p>
+            <p>Sim, oferecemos acordos de exclusividade regional para parceiros que comprovarem capacidade de cobertura e volume consistente. Os termos são definidos caso a caso, com base no potencial de mercado e no histórico de atuação.</p>
           </div>
         </details>
 
         <details class="group bg-gray-50 rounded-xl p-6">
           <summary class="font-semibold text-navy cursor-pointer flex justify-between items-center">
-            Vocês oferecem suporte técnico aos parceiros?
+            Vocês oferecem suporte técnico para revendedores?
             <svg class="w-5 h-5 transition-transform group-open:rotate-180 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
             </svg>
           </summary>
           <div class="text-gray-600 mt-4 leading-relaxed">
-            <p>Sim. Cada parceiro recebe acesso à nossa base de conhecimento e um canal direto para tirar dúvidas. Além disso, nós mesmos atendemos o pequeno negócio que você indicou — você não precisa dar suporte técnico, apenas indicar.</p>
+            <p>Absolutamente. Cada parceiro recebe um gerente de contas dedicado, acesso à base de conhecimento técnica, webinars de atualização e canal prioritário para resolução de chamados. Seu sucesso é nosso indicador principal.</p>
           </div>
         </details>
       </div>
@@ -403,7 +417,7 @@
             Hotels<span class="text-blue">Book</span>
           </a>
           <p class="mt-4 text-sm text-gray-400 max-w-xs">
-            Tecnologia e dados para pequenos meios de hospedagem. Startup residente no Sebraelab (Sebrae-CE).
+            Tecnologia e Consultoria Estratégica para o Setor Hoteleiro Brasileiro.
           </p>
         </div>
         
@@ -412,7 +426,7 @@
           <ul class="space-y-2 text-sm">
             <li><a href="databeds.html" class="hover:text-white transition">DataBeds</a></li>
             <li><a href="hospped.html" class="hover:text-white transition">Hospped</a></li>
-            <li><a href="sobre.html" class="hover:text-white transition">Nossa História</a></li>
+            <li><a href="sobre.html" class="hover:text-white transition">Consultoria</a></li>
           </ul>
         </div>
         
@@ -470,6 +484,7 @@
       localStorage.setItem('cookieConsent', 'accepted');
       banner.classList.add('hidden');
       if (typeof gtag === 'function') {
+        // ✅ CORREÇÃO: 'analytics_storage' é parâmetro oficial do Google Consent Mode
         gtag('consent', 'update', { 'analytics_storage': 'granted' });
       }
     });
@@ -478,6 +493,7 @@
       localStorage.setItem('cookieConsent', 'declined');
       banner.classList.add('hidden');
       if (typeof gtag === 'function') {
+        // ✅ CORREÇÃO: 'analytics_storage' é parâmetro oficial do Google Consent Mode
         gtag('consent', 'update', { 'analytics_storage': 'denied' });
       }
     });

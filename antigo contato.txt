@@ -6,13 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- SEO: Título e Descrição Únicos -->
-  <title>Contato | HotelsBook - Fale com Nossa Equipe</title>
-  <meta name="description" content="Entre em contato com a HotelsBook. Tecnologia e dados para pousadas e pequenos meios de hospedagem. Atendimento via email e WhatsApp.">
+  <title>Contato - HotelsBook | Fale com Nossa Equipe</title>
+  <meta name="description" content="Entre em contato com a HotelsBook. Consultoria estratégica, plataforma DataBeds e gestão de viagens corporativas. Atendimento nacional via email e WhatsApp.">
   
   <!-- SEO: Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Contato | HotelsBook - Fale com Nossa Equipe">
-  <meta property="og:description" content="Nossa equipe está pronta para entender sua demanda e apresentar a solução ideal para sua pequena hospedagem. Atendimento via email, WhatsApp e formulário.">
+  <meta property="og:title" content="Contato - HotelsBook | Fale com Nossa Equipe">
+  <meta property="og:description" content="Nossa equipe comercial e técnica está pronta para entender sua demanda. Atendimento via email, WhatsApp e formulário.">
   <meta property="og:url" content="https://hotelsbook.com.br/contato.html">
   <meta property="og:image" content="https://hotelsbook.com.br/assets/images/og-contato.jpg">
   <meta property="og:site_name" content="HotelsBook">
@@ -20,8 +20,8 @@
   
   <!-- SEO: Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Contato | HotelsBook - Fale com Nossa Equipe">
-  <meta name="twitter:description" content="Entre em contato com a HotelsBook. Tecnologia e dados para pousadas e pequenos meios de hospedagem.">
+  <meta name="twitter:title" content="Contato - HotelsBook | Fale com Nossa Equipe">
+  <meta name="twitter:description" content="Entre em contato com a HotelsBook. Consultoria estratégica, análise de dados e gestão de viagens.">
   <meta name="twitter:image" content="https://hotelsbook.com.br/assets/images/og-contato.jpg">
   
   <!-- Favicon (Consolidado - sem duplicatas) -->
@@ -105,10 +105,13 @@
         </div>
 
         <nav class="hidden md:flex space-x-8 items-center">
+          <!-- Links de navegação: JS adicionará 'active' automaticamente -->
           <a href="index.html" class="nav-link text-gray-600 hover:text-navy transition">Início</a>
           <a href="sobre.html" class="nav-link text-gray-600 hover:text-navy transition">Sobre Nós</a>
           <a href="databeds.html" class="nav-link text-gray-600 hover:text-navy transition">DataBeds</a>
+          <a href="hospped.html" class="nav-link text-gray-600 hover:text-navy transition">Hospped</a>
           <a href="parcerias.html" class="nav-link text-gray-600 hover:text-navy transition">Parcerias</a>
+          <!-- ✅ Contato com classe btn-contato para manter estilo de botão -->
           <a href="contato.html" class="nav-link btn-contato text-gray-600 hover:text-navy transition">Contato</a>
         </nav>
 
@@ -127,6 +130,7 @@
         <a href="index.html" class="nav-link block py-2 text-gray-600">Início</a>
         <a href="sobre.html" class="nav-link block py-2 text-gray-600">Sobre Nós</a>
         <a href="databeds.html" class="nav-link block py-2 text-gray-600">DataBeds</a>
+        <a href="hospped.html" class="nav-link block py-2 text-gray-600">Hospped</a>
         <a href="parcerias.html" class="nav-link block py-2 text-gray-600">Parcerias</a>
         <a href="contato.html" class="nav-link btn-contato block py-2 text-gray-600">Contato</a>
       </nav>
@@ -135,16 +139,20 @@
 
   <!-- HERO SECTION -->
   <section class="pt-32 pb-16 bg-gray-50 relative overflow-hidden">
+    <!-- 
+      💡 PROMPT PARA IA - IMAGEM DE FUNDO (OPCIONAL/DECORATIVA):
+      "Minimalist modern office space with soft natural lighting, clean desk with laptop and notebook, blurred background, corporate atmosphere, Brazilian business context, photorealistic, high quality, neutral tones."
+    -->
     <div class="absolute inset-0 opacity-30">
       <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2069&q=80" 
-           alt="Ambiente de trabalho" class="w-full h-full object-cover" loading="lazy">
+           alt="Ambiente corporativo" class="w-full h-full object-cover" loading="lazy">
       <div class="absolute inset-0 bg-gradient-to-b from-white via-white/80 to-gray-50"></div>
     </div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
       <h1 class="text-4xl lg:text-5xl font-bold text-navy mb-4">Entre em Contato</h1>
       <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-        Nossa equipe está pronta para entender sua demanda e apresentar a solução ideal para sua pequena hospedagem.
+        Nossa equipe comercial e técnica está pronta para entender sua demanda e apresentar a solução ideal para sua operação.
       </p>
     </div>
   </section>
@@ -169,14 +177,14 @@
                   </svg>
                 </div>
                 <div>
-                  <h3 class="font-bold text-navy mb-1">E-mail</h3>
-                  <a href="mailto:contato@hotelsbook.com.br" class="text-blue hover:underline font-medium">contato@hotelsbook.com.br</a>
-                  <p class="text-gray-500 text-sm mt-1">Propostas, parcerias e suporte técnico</p>
+                  <h3 class="font-bold text-navy mb-1">E-mail Comercial</h3>
+                  <a href="mailto:comercial@hotelsbook.com.br" class="text-blue hover:underline font-medium">comercial@hotelsbook.com.br</a>
+                  <p class="text-gray-500 text-sm mt-1">Propostas, parcerias e consultoria B2B</p>
                 </div>
               </div>
             </div>
 
-            <!-- WhatsApp -->
+            <!-- WhatsApp B2B -->
             <div class="service-card p-6">
               <div class="flex items-start">
                 <div class="w-12 h-12 bg-blue/10 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
@@ -185,9 +193,25 @@
                   </svg>
                 </div>
                 <div>
-                  <h3 class="font-bold text-navy mb-1">WhatsApp</h3>
+                  <h3 class="font-bold text-navy mb-1">WhatsApp Corporativo (B2B)</h3>
                   <a href="https://wa.me/5588921546413" target="_blank" rel="noopener noreferrer" class="text-blue hover:underline font-medium">(88) 92154-6413</a>
-                  <p class="text-gray-500 text-sm mt-1">Pousadas, pequenos hotéis e parceiros</p>
+                  <p class="text-gray-500 text-sm mt-1">Hotéis, redes e empresas de consultoria</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- WhatsApp B2C -->
+            <div class="service-card p-6">
+              <div class="flex items-start">
+                <div class="w-12 h-12 bg-blue/10 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                  <svg class="w-6 h-6 text-blue" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12.04 2C6.59 2 2.17 6.42 2.17 11.87c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.45 0 9.87-4.42 9.87-9.87 0-5.45-4.42-9.87-9.87-9.87zm.01 18.03c-1.5 0-2.98-.4-4.27-1.15l-.31-.18-3.11.82.83-3.04-.2-.32c-.83-1.33-1.27-2.87-1.27-4.45 0-4.64 3.78-8.42 8.42-8.42 4.64 0 8.42 3.78 8.42 8.42 0 4.64-3.78 8.42-8.42 8.42zm4.58-6.24c-.25-.13-1.48-.73-1.71-.81-.23-.08-.4-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.14-.25-.02-.38.1-.5.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.89.87-.89 2.13 0 1.26.92 2.48 1.05 2.65.13.17 1.81 2.77 4.39 3.88.61.26 1.09.42 1.46.54.62.2 1.18.17 1.62.11.49-.07 1.48-.61 1.69-1.19.21-.58.21-1.08.15-1.19-.06-.11-.23-.17-.48-.29z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-bold text-navy mb-1">WhatsApp Reservas (B2C)</h3>
+                  <a href="https://wa.me/5585984052096" target="_blank" rel="noopener noreferrer" class="text-blue hover:underline font-medium">(85) 98405-2096</a>
+                  <p class="text-gray-500 text-sm mt-1">Hospped: viagens corporativas e acadêmicas</p>
                 </div>
               </div>
             </div>
@@ -217,6 +241,7 @@
             <h2 class="text-2xl font-bold text-navy mb-2">Envie uma mensagem</h2>
             <p class="text-gray-600 mb-8">Preencha o formulário abaixo e nossa equipe retornará com uma proposta ou esclarecimento técnico.</p>
 
+            <!-- ✅ Formspree endpoint correto -->
             <form action="https://formspree.io/f/mpqbkyde" method="POST" class="space-y-6">
               <div class="grid md:grid-cols-2 gap-6">
                 <div>
@@ -224,15 +249,15 @@
                   <input type="text" id="nome" name="nome" required class="form-input" placeholder="Seu nome">
                 </div>
                 <div>
-                  <label for="empresa" class="block text-sm font-medium text-gray-700 mb-2">Nome da Hospedagem</label>
-                  <input type="text" id="empresa" name="empresa" class="form-input" placeholder="Nome da pousada ou hotel">
+                  <label for="empresa" class="block text-sm font-medium text-gray-700 mb-2">Empresa / Instituição</label>
+                  <input type="text" id="empresa" name="empresa" class="form-input" placeholder="Nome da organização">
                 </div>
               </div>
 
               <div class="grid md:grid-cols-2 gap-6">
                 <div>
-                  <label for="email" class="block text-sm font-medium text-gray-700 mb-2">E-mail</label>
-                  <input type="email" id="email" name="email" required class="form-input" placeholder="seu@email.com">
+                  <label for="email" class="block text-sm font-medium text-gray-700 mb-2">E-mail corporativo</label>
+                  <input type="email" id="email" name="email" required class="form-input" placeholder="seu@empresa.com">
                 </div>
                 <div>
                   <label for="telefone" class="block text-sm font-medium text-gray-700 mb-2">Telefone / WhatsApp</label>
@@ -244,9 +269,11 @@
                 <label for="assunto" class="block text-sm font-medium text-gray-700 mb-2">Assunto</label>
                 <select id="assunto" name="assunto" required class="form-input bg-white">
                   <option value="" disabled selected>Selecione uma opção</option>
+                  <option value="consultoria">Consultoria Estratégica</option>
                   <option value="databeds">HotelsBook DataBeds</option>
+                  <option value="hospped">Hospped - Reservas Corporativas e Acadêmicas</option>
                   <option value="parceria">Proposta de Parceria</option>
-                  <option value="suporte">Suporte Técnico</option>
+                  <option value="carreira">Carreiras / RH</option>
                   <option value="outro">Outro assunto</option>
                 </select>
               </div>
@@ -259,11 +286,13 @@
               <div class="flex items-start">
                 <input type="checkbox" id="lgpd" name="lgpd" required class="mt-1 mr-3 w-4 h-4 text-blue border-gray-300 rounded focus:ring-blue">
                 <label for="lgpd" class="text-sm text-gray-600">
-                  Concordo com a <a href="politica-privacidade.html" class="text-blue hover:underline">Política de Privacidade</a> e autorizo o tratamento dos meus dados para fins de contato.
+                  Concordo com a <a href="politica-privacidade.html" class="text-blue hover:underline">Política de Privacidade</a> e autorizo o tratamento dos meus dados para fins de contato comercial.
                 </label>
               </div>
 
+              <!-- Redirecionamento após envio -->
               <input type="hidden" name="_next" value="https://hotelsbook.com.br/contato.html?enviado=sucesso">
+              <!-- Reply-to para responder direto ao cliente -->
               <input type="hidden" name="_replyto" value="email">
 
               <button type="submit" class="btn-primary w-full py-4 text-base">
@@ -283,25 +312,25 @@
   <!-- COVERAGE SECTION -->
   <section class="py-16 bg-gray-50 border-t border-gray-100">
     <div class="max-w-5xl mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold text-navy mb-6">Nascidos no Cariri, Atendendo o Brasil</h2>
-      <p class="text-gray-600 mb-10 max-w-3xl mx-auto">Somos uma startup residente no Sebraelab (Sebrae-CE), nascida em Juazeiro do Norte. Atendemos pousadas e pequenos meios de hospedagem em todo o país de forma remota e humanizada.</p>
+      <h2 class="text-3xl font-bold text-navy mb-6">Atendimento em Todo o Brasil</h2>
+      <p class="text-gray-600 mb-10 max-w-3xl mx-auto">Atuamos de forma remota e presencial, com equipe distribuída estrategicamente para atender hotéis, redes e corporações em todas as regiões do país.</p>
 
       <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
         <div class="p-4 bg-white rounded-xl shadow-sm">
-          <div class="text-2xl font-bold text-blue mb-1">Cariri</div>
-          <div class="text-gray-500 text-sm">Base operacional e residência Sebraelab</div>
+          <div class="text-2xl font-bold text-blue mb-1">Norte</div>
+          <div class="text-gray-500 text-sm">Atendimento remoto + visitas programadas</div>
         </div>
         <div class="p-4 bg-white rounded-xl shadow-sm">
           <div class="text-2xl font-bold text-blue mb-1">Nordeste</div>
-          <div class="text-gray-500 text-sm">Foco em turismo regional e romarias</div>
+          <div class="text-gray-500 text-sm">Base operacional e suporte regional</div>
         </div>
         <div class="p-4 bg-white rounded-xl shadow-sm">
           <div class="text-2xl font-bold text-blue mb-1">Sudeste</div>
-          <div class="text-gray-500 text-sm">Atendimento remoto e parcerias</div>
+          <div class="text-gray-500 text-sm">Parcerias estratégicas e eventos</div>
         </div>
         <div class="p-4 bg-white rounded-xl shadow-sm">
-          <div class="text-2xl font-bold text-blue mb-1">Outras Regiões</div>
-          <div class="text-gray-500 text-sm">Suporte remoto e implementação online</div>
+          <div class="text-2xl font-bold text-blue mb-1">Sul / Centro-Oeste</div>
+          <div class="text-gray-500 text-sm">Consultoria técnica e implementação</div>
         </div>
       </div>
     </div>
@@ -316,15 +345,16 @@
             Hotels<span class="text-blue">Book</span>
           </a>
           <p class="mt-4 text-sm text-gray-400 max-w-xs">
-            Tecnologia e dados para pequenos meios de hospedagem. Startup residente no Sebraelab (Sebrae-CE).
+            Tecnologia e Consultoria Estratégica para o Setor Hoteleiro Brasileiro.
           </p>
         </div>
         
         <div>
-          <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Solução</h4>
+          <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Soluções</h4>
           <ul class="space-y-2 text-sm">
             <li><a href="databeds.html" class="hover:text-white transition">DataBeds</a></li>
-            <li><a href="sobre.html" class="hover:text-white transition">Nossa História</a></li>
+            <li><a href="hospped.html" class="hover:text-white transition">Hospped</a></li>
+            <li><a href="sobre.html" class="hover:text-white transition">Consultoria</a></li>
           </ul>
         </div>
         
@@ -382,6 +412,7 @@
       localStorage.setItem('cookieConsent', 'accepted');
       banner.classList.add('hidden');
       if (typeof gtag === 'function') {
+        // ✅ CORREÇÃO: 'analytics_storage' é parâmetro oficial do Google Consent Mode
         gtag('consent', 'update', { 'analytics_storage': 'granted' });
       }
     });
@@ -390,6 +421,7 @@
       localStorage.setItem('cookieConsent', 'declined');
       banner.classList.add('hidden');
       if (typeof gtag === 'function') {
+        // ✅ CORREÇÃO: 'analytics_storage' é parâmetro oficial do Google Consent Mode
         gtag('consent', 'update', { 'analytics_storage': 'denied' });
       }
     });
