@@ -6,15 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- SEO: Título e Descrição Únicos -->
-  <title>HotelsBook | Tecnologia e Dados para Pequenos Meios de Hospedagem</title>
+  <title>HotelsBook | Consultoria e Tecnologia para Hotelaria</title>
   <meta name="description"
-    content="Startup residente no Sebraelab (Sebrae-CE), nascida em Juazeiro do Norte. Software de dados DataBeds e gestão de viagens corporativas e acadêmicas Hospped para pousadas e pequenos meios de hospedagem.">
+    content="Soluções integradas para a hotelaria brasileira. Consultoria estratégica, plataforma de dados DataBeds e gestão de viagens corporativas com a Hospped.">
 
   <!-- SEO: Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="HotelsBook | Tecnologia e Dados para Pequenos Meios de Hospedagem">
+  <meta property="og:title" content="HotelsBook | Consultoria e Tecnologia para Hotelaria">
   <meta property="og:description"
-    content="Tecnologia proprietária e inteligência de dados para ajudar pousadas familiares e pequenas hospedagens a organizar reservas, planejar tarifas e crescer com sustentabilidade.">
+    content="Unimos expertise em gestão hoteleira com tecnologia proprietária para profissionalizar operações, maximizar receitas e escalar negócios.">
   <meta property="og:url" content="https://hotelsbook.com.br/">
   <meta property="og:image" content="https://hotelsbook.com.br/assets/images/og-index.jpg">
   <meta property="og:site_name" content="HotelsBook">
@@ -22,9 +22,9 @@
 
   <!-- SEO: Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="HotelsBook | Tecnologia e Dados para Pequenos Meios de Hospedagem">
+  <meta name="twitter:title" content="HotelsBook | Consultoria e Tecnologia para Hotelaria">
   <meta name="twitter:description"
-    content="Startup residente no Sebraelab (Sebrae-CE). DataBeds, Hospped e ferramentas de gestão para pousadas e pequenos meios de hospedagem.">
+    content="Soluções integradas para a hotelaria brasileira. DataBeds, Hospped e consultoria estratégica.">
   <meta name="twitter:image" content="https://hotelsbook.com.br/assets/images/og-index.jpg">
 
   <!-- Favicon (Consolidado - sem duplicatas) -->
@@ -44,7 +44,7 @@
     "legalName": "HotelsBook Tecnologia e Hospitalidade LTDA",
     "url": "https://hotelsbook.com.br",
     "logo": "https://hotelsbook.com.br/assets/images/favicon-192x192.png",
-    "description": "Tecnologia e inteligência de dados para pequenos meios de hospedagem. Startup residente no Sebraelab (Sebrae/CE), nascida em Juazeiro do Norte-CE.",
+    "description": "Consultoria estratégica e tecnologia para o setor hoteleiro brasileiro.",
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "BR"
@@ -167,24 +167,24 @@
     <!-- Imagem de Fundo (Placeholder) -->
     <div class="absolute inset-0 z-0 opacity-20">
       <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=2070&q=80"
-        alt="Hospedagem acolhedora" class="w-full h-full object-cover" loading="lazy">
+        alt="Hotel background" class="w-full h-full object-cover" loading="lazy">
     </div>
 
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <span
         class="inline-block py-1 px-3 rounded-full bg-blue/20 text-blue-light text-sm font-semibold mb-6 border border-blue/30">
-        Tecnologia para pequenos meios de hospedagem · Residente Sebraelab (Sebrae-CE)
+        Inovação para o Setor Hoteleiro
       </span>
       <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-6 leading-tight">
-        Tecnologia e Dados para<br>Pousadas e Pequenas Hospedagens
+        Inteligência e Consultoria<br>para Hotelaria Brasileira
       </h1>
       <p class="mt-4 text-xl text-gray-300 max-w-2xl mx-auto mb-10 font-light">
-        Unimos tecnologia proprietária e educação em gestão para ajudar pousadas familiares e pequenos meios de
-        hospedagem a organizar dados, planejar tarifas e crescer com sustentabilidade.
+        Unimos expertise em gestão hoteleira com tecnologia proprietária para profissionalizar operações, maximizar
+        receitas e escalar negócios.
       </p>
       <div class="flex flex-col sm:flex-row justify-center gap-4">
         <a href="contato.html" class="btn-primary bg-white text-navy font-semibold py-3.5 px-8 rounded-lg">
-          Falar com a Equipe
+          Falar com Consultor
         </a>
         <a href="databeds.html"
           class="btn-primary border border-gray-500 text-gray-200 font-semibold py-3.5 px-8 rounded-lg hover:bg-white/10 hover:border-white">
@@ -201,13 +201,12 @@
         <div>
           <h2 class="text-3xl font-bold text-navy mb-6">Quem Somos</h2>
           <p class="text-lg text-gray-600 mb-6 leading-relaxed">
-            A HotelsBook é uma startup de tecnologia nascida no Cariri e residente no Sebraelab (Sebrae-CE).
-            Desenvolvemos software e ferramentas simples de gestão para pousadas familiares e pequenos meios de
-            hospedagem — negócios que hoje organizam reservas e tarifas no caderno ou na planilha.
+            A HotelsBook é uma empresa de soluções integradas para o setor hoteleiro. Não somos apenas uma empresa de
+            tecnologia, somos parceiros estratégicos que entendem a operação do chão de fábrica até o board.
           </p>
           <p class="text-gray-600 mb-8 leading-relaxed">
-            Nosso foco inicial é digitalizar e fortalecer o micro e o pequeno empreendedor do turismo regional,
-            transformando a vivência prática da hotelaria em produtos acessíveis e fáceis de usar.
+            Nascemos da necessidade de trazer dados confiáveis e processos eficientes para hotéis e pousadas que desejam
+            crescer com sustentabilidade.
           </p>
           <a href="sobre.html" class="text-blue font-semibold hover:text-navy transition flex items-center gap-2">
             Conheça nossa história e equipe
@@ -220,8 +219,8 @@
           <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1170&q=80"
             alt="Equipe HotelsBook" class="rounded-xl shadow-2xl w-full object-cover h-80 lg:h-96" loading="lazy">
           <div class="absolute -bottom-6 -right-6 bg-navy p-6 rounded-lg shadow-lg hidden md:block">
-            <p class="text-white text-2xl font-bold">Cariri</p>
-            <p class="text-gray-300 text-sm">Juazeiro do Norte-CE</p>
+            <p class="text-white text-2xl font-bold">100%</p>
+            <p class="text-gray-300 text-sm">Capital Nacional</p>
           </div>
         </div>
       </div>
@@ -234,8 +233,8 @@
       <div class="text-center mb-16">
         <h2 class="text-3xl font-bold text-navy mb-4">Nossas Soluções</h2>
         <div class="w-16 h-1 bg-blue mx-auto rounded-full"></div>
-        <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Tecnologia e serviços desenhados para simplificar a gestão de
-          pequenas hospedagens e de programas de viagem.</p>
+        <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Tecnologia e serviço desenhados para cobrir todas as etapas da
+          gestão hoteleira e de viagens.</p>
       </div>
 
       <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
@@ -253,16 +252,16 @@
           <div class="p-8">
             <h3 class="text-2xl font-bold text-navy mb-3">HotelsBook DataBeds</h3>
             <p class="text-gray-600 mb-6">
-              Plataforma de inteligência de dados para pequenas hospedagens. Organize reservas, ocupação e tarifas em
-              um painel simples, com previsão de sazonalidade e apoio ao planejamento do seu negócio.
+              Plataforma de Revenue Management com parser adaptativo e IA generativa. Transforme dados brutos do seu PMS
+              em decisões estratégicas de precificação e ocupação.
             </p>
             <ul class="space-y-2 mb-8 text-sm text-gray-500">
               <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Previsão de
                 Sazonalidade</li>
-              <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Conexão com seu
-                sistema de reservas (PMS)</li>
-              <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Relatórios simples
-                para decisão</li>
+              <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Parser de PMS
+                automático</li>
+              <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Relatórios Executivos
+              </li>
             </ul>
             <a href="databeds.html"
               class="inline-block w-full text-center border-2 border-navy text-navy font-semibold py-2.5 rounded-lg hover:bg-navy hover:text-white transition">
@@ -286,8 +285,8 @@
           <div class="p-8">
             <h3 class="text-2xl font-bold text-navy mb-3">Hospped</h3>
             <p class="text-gray-600 mb-6">
-              Gestão de viagens corporativas e mobilidade acadêmica para empresas e instituições de ensino. Conectamos
-              programas de viagem a meios de hospedagem parceiros, com controle de políticas e relatórios de gastos.
+              Gestão completa de viagens corporativas e mobilidade acadêmica. Negociação direta com rede hoteleira,
+              controle de políticas e relatórios de gastos.
             </p>
             <ul class="space-y-2 mb-8 text-sm text-gray-500">
               <li class="flex items-center"><span class="w-2 h-2 bg-blue rounded-full mr-2"></span>Reservas Corporativas
@@ -323,9 +322,9 @@
                 d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
           </div>
-          <h3 class="text-xl font-bold mb-3">Vivência de Hotelaria</h3>
-          <p class="text-gray-300 text-sm">Nosso time formou-se na prática da recepção e do front office. Transformamos
-            essa vivência em ferramentas simples, feitas para quem opera com poucos recursos.</p>
+          <h3 class="text-xl font-bold mb-3">Expertise Real</h3>
+          <p class="text-gray-300 text-sm">Nossa equipe vive o dia a dia da hotelaria. Não somos apenas teóricos, somos
+            operadores.</p>
         </div>
 
         <div class="p-6">
@@ -348,9 +347,9 @@
               </path>
             </svg>
           </div>
-          <h3 class="text-xl font-bold mb-3">Raiz no Cariri</h3>
-          <p class="text-gray-300 text-sm">Nascida em Juazeiro do Norte e residente no Sebraelab (Sebrae-CE),
-            desenvolvemos tecnologia com olhar para o turismo regional e seus pequenos negócios.</p>
+          <h3 class="text-xl font-bold mb-3">Atuação Nacional</h3>
+          <p class="text-gray-300 text-sm">Atendemos clientes em todo o Brasil, combinando tecnologia remota com suporte
+            humanizado.</p>
         </div>
       </div>
     </div>
@@ -359,9 +358,9 @@
   <!-- CTA FINAL -->
   <section class="py-20 bg-white">
     <div class="max-w-4xl mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold text-navy mb-6">Pronto para organizar sua hospedagem com dados?</h2>
-      <p class="text-gray-600 mb-8">Converse com nossa equipe e descubra como a tecnologia pode simplificar a gestão da
-        sua pousada ou pequeno hotel.</p>
+      <h2 class="text-3xl font-bold text-navy mb-6">Pronto para transformar sua operação?</h2>
+      <p class="text-gray-600 mb-8">Agende uma conversa com nossos especialistas e descubra como podemos otimizar seus
+        resultados.</p>
       <a href="contato.html"
         class="btn-primary bg-blue text-white font-semibold py-4 px-10 rounded-lg text-lg shadow-lg hover:bg-blue-600">
         Entrar em Contato
@@ -378,7 +377,7 @@
             Hotels<span class="text-blue">Book</span>
           </a>
           <p class="mt-4 text-sm text-gray-400 max-w-xs">
-            Tecnologia e dados para pequenos meios de hospedagem. Startup residente no Sebraelab (Sebrae-CE).
+            Tecnologia e Consultoria Estratégica para o Setor Hoteleiro Brasileiro.
           </p>
         </div>
 
@@ -387,7 +386,7 @@
           <ul class="space-y-2 text-sm">
             <li><a href="databeds.html" class="hover:text-white transition">DataBeds</a></li>
             <li><a href="hospped.html" class="hover:text-white transition">Hospped</a></li>
-            <li><a href="sobre.html" class="hover:text-white transition">Nossa História</a></li>
+            <li><a href="sobre.html" class="hover:text-white transition">Consultoria</a></li>
           </ul>
         </div>
 
@@ -449,6 +448,7 @@
       localStorage.setItem('cookieConsent', 'accepted');
       banner.classList.add('hidden');
       if (typeof gtag === 'function') {
+        // ✅ CORREÇÃO: 'analytics_storage' é parâmetro oficial do Google Consent Mode
         gtag('consent', 'update', { 'analytics_storage': 'granted' });
       }
     });
@@ -457,6 +457,7 @@
       localStorage.setItem('cookieConsent', 'declined');
       banner.classList.add('hidden');
       if (typeof gtag === 'function') {
+        // ✅ CORREÇÃO: 'analytics_storage' é parâmetro oficial do Google Consent Mode
         gtag('consent', 'update', { 'analytics_storage': 'denied' });
       }
     });
